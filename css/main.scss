@@ -1,0 +1,132 @@
+---
+---
+    
+@import "bootstrap";
+
+img { margin-bottom: 24px; 
+     margin-top: 17px; 
+}
+
+
+body {
+	padding-top: 70px;
+}
+
+figcaption {
+    text-align: right;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Top navigation bar */
+
+
+p.byline {
+	text-align: center;
+	font-size: 18px;
+	line-height: 36px;
+	margin-top: -24px;
+	margin-bottom: 48px;
+}
+
+
+pubtit {
+	font-weight: bold;
+}
+
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px; /* or 950px */
+}
+
+/* Home, News */
+#newsid p {
+	text-align: left;
+}
+
+#homeidtmp h1 {
+	text-align: center;
+}
+
+#newsid img {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+/* Team & Publications */
+#gridid img { margin: 16px 22px 6px 0; }
+#homeid img { margin: 0 0 0 0; box-shadow: 0px 0px 0px #888888 }
+#picid img { margin: 6px 3px 60px 6px; box-shadow: 2px 2px 5px #888888 }
+#gridid .row { margin-bottom: 24px; }
+
+
+/* Grid overrides */
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
+.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+/* Grid overrides */
+.col-sm-4 {
+	padding-left: 26px;
+	padding-right: 26px;
+}
+
+.navbar-brand {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+/* Carusel */
+
+.carousel {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.email::after {
+	content: "@kookmin.ac.kr";
+}
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:  url('.../fonts/icomoon.eot?z5905g');
+	src:  url('../fonts/icomoon.eot?z5905g#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon.ttf?z5905g') format('truetype'),
+	  url('../fonts/icomoon.woff?z5905g') format('woff'),
+	  url('../fonts/icomoon.svg?z5905g#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-link:before {
+	font-size: 80%;
+    margin-left: 0.3em;
+	color: #666;
+	content: "\e9cb";
+}

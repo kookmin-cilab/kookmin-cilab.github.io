@@ -1,0 +1,12 @@
+#- name:
+#  photo: rock.jpg
+#  homepage:
+#  email:
+#  interests:
+
+# Make sure photo images are squre.
+
+- name: Currently Hiring!
+  photo: you.jpg
+  email: mail@kookmin.ac.kr
+  interests: Computer Vision, Robotics

@@ -1,0 +1,49 @@
+- img: kookmin-logo.png
+  year: 2024
+  month: July
+  category: News
+  description: "Seongwon Lee starting the assistant professorship in Kookmin University."
+
+- img: eccv2024.svg
+  year: 2024
+  month: July
+  category: Publication
+  description: "A paper accepted to ECCV 2024 Workshop."
+
+- img: bmvc2023.png
+  year: 2023
+  month: August
+  category: Publication
+  description: "A paper accepted to BMVC 2023."
+  long_description: 
+
+- img: cvpr2023.png
+  year: 2023
+  month: February
+  category: Publication
+  description: "A paper accepted to CVPR 2023."
+  long_description: 
+
+- img: qualcomm.jpg
+  year: 2022
+  month: November
+  category: Awards
+  description: "Seongwon Lee won the Qualcomm Innovation Fellowship 2022."
+
+- img: cvpr2022.png
+  year: 2022
+  month: March
+  category: Publication
+  description: "A paper has been selected for Oral presentation in CVPR 2022."
+
+- img: cvpr2022.png
+  year: 2022
+  month: March
+  category: Publication
+  description: "Two papers accepted to CVPR 2022."
+
+- img: iccv2021.png
+  year: 2022
+  month: July
+  category: Publication
+  description: "A paper accepted to ICCV 2021."

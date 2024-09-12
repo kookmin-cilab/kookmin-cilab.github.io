@@ -1,0 +1,37 @@
+
+<div class="well" style="padding: 10px 10px 10px 10px;">
+<h4 style="margin-top: 0px;">Latest News</h4>
+
+{% assign number_printed = 0 %}
+{% for article in site.data.news limit:8 %}
+
+{% assign even_odd = number_printed | modulo: 4 %}
+
+{% if even_odd == 0 %}
+<div class="row">
+{% endif %}
+
+<div class="col-sm-3">
+<img src="{{ site.url }}{{ site.baseurl }}/images/newspic/{{ article.img }}" style="width: 100%; aspect-ratio: 2/1; object-fit: contain;"/>
+<span style="color: black;">{{ article.category }}</span><br /><span>{{ article.description | markdownify}}</span>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd == 3 %}
+</div>
+{% endif %}
+
+{% endfor %}
+
+{% assign even_odd = number_printed | modulo: 4 %}
+{% if even_odd != 0 %}
+</div>
+{% endif %}
+
+<div class="row">
+<div class="col-sm-12">
+<span><a href="{{ site.url }}{{ site.baseurl }}/allnews.html" style="float: right;">... see all News</a></span>
+</div>
+</div>
+</div>

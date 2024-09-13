@@ -12,9 +12,9 @@
 - title: "Language-only Efficient Prompt Learning for Zero-shot Composed Image Retrieval"
   year: 2024
   authors: Seongwon Lee, and Yong-Ju Lee
-  venue: European Conference on Computer Vision Workshop (ECCVW (Green-FOMO Workshop))
-  link_exist: 0
-  link: 
+  venue: European Conference on Computer Vision (ECCV) 2024 Workshop (Green Foundation Models)
+  link_exist: 1
+  link: https://green-fomo.github.io/ECCV2024/index.html
   oral: 
   spotlight: 
   highlight: 

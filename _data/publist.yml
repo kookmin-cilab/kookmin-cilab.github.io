@@ -67,7 +67,7 @@
 
 - title: "Hierarchical Memory Matching Network for Video Object Segmentation"
   year: 2021
-  authors: Seongwon Lee, Hongje Seong, Suhyeon Lee, and Euntai Kim
+  authors: Hongje Seong, Seoung Wug Oh, Joon-Young Lee, Seongwon Lee, Suhyeon Lee, and Euntai Kim
   venue: IEEE/CVF International Conference on Computer Vision (ICCV) 2021
   link_exist: 1
   link: https://openaccess.thecvf.com/content/ICCV2021/html/Seong_Hierarchical_Memory_Matching_Network_for_Video_Object_Segmentation_ICCV_2021_paper.html

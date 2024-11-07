@@ -7,7 +7,7 @@
   oral: 
   spotlight: 
   highlight: 
-  under_review: 1
+  under_review: 
 
 - title: "Location-Aware Transformer Network for Bird’s Eye View Semantic Segmentation"
   year: 2024

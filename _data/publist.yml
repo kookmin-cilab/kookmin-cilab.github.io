@@ -2,8 +2,8 @@
   year: 2024
   authors: Seongwon Lee, Hongje Seong, Suhyeon Lee, and Euntai Kim
   venue: Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
-  link_exist: 0
-  link:
+  link_exist: 1
+  link: https://ieeexplore.ieee.org/document/10759842
   oral: 
   spotlight: 
   highlight: 
@@ -13,8 +13,8 @@
   year: 2024
   authors: Suhan Woo, Minseong Park, Youngjo Lee, Seongwon Lee, and Euntai Kim
   venue: Transactions on Intelligent Vehicle (TIV)
-  link_exist: 0
-  link:
+  link_exist: 1
+  link: https://ieeexplore.ieee.org/document/10729649
   oral: 
   spotlight: 
   highlight: 
@@ -24,8 +24,8 @@
   year: 2024
   authors: Nanda Febri Istighfarin, Seongwon Lee, and HyungGi Jo
   venue: IEEE Access
-  link_exist: 0
-  link:
+  link_exist: 1
+  link: https://ieeexplore.ieee.org/document/10723272
   oral: 
   spotlight: 
   highlight: 

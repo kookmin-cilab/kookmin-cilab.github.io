@@ -6,7 +6,32 @@
 
 # Make sure photo images are squre.
 
+- name: Junho Kim
+  photo: jhkim.jpg
+  external_email: pyeun08@kookmin.ac.kr
+  interests: 3D Reconstruction, Autonomous Driving
+
+- name: Sangho Byeon
+  photo: shbyeon.jpg
+  external_email: pyeun08@kookmin.ac.kr
+  interests: Computer Vision, 3D Vision
+
+- name: Junyeong Jang
+  photo: jyjang.jpg
+  external_email: junyoung0825@kookmin.ac.kr
+  interests: Computer Vision, 3D Vision
+
+- name: Chaeyoung Shin
+  photo: cyshin.jpg
+  external_email: scy3316@kookmin.ac.kr
+  interests: Computer Vision, 3D Vision
+
+- name: Jiseok Kim
+  photo: jskim.jpg
+  external_email: inplus@kookmin.ac.kr
+  interests: Computer Vision, 3D Vision
+
 - name: Currently Hiring!
   photo: you.jpg
   external_email: mail@kookmin.ac.kr
-  interests: Computer Vision, Robotics
+  interests: Computer Vision, 3D Vision, Robotics, Autonomous Driving

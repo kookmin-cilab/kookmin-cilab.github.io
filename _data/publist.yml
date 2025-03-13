@@ -1,6 +1,17 @@
+- title: "Fast Global Localization on Neural Radiance Field"
+  year: 2025
+  authors: Mangyu Kong, Jaewon Lee, Seongwon Lee<sup>†</sup>, Euntai Kim<sup>†</sup>
+  venue: IEEE International Conference on Robotics and Automation (ICRA)
+  link_exist: 1
+  link: https://arxiv.org/abs/2406.12202
+  oral: 
+  spotlight: 
+  highlight: 
+  under_review: 
+
 - title: "Correlation Verification for Image Retrieval and Its Memory Footprint Optimization"
-  year: 2024
-  authors: Seongwon Lee, Hongje Seong, Suhyeon Lee, and Euntai Kim
+  year: 2025
+  authors: Seongwon Lee, Hongje Seong, Suhyeon Lee, and Euntai Kim<sup>†</sup>
   venue: Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/10759842
@@ -10,8 +21,8 @@
   under_review: 
 
 - title: "Location-Aware Transformer Network for Bird’s Eye View Semantic Segmentation"
-  year: 2024
-  authors: Suhan Woo, Minseong Park, Youngjo Lee, Seongwon Lee, and Euntai Kim
+  year: 2025
+  authors: Suhan Woo, Minseong Park, Youngjo Lee, Seongwon Lee, and Euntai Kim<sup>†</sup>
   venue: Transactions on Intelligent Vehicle (TIV)
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/10729649
@@ -22,7 +33,7 @@
 
 - title: "Back to the Context: Tuning Visual Localization using Structural and Edge Context within Image"
   year: 2024
-  authors: Nanda Febri Istighfarin, Seongwon Lee, and HyungGi Jo
+  authors: Nanda Febri Istighfarin, Seongwon Lee, and HyungGi Jo<sup>†</sup>
   venue: IEEE Access
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/10723272
@@ -33,7 +44,7 @@
 
 - title: "Language-only Efficient Prompt Learning for Zero-shot Composed Image Retrieval"
   year: 2024
-  authors: Seongwon Lee, and Yong-Ju Lee
+  authors: Seongwon Lee, and Yong-Ju Lee<sup>†</sup>
   venue: European Conference on Computer Vision (ECCV) 2024 Workshop (Green Foundation Models)
   link_exist: 1
   link: https://green-fomo.github.io/ECCV2024/index.html
@@ -44,7 +55,7 @@
 
 - title: "RoomNeRF: Representing Empty Room as Neural Radiance Fields for View Synthesis"
   year: 2023
-  authors: Mangyu Kong, Seongwon Lee, and Euntai Kim
+  authors: Mangyu Kong, Seongwon Lee, and Euntai Kim<sup>†</sup>
   venue: The British Machine Vision Conference (BMVC) 2023
   link: https://proceedings.bmvc2023.org/825/
   link_exist: 1
@@ -55,7 +66,7 @@
 
 - title: "Revisiting Self-Similarity: Structural Embedding for Image Retrieval"
   year: 2023
-  authors: Seongwon Lee, Hongje Seong, Suhyeon Lee, and Euntai Kim
+  authors: Seongwon Lee, Hongje Seong, Suhyeon Lee, and Euntai Kim<sup>†</sup>
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023
   link_exist: 1
   link: https://openaccess.thecvf.com/content/CVPR2023/html/Lee_Revisiting_Self-Similarity_Structural_Embedding_for_Image_Retrieval_CVPR_2023_paper.html
@@ -66,7 +77,7 @@
 
 - title: "Correlation Verification for Image Retrieval"
   year: 2022
-  authors: Seongwon Lee, Hongje Seong, Suhyeon Lee, and Euntai Kim
+  authors: Seongwon Lee, Hongje Seong, Suhyeon Lee, and Euntai Kim<sup>†</sup>
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022
   link_exist: 1
   link: https://openaccess.thecvf.com/content/CVPR2022/html/Lee_Correlation_Verification_for_Image_Retrieval_CVPR_2022_paper.html
@@ -78,7 +89,7 @@
 
 - title: "WildNet: Learning Domain Generalized Semantic Segmentation from the Wild"
   year: 2022
-  authors: Suhyeon Lee, Hongje Seong, Seongwon Lee, and Euntai Kim
+  authors: Suhyeon Lee, Hongje Seong, Seongwon Lee, and Euntai Kim<sup>†</sup>
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022
   link_exist: 1
   link: https://openaccess.thecvf.com/content/CVPR2022/html/Lee_WildNet_Learning_Domain_Generalized_Semantic_Segmentation_From_the_Wild_CVPR_2022_paper.html
@@ -89,7 +100,7 @@
 
 - title: "Hierarchical Memory Matching Network for Video Object Segmentation"
   year: 2021
-  authors: Hongje Seong, Seoung Wug Oh, Joon-Young Lee, Seongwon Lee, Suhyeon Lee, and Euntai Kim
+  authors: Hongje Seong, Seoung Wug Oh, Joon-Young Lee, Seongwon Lee, Suhyeon Lee, and Euntai Kim<sup>†</sup>
   venue: IEEE/CVF International Conference on Computer Vision (ICCV) 2021
   link_exist: 1
   link: https://openaccess.thecvf.com/content/ICCV2021/html/Seong_Hierarchical_Memory_Matching_Network_for_Video_Object_Segmentation_ICCV_2021_paper.html
@@ -100,7 +111,7 @@
 
 - title: "Loop Closure Detection in Crowded Place"
   year: 2021
-  authors: Seongwon Lee, HyungGi Jo, Hongje Seong, and Euntai Kim
+  authors: Seongwon Lee, HyungGi Jo, Hongje Seong, and Euntai Kim<sup>†</sup>
   venue: 2021 IEEE Region 10 Symposium (TENSYMP 2021)
   link_exist: 0
   link:
@@ -111,7 +122,7 @@
 
 - title: "A Hybrid SLAM in Complicated Indoor Environments for Mobile Robot on Low-Cost Platform"
   year: 2021
-  authors: Hae Min Cho, Seongwon Lee, and Euntai Kim
+  authors: Hae Min Cho, Seongwon Lee, and Euntai Kim<sup>†</sup>
   venue: 18th International Conference on Ubiquitous Robots (UR 2021)
   link_exist: 0
   link:
@@ -122,7 +133,7 @@
 
 - title: "Visual Loop Closure Detection over Illumination Change"
   year: 2019
-  authors: Seongwon Lee, HyungGi Jo, Hae Min Cho, and Euntai Kim
+  authors: Seongwon Lee, HyungGi Jo, Hae Min Cho, and Euntai Kim<sup>†</sup>
   venue: 16th International Conference on Ubiquitous Robots (UR 2019)
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/8768627
@@ -133,7 +144,7 @@
 
 - title: "Odometry Estimation via CNN Using Sparse LiDAR Data"
   year: 2019
-  authors: Hae Min Cho, HyungGi Jo, Seongwon Lee, and Euntai Kim
+  authors: Hae Min Cho, HyungGi Jo, Seongwon Lee, and Euntai Kim<sup>†</sup>
   venue: 16th International Conference on Ubiquitous Robots (UR 2019)
   link_exist: 0
   link:
@@ -144,7 +155,7 @@
 
 - title: "Large Scale Representation of Volumetric Fusion using ICP"
   year: 2018
-  authors: Hae Min Cho, HyungGi Jo, Seongwon Lee, and Euntai Kim
+  authors: Hae Min Cho, HyungGi Jo, Seongwon Lee, and Euntai Kim<sup>†</sup>
   venue: 18th International Conference on Control, Automation and Systems (ICCAS 2018)
   link_exist: 0
   link:
@@ -155,7 +166,7 @@
 
 - title: "Robust Visual Loop Closure Detection with Repetitive Features"
   year: 2018
-  authors: Seongwon Lee, HyungGi Jo, Hae Min Cho, and Euntai Kim
+  authors: Seongwon Lee, HyungGi Jo, Hae Min Cho, and Euntai Kim<sup>†</sup>
   venue: 15th International Conference on Ubiquitous Robots (UR 2018)
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/8441872
@@ -166,7 +177,7 @@
 
 - title: "Robust 6-DOF Localization Using Sensor Fusion System in Indoor-Outdoor Environments"
   year: 2018
-  authors: HyungGi Jo, Hae Min Cho, Seongwon Lee, and Euntai Kim
+  authors: HyungGi Jo, Hae Min Cho, Seongwon Lee, and Euntai Kim<sup>†</sup>
   venue: 15th International Conference on Ubiquitous Robots (UR 2018)
   link_exist: 0
   link:
@@ -177,7 +188,7 @@
 
 - title: "Empty Area Search on Occupancy Grid Map for Mobile Robot Navigation"
   year: 2017
-  authors: Seongwon Lee, HyungGi Jo, Hae Min Cho, and Euntai Kim
+  authors: Seongwon Lee, HyungGi Jo, Hae Min Cho, and Euntai Kim<sup>†</sup>
   venue: 18th International Symposium on Advanced Intelligent Systems (ISIS 2017)
   link_exist: 0
   link:
@@ -188,7 +199,7 @@
 
 - title: "Multi-Resolution Point Cloud Generation Based on Heterogeneous Sensor Fusion System"
   year: 2017
-  authors: HyungGi Jo, Hae Min Cho, Seongwon Lee, and Euntai Kim
+  authors: HyungGi Jo, Hae Min Cho, Seongwon Lee, and Euntai Kim<sup>†</sup>
   venue: 2017 14th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI 2017)
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/7992856

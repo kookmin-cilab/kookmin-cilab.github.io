@@ -1,20 +1,20 @@
+- img: icra2025.jpg
+  year: 2025
+  month: Feb
+  category: News
+  description: "A paper accepted to ICRA 2025."
+
 - img: tpami.jpg
   year: 2024
   month: November
   category: News
-  description: "A paper accepted to TPAMI (IF=20.8)."
+  description: "A paper accepted to TPAMI (IF: 20.6, JCR Top 1%)"
 
 - img: tiv.jpg
   year: 2024
   month: November
   category: News
-  description: "A paper accepted to TIV (IF=14.0)."
-
-- img: kookmin-logo.png
-  year: 2024
-  month: July
-  category: News
-  description: "Seongwon Lee starting the assistant professorship in Kookmin University."
+  description: "A paper accepted to TIV (IF: 14.0, JCR Top 2%)"
 
 - img: eccv2024.svg
   year: 2024

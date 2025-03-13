@@ -93,7 +93,7 @@ pubtit {
 
 
 .email::after {
-	content: "@kookmin.ac.kr";
+	content: "";
 }
 
 
@@ -130,3 +130,7 @@ pubtit {
 	color: #666;
 	content: "\e9cb";
 }
+
+html {
+	overflow-y: scroll;
+  }

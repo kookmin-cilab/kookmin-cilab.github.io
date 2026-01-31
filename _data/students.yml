@@ -6,6 +6,16 @@
 
 # Make sure photo images are squre.
 
+- name: Sangho Byeon
+  photo: shbyeon.jpg
+  external_email: pyeun08@kookmin.ac.kr
+  interests: Computer Vision, 3D Vision
+
+- name: Junyeong Jang
+  photo: jyjang.jpg
+  external_email: junyoung0825@kookmin.ac.kr
+  interests: Computer Vision, 3D Vision
+  
 - name: Currently Hiring!
   photo: you.jpg
   email: mail@kookmin.ac.kr

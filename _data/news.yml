@@ -1,3 +1,9 @@
+- img: icra2026.png
+  year: 2026
+  month: Jan
+  category: News
+  description: "A paper accepted to ICRA 2026."
+
 - img: intern.jpg
   year: 2025
   month: Mar
@@ -22,11 +28,11 @@
   category: News
   description: "A paper accepted to TIV (IF: 14.0, JCR Top 2%)"
 
-- img: eccv2024.svg
-  year: 2024
-  month: July
-  category: Publication
-  description: "A paper accepted to ECCV 2024 Workshop."
+# - img: eccv2024.svg
+#   year: 2024
+#   month: July
+#   category: Publication
+#   description: "A paper accepted to ECCV 2024 Workshop."
 
 - img: bmvc2023.png
   year: 2023

@@ -1,3 +1,14 @@
+- title: "VG3T: Visual Geometry Grounded Gaussian Transformer"
+  year: 2026
+  authors: Junho Kim, Seongwon Lee<sup>†</sup>
+  venue: IEEE International Conference on Robotics and Automation (ICRA)
+  link_exist: 1
+  link: https://arxiv.org/abs/2512.05988
+  oral: 
+  spotlight: 
+  highlight: 
+  under_review: 
+
 - title: "Fast Global Localization on Neural Radiance Field"
   year: 2025
   authors: Mangyu Kong, Jaewon Lee, Seongwon Lee<sup>†</sup>, Euntai Kim<sup>†</sup>

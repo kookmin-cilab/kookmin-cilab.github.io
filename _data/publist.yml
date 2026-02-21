@@ -1,3 +1,25 @@
+- title: "Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty"
+  year: 2026
+  authors: Mangyu Kong, Seongwon Lee<sup>†</sup>, Euntai Kim<sup>†</sup>
+  venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026
+  link_exist: 0
+  link: 
+  oral: 
+  spotlight: 
+  highlight: 
+  under_review: 
+
+- title: "HypeVPR: Exploring Hyperbolic Space for Perspective to Equirectangular Visual Place Recognition"
+  year: 2026
+  authors: Suhan Woo, Seongwon Lee, Jinwoo Jang, Euntai Kim<sup>†</sup>
+  venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026
+  link_exist: 1
+  link: https://arxiv.org/abs/2506.04764
+  oral: 
+  spotlight: 
+  highlight: 
+  under_review: 
+
 - title: "VG3T: Visual Geometry Grounded Gaussian Transformer"
   year: 2026
   authors: Junho Kim, Seongwon Lee<sup>†</sup>

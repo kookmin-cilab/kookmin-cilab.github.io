@@ -128,6 +128,10 @@ pubtit {
 	vertical-align: middle;
 }
 
+#gridid .publication-entry__thumbnail {
+	margin: 0;
+}
+
 .publication-entry__body {
 	min-width: 0;
 	flex: 1 1 auto;

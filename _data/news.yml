@@ -3,25 +3,25 @@
   category: Publication
   description: "📝 **Two papers** have been accepted to **CVPR 2026**."
 
-- year: 2025
-  month: 9
-  category: Publication
-  description: "📝 **One paper** has been published in **IEEE Transactions on Intelligent Vehicles (TIV)** (IF: 14.0, JCR Top 2%)."
-
 - year: 2026
   month: 1
   category: Publication
   description: "📝 **One paper** has been accepted to **ICRA 2026**."
 
 - year: 2025
-  month: 2
+  month: 9
   category: Publication
-  description: "📝 **One paper** has been accepted to **ICRA 2025**."
+  description: "📝 **One paper** has been published in **IEEE Transactions on Intelligent Vehicles (TIV)** (IF: 14.0, JCR Top 2%)."
 
 - year: 2025
   month: 3
   category: Publication
   description: "📝 **One paper** has been published in **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)** (IF: 20.6, JCR Top 1%)."
+
+- year: 2025
+  month: 2
+  category: Publication
+  description: "📝 **One paper** has been accepted to **ICRA 2025**."
 
 - year: 2024
   month: 10

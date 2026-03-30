@@ -45,7 +45,7 @@ permalink: /members/
 {% for member in site.data.students %}
 
 {% if number_printed == 0 %}
-### Students
+### Master Program Students
 {% endif %}
 
 {% assign even_odd = number_printed | modulo: 2 %}

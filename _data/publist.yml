@@ -1,10 +1,10 @@
 - title: "Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty"
   year: 2026
-  authors: Mangyu Kong, Seongwon Lee<sup>†</sup>, Euntai Kim<sup>†</sup>
+  authors: Mangyu Kong, Seongwon Lee<sup>†</sup>, and Euntai Kim<sup>†</sup>
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026
   link_exist: 0
   link: 
-  thumbnail: /images/publications/cvpr2026.png
+  thumbnail: /images/publications/kong2026rethinking.png
   oral: 
   spotlight: 
   highlight: 
@@ -12,11 +12,11 @@
 
 - title: "HypeVPR: Exploring Hyperbolic Space for Perspective to Equirectangular Visual Place Recognition"
   year: 2026
-  authors: Suhan Woo, Seongwon Lee, Jinwoo Jang, Euntai Kim<sup>†</sup>
+  authors: Suhan Woo, Seongwon Lee, Jinwoo Jang, and Euntai Kim<sup>†</sup>
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026
   link_exist: 1
   link: https://arxiv.org/abs/2506.04764
-  thumbnail: /images/publications/cvpr2026.png
+  thumbnail: /images/publications/woo2026hypevpr.png
   oral: 
   spotlight: 
   highlight: 
@@ -24,11 +24,11 @@
 
 - title: "VG3T: Visual Geometry Grounded Gaussian Transformer"
   year: 2026
-  authors: Junho Kim, Seongwon Lee<sup>†</sup>
+  authors: Junho Kim, and Seongwon Lee<sup>†</sup>
   venue: IEEE International Conference on Robotics and Automation (ICRA)
   link_exist: 1
   link: https://arxiv.org/abs/2512.05988
-  thumbnail: /images/publications/icra2026.png
+  thumbnail: /images/publications/kim2025vg3t.gif
   oral: 
   spotlight: 
   highlight: 
@@ -36,11 +36,11 @@
 
 - title: "Fast Global Localization on Neural Radiance Field"
   year: 2025
-  authors: Mangyu Kong, Jaewon Lee, Seongwon Lee<sup>†</sup>, Euntai Kim<sup>†</sup>
+  authors: Mangyu Kong, Jaewon Lee, Seongwon Lee<sup>†</sup>, and Euntai Kim<sup>†</sup>
   venue: IEEE International Conference on Robotics and Automation (ICRA)
   link_exist: 1
   link: https://arxiv.org/abs/2406.12202
-  thumbnail: /images/publications/icra2025.jpg
+  thumbnail: /images/publications/kong2025fast.gif
   oral: 
   spotlight: 
   highlight: 
@@ -52,7 +52,7 @@
   venue: Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/10759842
-  thumbnail: /images/publications/tpami.jpg
+  thumbnail: /images/publications/lee2025cvnetds.png
   oral: 
   spotlight: 
   highlight: 
@@ -64,7 +64,7 @@
   venue: Transactions on Intelligent Vehicle (TIV)
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/10729649
-  thumbnail: /images/publications/tiv.jpg
+  thumbnail: /images/publications/woo2025lat.gif
   oral: 
   spotlight: 
   highlight: 
@@ -76,6 +76,7 @@
   venue: IEEE Access
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/10723272
+  thumbnail:
   oral: 
   spotlight: 
   highlight: 
@@ -87,6 +88,7 @@
   venue: European Conference on Computer Vision (ECCV) 2024 Workshop (Green Foundation Models)
   link_exist: 1
   link: https://green-fomo.github.io/ECCV2024/index.html
+  thumbnail: /images/publications/lee2024language.png
   oral: 
   spotlight: 
   highlight: 
@@ -98,7 +100,7 @@
   venue: The British Machine Vision Conference (BMVC) 2023
   link: https://proceedings.bmvc2023.org/825/
   link_exist: 1
-  thumbnail: /images/publications/bmvc2023.png
+  thumbnail: /images/publications/kong2023room.gif
   oral: 
   spotlight: 
   highlight: 
@@ -110,7 +112,7 @@
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023
   link_exist: 1
   link: https://openaccess.thecvf.com/content/CVPR2023/html/Lee_Revisiting_Self-Similarity_Structural_Embedding_for_Image_Retrieval_CVPR_2023_paper.html
-  thumbnail: /images/publications/cvpr2023.png
+  thumbnail: /images/publications/lee2023revisiting.jpg
   oral: 
   spotlight: 
   highlight: 
@@ -122,7 +124,7 @@
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022
   link_exist: 1
   link: https://openaccess.thecvf.com/content/CVPR2022/html/Lee_Correlation_Verification_for_Image_Retrieval_CVPR_2022_paper.html
-  thumbnail: /images/publications/cvpr2022.png
+  thumbnail: /images/publications/lee2022cvnet.jpg
   oral: 1
   spotlight: 
   highlight: 
@@ -135,7 +137,7 @@
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022
   link_exist: 1
   link: https://openaccess.thecvf.com/content/CVPR2022/html/Lee_WildNet_Learning_Domain_Generalized_Semantic_Segmentation_From_the_Wild_CVPR_2022_paper.html
-  thumbnail: /images/publications/cvpr2022.png
+  thumbnail: /images/publications/lee2022wildnet.jpg
   oral: 
   spotlight: 
   highlight: 
@@ -147,6 +149,7 @@
   venue: IEEE/CVF International Conference on Computer Vision (ICCV) 2021
   link_exist: 1
   link: https://openaccess.thecvf.com/content/ICCV2021/html/Seong_Hierarchical_Memory_Matching_Network_for_Video_Object_Segmentation_ICCV_2021_paper.html
+  thumbnail: /images/publications/seong2021hmmn.jpg
   oral: 
   spotlight: 
   highlight: 

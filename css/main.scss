@@ -73,10 +73,9 @@ pubtit {
 	font-weight: 400;
 }
 
-.news-list__separator,
-.news-archive__separator {
-	color: #999;
-	margin: 0 6px;
+.news-list__text,
+.news-archive__text {
+	display: inline;
 }
 
 /* Team & Publications */

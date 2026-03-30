@@ -37,7 +37,9 @@ permalink: /photos/
             {% assign image_path = '/images/photos/' | append: image %}
           {% endunless %}
           <div class="item{% if forloop.first %} active{% endif %}">
-            <img src="{{ image_path | relative_url }}" alt="{{ album.title | default: album.date | escape }}">
+            <div class="photo-album__frame">
+              <img src="{{ image_path | relative_url }}" alt="{{ album.title | default: album.date | escape }}">
+            </div>
           </div>
           {% endfor %}
         </div>
@@ -58,7 +60,9 @@ permalink: /photos/
         {% assign image_path = '/images/photos/' | append: album.images[0] %}
       {% endunless %}
       <div class="photo-album__single">
-        <img src="{{ image_path | relative_url }}" alt="{{ album.title | default: album.date | escape }}">
+        <div class="photo-album__frame">
+          <img src="{{ image_path | relative_url }}" alt="{{ album.title | default: album.date | escape }}">
+        </div>
       </div>
       {% endif %}
     </div>

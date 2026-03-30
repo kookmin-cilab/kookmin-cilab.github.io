@@ -7,9 +7,10 @@ Each entry in `_data/photos.yml` should provide:
   title: Lab dinner
   description: Optional text
   images:
-    - /images/photos/dinner-1.jpg
-    - /images/photos/dinner-2.jpg
+    - dinner-1.jpg
+    - dinner-2.jpg
 ```
 
 If `images` has one file, it is shown as a single photo.
 If `images` has multiple files, they are shown as a slideshow.
+If you use only a filename, the page automatically prepends `/images/photos/`.

@@ -31,8 +31,13 @@ permalink: /photos/
 
         <div class="carousel-inner" role="listbox">
           {% for image in album.images %}
+          {% assign image_path = image %}
+          {% assign image_prefix = image | slice: 0 %}
+          {% unless image contains '://' or image_prefix == '/' %}
+            {% assign image_path = '/images/photos/' | append: image %}
+          {% endunless %}
           <div class="item{% if forloop.first %} active{% endif %}">
-            <img src="{{ image | relative_url }}" alt="{{ album.title | default: album.date | escape }}">
+            <img src="{{ image_path | relative_url }}" alt="{{ album.title | default: album.date | escape }}">
           </div>
           {% endfor %}
         </div>
@@ -47,8 +52,13 @@ permalink: /photos/
         </a>
       </div>
       {% else %}
+      {% assign image_path = album.images[0] %}
+      {% assign image_prefix = album.images[0] | slice: 0 %}
+      {% unless album.images[0] contains '://' or image_prefix == '/' %}
+        {% assign image_path = '/images/photos/' | append: album.images[0] %}
+      {% endunless %}
       <div class="photo-album__single">
-        <img src="{{ album.images[0] | relative_url }}" alt="{{ album.title | default: album.date | escape }}">
+        <img src="{{ image_path | relative_url }}" alt="{{ album.title | default: album.date | escape }}">
       </div>
       {% endif %}
     </div>

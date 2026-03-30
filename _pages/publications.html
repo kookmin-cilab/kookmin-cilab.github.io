@@ -25,18 +25,25 @@ permalink: /publications/
     {% endif %}
 
     {% assign first_under_review = 0 %}
+    {% assign thumbnail_path = publi.thumbnail %}
+    {% if publi.thumbnail %}
+      {% assign thumbnail_prefix = publi.thumbnail | slice: 0 %}
+      {% unless publi.thumbnail contains '://' or thumbnail_prefix == '/' %}
+        {% assign thumbnail_path = '/images/publications/' | append: publi.thumbnail %}
+      {% endunless %}
+    {% endif %}
 
     <div class="well" style="padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; margin-bottom: 3px; box-shadow: none;">
       <div class="publication-entry{% if publi.thumbnail %} publication-entry--with-thumbnail{% endif %}">
-        {% if publi.thumbnail %}
+        {% if thumbnail_path %}
         <button
           type="button"
           class="publication-entry__thumbnail-button"
-          data-publication-image="{{ publi.thumbnail | relative_url }}"
+          data-publication-image="{{ thumbnail_path | relative_url }}"
           data-publication-title="{{ publi.title | escape }}">
           <img
             class="publication-entry__thumbnail"
-            src="{{ publi.thumbnail | relative_url }}"
+            src="{{ thumbnail_path | relative_url }}"
             alt="{{ publi.title | escape }} thumbnail">
         </button>
         {% endif %}
@@ -76,18 +83,25 @@ permalink: /publications/
       <div class="col-sm-11 clearfix">
       {% assign div_opened = 1 %}
     {% endif %}
+    {% assign thumbnail_path = publi.thumbnail %}
+    {% if publi.thumbnail %}
+      {% assign thumbnail_prefix = publi.thumbnail | slice: 0 %}
+      {% unless publi.thumbnail contains '://' or thumbnail_prefix == '/' %}
+        {% assign thumbnail_path = '/images/publications/' | append: publi.thumbnail %}
+      {% endunless %}
+    {% endif %}
 
     <div class="well" style="padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; margin-bottom: 3px; box-shadow: none;">
       <div class="publication-entry{% if publi.thumbnail %} publication-entry--with-thumbnail{% endif %}">
-        {% if publi.thumbnail %}
+        {% if thumbnail_path %}
         <button
           type="button"
           class="publication-entry__thumbnail-button"
-          data-publication-image="{{ publi.thumbnail | relative_url }}"
+          data-publication-image="{{ thumbnail_path | relative_url }}"
           data-publication-title="{{ publi.title | escape }}">
           <img
             class="publication-entry__thumbnail"
-            src="{{ publi.thumbnail | relative_url }}"
+            src="{{ thumbnail_path | relative_url }}"
             alt="{{ publi.title | escape }} thumbnail">
         </button>
         {% endif %}

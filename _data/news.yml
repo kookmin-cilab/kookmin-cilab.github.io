@@ -2,79 +2,79 @@
   year: 2026
   month: Jan
   category: News
-  description: "Two papers accepted to CVPR 2026."
+  description: "**Two papers** accepted to **CVPR 2026**."
 
 
 - img: icra2026.png
   year: 2026
   month: Jan
   category: News
-  description: "A paper accepted to ICRA 2026."
+  description: "**A paper** accepted to **ICRA 2026**."
 
 - img: intern.jpg
   year: 2025
   month: Mar
   category: News
-  description: "Five interns have joined our lab. Welcome!"
+  description: "**Five interns** have joined our lab. Welcome!"
 
 - img: icra2025.jpg
   year: 2025
   month: Feb
   category: News
-  description: "A paper accepted to ICRA 2025."
+  description: "**A paper** accepted to **ICRA 2025**."
 
 - img: tpami.jpg
   year: 2024
   month: November
   category: News
-  description: "A paper accepted to TPAMI (IF: 20.6, JCR Top 1%)"
+  description: "**A paper** accepted to **TPAMI** (IF: 20.6, JCR Top 1%)"
 
 - img: tiv.jpg
   year: 2024
   month: November
   category: News
-  description: "A paper accepted to TIV (IF: 14.0, JCR Top 2%)"
+  description: "**A paper** accepted to **TIV** (IF: 14.0, JCR Top 2%)"
 
 # - img: eccv2024.svg
 #   year: 2024
 #   month: July
 #   category: Publication
-#   description: "A paper accepted to ECCV 2024 Workshop."
+#   description: "**A paper** accepted to **ECCV 2024 Workshop**."
 
 - img: bmvc2023.png
   year: 2023
   month: August
   category: Publication
-  description: "A paper accepted to BMVC 2023."
+  description: "**A paper** accepted to **BMVC 2023**."
   long_description: 
 
 - img: cvpr2023.png
   year: 2023
   month: February
   category: Publication
-  description: "A paper accepted to CVPR 2023."
+  description: "**A paper** accepted to **CVPR 2023**."
   long_description: 
 
 - img: qualcomm.jpg
   year: 2022
   month: November
   category: Awards
-  description: "Seongwon Lee won the Qualcomm Innovation Fellowship 2022."
+  description: "Seongwon Lee won the **Qualcomm Innovation Fellowship 2022**."
 
 - img: cvpr2022.png
   year: 2022
   month: March
   category: Publication
-  description: "A paper has been selected for Oral presentation in CVPR 2022."
+  description: "**A paper** has been selected for **Oral presentation** in **CVPR 2022**."
 
 - img: cvpr2022.png
   year: 2022
   month: March
   category: Publication
-  description: "Two papers accepted to CVPR 2022."
+  description: "**Two papers** accepted to **CVPR 2022**."
 
 - img: iccv2021.png
   year: 2022
   month: July
   category: Publication
-  description: "A paper accepted to ICCV 2021."
+  description: "**A paper** accepted to **ICCV 2021**."

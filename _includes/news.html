@@ -4,10 +4,26 @@
 
 <div class="news-list">
 {% for article in site.data.news limit:8 %}
+  {% assign month_lower = article.month | downcase %}
+  {% assign month_number = article.month %}
+  {% case month_lower %}
+    {% when 'jan' or 'january' %}{% assign month_number = '01' %}
+    {% when 'feb' or 'february' %}{% assign month_number = '02' %}
+    {% when 'mar' or 'march' %}{% assign month_number = '03' %}
+    {% when 'apr' or 'april' %}{% assign month_number = '04' %}
+    {% when 'may' %}{% assign month_number = '05' %}
+    {% when 'jun' or 'june' %}{% assign month_number = '06' %}
+    {% when 'jul' or 'july' %}{% assign month_number = '07' %}
+    {% when 'aug' or 'august' %}{% assign month_number = '08' %}
+    {% when 'sep' or 'sept' or 'september' %}{% assign month_number = '09' %}
+    {% when 'oct' or 'october' %}{% assign month_number = '10' %}
+    {% when 'nov' or 'november' %}{% assign month_number = '11' %}
+    {% when 'dec' or 'december' %}{% assign month_number = '12' %}
+  {% endcase %}
   <p class="news-list__item">
-    <span class="news-list__date">{{ article.month }} {{ article.year }}</span>
+    <span class="news-list__date">{{ month_number }} {{ article.year }}</span>
     <span class="news-list__separator">-</span>
-    <span class="news-list__text">{{ article.description }}</span>
+    <span class="news-list__text">{{ article.description | markdownify | remove: '<p>' | remove: '</p>' }}</span>
   </p>
 {% endfor %}
 </div>

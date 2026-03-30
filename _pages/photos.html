@@ -22,7 +22,7 @@ permalink: /photos/
 
     <div class="photo-album__media">
       {% if album.images.size > 1 %}
-      <div id="{{ carousel_id }}" class="carousel slide photo-album__carousel" data-ride="carousel" data-interval="4000">
+      <div id="{{ carousel_id }}" class="carousel slide photo-album__carousel" data-ride="carousel" data-interval="5000">
         <ol class="carousel-indicators">
           {% for image in album.images %}
           <li data-target="#{{ carousel_id }}" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>

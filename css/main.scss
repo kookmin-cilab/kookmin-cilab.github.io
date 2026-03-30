@@ -63,6 +63,115 @@ pubtit {
 #picid img { margin: 6px 3px 60px 6px; box-shadow: 2px 2px 5px #888888 }
 #gridid .row { margin-bottom: 24px; }
 
+.publication-entry {
+	display: block;
+}
+
+.publication-entry--with-thumbnail {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.publication-entry__thumbnail-button {
+	flex: 0 0 120px;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	cursor: zoom-in;
+}
+
+.publication-entry__thumbnail-button:focus {
+	outline: 2px solid #0076df;
+	outline-offset: 2px;
+}
+
+.publication-entry__thumbnail {
+	display: block;
+	width: 120px;
+	max-width: 100%;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 8px;
+	border: 1px solid #d8d8d8;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+	margin: 0;
+}
+
+.publication-entry__body {
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.publication-image-modal {
+	position: fixed;
+	inset: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 2000;
+	padding: 24px;
+}
+
+.publication-image-modal.is-open {
+	display: flex;
+}
+
+.publication-image-modal__backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.78);
+}
+
+.publication-image-modal__content {
+	position: relative;
+	z-index: 1;
+	max-width: min(92vw, 1200px);
+	max-height: 88vh;
+	width: auto;
+	height: auto;
+	margin: 0;
+	border-radius: 10px;
+	box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+.publication-image-modal__close {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	border: 0;
+	border-radius: 999px;
+	font-size: 30px;
+	line-height: 1;
+	color: #111;
+	background: rgba(255, 255, 255, 0.92);
+	cursor: pointer;
+}
+
+body.publication-modal-open {
+	overflow: hidden;
+}
+
+@media (max-width: 767px) {
+	.publication-entry--with-thumbnail {
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.publication-entry__thumbnail-button {
+		flex-basis: auto;
+	}
+
+	.publication-entry__thumbnail {
+		width: 100%;
+		max-width: 220px;
+		height: auto;
+	}
+}
+
 
 /* Grid overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,

@@ -8,6 +8,12 @@ permalink: /publications/
 
 ### Publications
 
+<div id="publication-image-modal" class="publication-image-modal" aria-hidden="true">
+  <button type="button" class="publication-image-modal__close" aria-label="Close image">&times;</button>
+  <div class="publication-image-modal__backdrop"></div>
+  <img class="publication-image-modal__content" src="" alt="" />
+</div>
+
 {% assign first_under_review = 1 %}
 
 {% for publi in site.data.publist %}
@@ -23,17 +29,33 @@ permalink: /publications/
 {% assign first_under_review = 0 %}
 
 <div class="well" style="padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; margin-bottom: 3px; box-shadow: none;">
-<p style="margin-bottom: 0px;">
-{% if publi.link_exist == 1 %}
-<a href="{{ publi.link }}" target="_blank">**{{ publi.title }}**</a> 
-{% endif %}
-{% if publi.link_exist == 0 %}
-**{{ publi.title }}** 
-{% endif %}
-<br />
-{{ publi.authors }}<br />
-In <i>{{ publi.venue }}</i>
-</p>
+<div class="publication-entry{% if publi.thumbnail %} publication-entry--with-thumbnail{% endif %}">
+  {% if publi.thumbnail %}
+  <button
+    type="button"
+    class="publication-entry__thumbnail-button"
+    data-publication-image="{{ publi.thumbnail | relative_url }}"
+    data-publication-title="{{ publi.title | escape }}">
+    <img
+      class="publication-entry__thumbnail"
+      src="{{ publi.thumbnail | relative_url }}"
+      alt="{{ publi.title | escape }} thumbnail" />
+  </button>
+  {% endif %}
+  <div class="publication-entry__body">
+    <p style="margin-bottom: 0px;">
+    {% if publi.link_exist == 1 %}
+    <a href="{{ publi.link }}" target="_blank">**{{ publi.title }}**</a> 
+    {% endif %}
+    {% if publi.link_exist == 0 %}
+    **{{ publi.title }}** 
+    {% endif %}
+    <br />
+    {{ publi.authors }}<br />
+    In <i>{{ publi.venue }}</i>
+    </p>
+  </div>
+</div>
 </div>
 {% endif %}
 {% endfor %}
@@ -61,24 +83,40 @@ In <i>{{ publi.venue }}</i>
 {% endif %}
 
 <div class="well" style="padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; margin-bottom: 3px; box-shadow: none;">
-<p style="margin-bottom: 0px;">
-{% if publi.link_exist == 1 %}
-<a href="{{ publi.link }}" target="_blank">**{{ publi.title }}**</a> 
-{% endif %}
-{% if publi.link_exist == 0 %}
-**{{ publi.title }}** 
-{% endif %}
+<div class="publication-entry{% if publi.thumbnail %} publication-entry--with-thumbnail{% endif %}">
+  {% if publi.thumbnail %}
+  <button
+    type="button"
+    class="publication-entry__thumbnail-button"
+    data-publication-image="{{ publi.thumbnail | relative_url }}"
+    data-publication-title="{{ publi.title | escape }}">
+    <img
+      class="publication-entry__thumbnail"
+      src="{{ publi.thumbnail | relative_url }}"
+      alt="{{ publi.title | escape }} thumbnail" />
+  </button>
+  {% endif %}
+  <div class="publication-entry__body">
+    <p style="margin-bottom: 0px;">
+    {% if publi.link_exist == 1 %}
+    <a href="{{ publi.link }}" target="_blank">**{{ publi.title }}**</a> 
+    {% endif %}
+    {% if publi.link_exist == 0 %}
+    **{{ publi.title }}** 
+    {% endif %}
 
-{% if publi.oral == 1 %}
-<span style="line-height: 1; font-size: 12px; color: #FFFFFF; background-color: #0076df; text-align: center; display: inline-block; border-radius: 5px 5px 5px 5px; padding: 3px 6px 3px 6px; font-weight: bold; margin-left: 5px;">oral</span>
-{% endif %}
-{% if publi.highlight == 1 %}
-<span style="line-height: 1; font-size: 12px; color: #FFFFFF; background-color: #0076df; text-align: center; display: inline-block; border-radius: 5px 5px 5px 5px; padding: 3px 6px 3px 6px; font-weight: bold; margin-left: 5px;">highlight</span>
-{% endif %}
-<br />
-{{ publi.authors }}<br />
-In <i>{{ publi.venue }}</i>
-</p>
+    {% if publi.oral == 1 %}
+    <span style="line-height: 1; font-size: 12px; color: #FFFFFF; background-color: #0076df; text-align: center; display: inline-block; border-radius: 5px 5px 5px 5px; padding: 3px 6px 3px 6px; font-weight: bold; margin-left: 5px;">oral</span>
+    {% endif %}
+    {% if publi.highlight == 1 %}
+    <span style="line-height: 1; font-size: 12px; color: #FFFFFF; background-color: #0076df; text-align: center; display: inline-block; border-radius: 5px 5px 5px 5px; padding: 3px 6px 3px 6px; font-weight: bold; margin-left: 5px;">highlight</span>
+    {% endif %}
+    <br />
+    {{ publi.authors }}<br />
+    In <i>{{ publi.venue }}</i>
+    </p>
+  </div>
+</div>
 </div>
 {% endif %}
 {% endfor %}
@@ -87,3 +125,44 @@ In <i>{{ publi.venue }}</i>
 </div>
 </div>
 {% endif %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.getElementById('publication-image-modal');
+  if (!modal) {
+    return;
+  }
+
+  var modalImage = modal.querySelector('.publication-image-modal__content');
+  var closeButton = modal.querySelector('.publication-image-modal__close');
+  var backdrop = modal.querySelector('.publication-image-modal__backdrop');
+  var triggers = document.querySelectorAll('.publication-entry__thumbnail-button');
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('publication-modal-open');
+    modalImage.setAttribute('src', '');
+    modalImage.setAttribute('alt', '');
+  }
+
+  triggers.forEach(function (trigger) {
+    trigger.addEventListener('click', function () {
+      modalImage.setAttribute('src', trigger.getAttribute('data-publication-image'));
+      modalImage.setAttribute('alt', trigger.getAttribute('data-publication-title'));
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('publication-modal-open');
+    });
+  });
+
+  closeButton.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+      closeModal();
+    }
+  });
+});
+</script>

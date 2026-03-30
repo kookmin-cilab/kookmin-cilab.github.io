@@ -4,6 +4,7 @@
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026
   link_exist: 0
   link: 
+  thumbnail: /images/publications/cvpr2026.png
   oral: 
   spotlight: 
   highlight: 
@@ -15,6 +16,7 @@
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026
   link_exist: 1
   link: https://arxiv.org/abs/2506.04764
+  thumbnail: /images/publications/cvpr2026.png
   oral: 
   spotlight: 
   highlight: 
@@ -26,6 +28,7 @@
   venue: IEEE International Conference on Robotics and Automation (ICRA)
   link_exist: 1
   link: https://arxiv.org/abs/2512.05988
+  thumbnail: /images/publications/icra2026.png
   oral: 
   spotlight: 
   highlight: 
@@ -37,6 +40,7 @@
   venue: IEEE International Conference on Robotics and Automation (ICRA)
   link_exist: 1
   link: https://arxiv.org/abs/2406.12202
+  thumbnail: /images/publications/icra2025.jpg
   oral: 
   spotlight: 
   highlight: 
@@ -48,6 +52,7 @@
   venue: Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/10759842
+  thumbnail: /images/publications/tpami.jpg
   oral: 
   spotlight: 
   highlight: 
@@ -59,6 +64,7 @@
   venue: Transactions on Intelligent Vehicle (TIV)
   link_exist: 1
   link: https://ieeexplore.ieee.org/document/10729649
+  thumbnail: /images/publications/tiv.jpg
   oral: 
   spotlight: 
   highlight: 
@@ -92,6 +98,7 @@
   venue: The British Machine Vision Conference (BMVC) 2023
   link: https://proceedings.bmvc2023.org/825/
   link_exist: 1
+  thumbnail: /images/publications/bmvc2023.png
   oral: 
   spotlight: 
   highlight: 
@@ -103,6 +110,7 @@
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023
   link_exist: 1
   link: https://openaccess.thecvf.com/content/CVPR2023/html/Lee_Revisiting_Self-Similarity_Structural_Embedding_for_Image_Retrieval_CVPR_2023_paper.html
+  thumbnail: /images/publications/cvpr2023.png
   oral: 
   spotlight: 
   highlight: 
@@ -114,6 +122,7 @@
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022
   link_exist: 1
   link: https://openaccess.thecvf.com/content/CVPR2022/html/Lee_Correlation_Verification_for_Image_Retrieval_CVPR_2022_paper.html
+  thumbnail: /images/publications/cvpr2022.png
   oral: 1
   spotlight: 
   highlight: 
@@ -126,6 +135,7 @@
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022
   link_exist: 1
   link: https://openaccess.thecvf.com/content/CVPR2022/html/Lee_WildNet_Learning_Domain_Generalized_Semantic_Segmentation_From_the_Wild_CVPR_2022_paper.html
+  thumbnail: /images/publications/cvpr2022.png
   oral: 
   spotlight: 
   highlight: 

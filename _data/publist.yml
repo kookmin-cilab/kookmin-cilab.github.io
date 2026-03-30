@@ -34,6 +34,19 @@
   highlight: 
   under_review: 
 
+- title: "Location-Aware Transformer Network for Bird’s Eye View Semantic Segmentation"
+  year: 2025
+  authors: Suhan Woo, Minseong Park, Youngjo Lee, Seongwon Lee, and Euntai Kim<sup>†</sup>
+  venue: Transactions on Intelligent Vehicle (TIV)
+  link_exist: 1
+  link: https://ieeexplore.ieee.org/document/10729649
+  thumbnail: /images/publications/woo2025lat.gif
+  oral: 
+  spotlight: 
+  highlight: 
+  under_review:
+
+
 - title: "Fast Global Localization on Neural Radiance Field"
   year: 2025
   authors: Mangyu Kong, Jaewon Lee, Seongwon Lee<sup>†</sup>, and Euntai Kim<sup>†</sup>
@@ -57,18 +70,6 @@
   spotlight: 
   highlight: 
   under_review: 
-
-- title: "Location-Aware Transformer Network for Bird’s Eye View Semantic Segmentation"
-  year: 2025
-  authors: Suhan Woo, Minseong Park, Youngjo Lee, Seongwon Lee, and Euntai Kim<sup>†</sup>
-  venue: Transactions on Intelligent Vehicle (TIV)
-  link_exist: 1
-  link: https://ieeexplore.ieee.org/document/10729649
-  thumbnail: /images/publications/woo2025lat.gif
-  oral: 
-  spotlight: 
-  highlight: 
-  under_review:
 
 - title: "Back to the Context: Tuning Visual Localization using Structural and Edge Context within Image"
   year: 2024

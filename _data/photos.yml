@@ -1,13 +1,43 @@
-- date: 2026-03-30
-  title: Lab Moments
-  description: Add one photo or multiple photos for the same date.
+- date: 2026-03
+  title: Lab Meeting of KMU CILAB
   images:
-    - /images/slider/1.jpg
+    - 2603_lab_meeting.png
 
-- date: 2026-03-15
-  title: Group Photos
-  description: Multiple images on the same date will appear as a slideshow.
+- date: 2025-12
+  title: Year-End Party of KMU CILAB
   images:
-    - /images/slider/1.jpg
-    - /images/slider/backup.jpg
-    - /images/newspic/intern.jpg
+    - 2512_KMU_CILAB_year_end_party_1.jpg
+    - 2512_KMU_CILAB_year_end_party_2.jpg
+    - 2512_KMU_CILAB_year_end_party_3.jpg
+    - 2512_KMU_CILAB_year_end_party_4.jpg
+    - 2512_KMU_CILAB_year_end_party_5.jpg
+
+- date: 2025-08
+  title: Photos at KCCV 2025
+  images:
+    - 2508_KCCV2025_1.jpg
+    - 2508_KCCV2025_2.jpg
+    - 2508_KCCV2025_3.jpg
+
+- date: 2025-08
+  title: Summer of Kookmin University
+  images:
+    - 2508_KMU_summer_2.jpg
+    - 2508_KMU_summer_3.jpg
+
+- date: 2025-07
+  title: Presentation at Gachon University
+  images:
+    - 2507_gachon_univ_presentation.jpg
+
+- date: 2025-06
+  title: Presentation at ICCAS 2025
+  images:
+    - 2506_ICCAS_2025_presentation_1.jpg
+    - 2506_ICCAS_2025_presentation_2.jpg
+    - 2506_ICCAS_2025_presentation_3.jpg
+
+- date: 2025-06
+  title: First Meeting of KMU CILAB
+  images:
+    - 2506_KMU_CILAB_first_meeting.jpg

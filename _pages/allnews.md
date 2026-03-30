@@ -23,22 +23,15 @@ permalink: /allnews.html
 <div class="col-sm-11 clearfix">
 {% assign div_opened = 1 %}
 {% endif %}
-<div class="row">
-<div class="col-sm-3">
-<img src="{{ site.url }}{{ site.baseurl }}/images/newspic/{{ article.img }}" style="width: 100%; aspect-ratio: 2/1; object-fit: contain; margin-bottom: 0px; margin-top: 4px;"/>
-</div>
-<div class="col-sm-9">
-<p>
-<span style="color: black;">{{ article.category }}</span><br />
+<p class="news-archive__item">
+<span class="news-archive__month">{{ article.month }}</span>
+<span class="news-archive__separator">-</span>
 {% if article.long_description != null %}
-<span>{{ article.long_description }}</span>
+<span class="news-archive__text">{{ article.long_description }}</span>
 {% else %}
-<span>{{ article.description }}</span>
+<span class="news-archive__text">{{ article.description }}</span>
 {% endif %}
-<span style="color: #999; font-size: 90%;">{{ article.month }}, {{ article.year }}</span>
 </p>
-</div>
-</div>
 {% endfor %}
 
 {% if div_opened == 1 %}

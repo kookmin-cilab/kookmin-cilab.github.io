@@ -1,0 +1,160 @@
+---
+title: "CILAB - Publications"
+layout: gridlay
+sitemap: false
+permalink: /publications/
+---
+
+<h3>Publications</h3>
+
+<div id="publication-image-modal" class="publication-image-modal" aria-hidden="true">
+  <button type="button" class="publication-image-modal__close" aria-label="Close image">&times;</button>
+  <div class="publication-image-modal__backdrop"></div>
+  <img class="publication-image-modal__content" src="" alt="">
+</div>
+
+{% assign first_under_review = 1 %}
+
+{% for publi in site.data.publist %}
+  {% if publi.under_review == 1 %}
+    {% if first_under_review == 1 %}
+    <div class="row">
+      <div class="col-sm-1 clearfix"><h5>Under Review</h5></div>
+      <div class="col-sm-11 clearfix">
+      {% assign div_opened = 1 %}
+    {% endif %}
+
+    {% assign first_under_review = 0 %}
+
+    <div class="well" style="padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; margin-bottom: 3px; box-shadow: none;">
+      <div class="publication-entry{% if publi.thumbnail %} publication-entry--with-thumbnail{% endif %}">
+        {% if publi.thumbnail %}
+        <button
+          type="button"
+          class="publication-entry__thumbnail-button"
+          data-publication-image="{{ publi.thumbnail | relative_url }}"
+          data-publication-title="{{ publi.title | escape }}">
+          <img
+            class="publication-entry__thumbnail"
+            src="{{ publi.thumbnail | relative_url }}"
+            alt="{{ publi.title | escape }} thumbnail">
+        </button>
+        {% endif %}
+        <div class="publication-entry__body">
+          <p style="margin-bottom: 0px;">
+            {% if publi.link_exist == 1 %}
+            <a href="{{ publi.link }}" target="_blank"><strong>{{ publi.title }}</strong></a>
+            {% else %}
+            <strong>{{ publi.title }}</strong>
+            {% endif %}
+            <br>
+            {{ publi.authors }}<br>
+            In <i>{{ publi.venue }}</i>
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% if div_opened == 1 %}
+      </div>
+    </div>
+{% endif %}
+
+{% assign year_last = 0 %}
+{% for publi in site.data.publist %}
+  {% if publi.under_review != 1 %}
+    {% if year_last != publi.year %}
+      {% if year_last != 0 %}
+      </div>
+    </div>
+      {% endif %}
+      {% assign year_last = publi.year %}
+    <div class="row">
+      <div class="col-sm-1 clearfix"><h4>{{ publi.year }}</h4></div>
+      <div class="col-sm-11 clearfix">
+      {% assign div_opened = 1 %}
+    {% endif %}
+
+    <div class="well" style="padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; margin-bottom: 3px; box-shadow: none;">
+      <div class="publication-entry{% if publi.thumbnail %} publication-entry--with-thumbnail{% endif %}">
+        {% if publi.thumbnail %}
+        <button
+          type="button"
+          class="publication-entry__thumbnail-button"
+          data-publication-image="{{ publi.thumbnail | relative_url }}"
+          data-publication-title="{{ publi.title | escape }}">
+          <img
+            class="publication-entry__thumbnail"
+            src="{{ publi.thumbnail | relative_url }}"
+            alt="{{ publi.title | escape }} thumbnail">
+        </button>
+        {% endif %}
+        <div class="publication-entry__body">
+          <p style="margin-bottom: 0px;">
+            {% if publi.link_exist == 1 %}
+            <a href="{{ publi.link }}" target="_blank"><strong>{{ publi.title }}</strong></a>
+            {% else %}
+            <strong>{{ publi.title }}</strong>
+            {% endif %}
+
+            {% if publi.oral == 1 %}
+            <span style="line-height: 1; font-size: 12px; color: #FFFFFF; background-color: #0076df; text-align: center; display: inline-block; border-radius: 5px; padding: 3px 6px; font-weight: bold; margin-left: 5px;">oral</span>
+            {% endif %}
+            {% if publi.highlight == 1 %}
+            <span style="line-height: 1; font-size: 12px; color: #FFFFFF; background-color: #0076df; text-align: center; display: inline-block; border-radius: 5px; padding: 3px 6px; font-weight: bold; margin-left: 5px;">highlight</span>
+            {% endif %}
+            <br>
+            {{ publi.authors }}<br>
+            In <i>{{ publi.venue }}</i>
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% if div_opened == 1 %}
+      </div>
+    </div>
+{% endif %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.getElementById('publication-image-modal');
+  if (!modal) return;
+
+  var modalImage = modal.querySelector('.publication-image-modal__content');
+  var closeButton = modal.querySelector('.publication-image-modal__close');
+  var backdrop = modal.querySelector('.publication-image-modal__backdrop');
+  var triggers = document.querySelectorAll('.publication-entry__thumbnail-button');
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('publication-modal-open');
+    modalImage.setAttribute('src', '');
+    modalImage.setAttribute('alt', '');
+  }
+
+  Array.prototype.forEach.call(triggers, function (trigger) {
+    trigger.addEventListener('click', function () {
+      modalImage.setAttribute('src', trigger.getAttribute('data-publication-image'));
+      modalImage.setAttribute('alt', trigger.getAttribute('data-publication-title'));
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('publication-modal-open');
+    });
+  });
+
+  closeButton.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+      closeModal();
+    }
+  });
+});
+</script>

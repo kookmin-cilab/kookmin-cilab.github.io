@@ -8,25 +8,36 @@ permalink: //
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="100000" data-pause="hover" >
     <!-- Menu -->
     <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <!-- <li data-target="#carousel" data-slide-to="1"></li> -->
-
+        {% for slide in site.data.home_slider %}
+        <li data-target="#carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+        {% endfor %}
     </ol>
 
     <!-- Items -->
     <div class="carousel-inner" markdown="0">
-        <div class="item active">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/1.jpg" alt="Slide 1" />
+        {% for slide in site.data.home_slider %}
+        {% assign slide_path = slide.image %}
+        {% assign slide_prefix = slide.image | slice: 0 %}
+        {% unless slide.image contains '://' or slide_prefix == '/' %}
+            {% assign slide_path = '/images/photos/' | append: slide.image %}
+        {% endunless %}
+        <div class="item{% if forloop.first %} active{% endif %}">
+            <div class="home-carousel__frame">
+                <img src="{{ slide_path | relative_url }}" alt="{{ slide.alt | default: slide.title | default: 'Home slide' | escape }}" />
+            </div>
         </div>
+        {% endfor %}
     </div>
-<!--   <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+  {% if site.data.home_slider.size > 1 %}
+  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a> -->
+  </a>
+  {% endif %}
 </div>
 
 <strong style="color: #0076df;">Welcome to the Computational Intelligence Laboratory (CILAB).</strong>

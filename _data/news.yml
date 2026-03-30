@@ -1,80 +1,69 @@
-- img: cvpr2026.png
-  year: 2026
-  month: Jan
-  category: News
-  description: "**Two papers** accepted to **CVPR 2026**."
-
-
-- img: icra2026.png
-  year: 2026
-  month: Jan
-  category: News
-  description: "**A paper** accepted to **ICRA 2026**."
-
-- img: intern.jpg
-  year: 2025
-  month: Mar
-  category: News
-  description: "**Five interns** have joined our lab. Welcome!"
-
-- img: icra2025.jpg
-  year: 2025
+- year: 2026
   month: Feb
-  category: News
-  description: "**A paper** accepted to **ICRA 2025**."
+  category: Publication
+  description: "📝 **Two papers** have been accepted to **CVPR 2026**."
 
-- img: tpami.jpg
-  year: 2024
-  month: November
-  category: News
-  description: "**A paper** accepted to **TPAMI** (IF: 20.6, JCR Top 1%)"
+- year: 2026
+  month: Jan
+  category: Publication
+  description: "📝 **One paper** has been accepted to **ICRA 2026**."
 
-- img: tiv.jpg
-  year: 2024
-  month: November
-  category: News
-  description: "**A paper** accepted to **TIV** (IF: 14.0, JCR Top 2%)"
+- year: 2025
+  month: Feb
+  category: Publication
+  description: "📝 **One paper** has been accepted to **ICRA 2025**."
 
-# - img: eccv2024.svg
-#   year: 2024
-#   month: July
+- year: 2024
+  month: Nov
+  category: Publication
+  description: "📝 **One paper** has been accepted to **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)** (IF: 20.6, JCR Top 1%)."
+
+- year: 2024
+  month: Oct
+  category: Publication
+  description: "📝 **One paper** has been accepted to **IEEE Transactions on Intelligent Vehicles (TIV)** (IF: 14.0, JCR Top 2%)."
+
+- year: 2024
+  month: Oct
+  category: Publication
+  description: "📝 **One paper** has been accepted to **IEEE Access** (IF: 3.4, JCR Top 40%)."
+
+- year: 2024
+  month: Aug
+  category: Career
+  description: "👨‍🏫 **KMU CILAB** is now open!."
+
+# - year: 2024
+#   month: Jul
 #   category: Publication
-#   description: "**A paper** accepted to **ECCV 2024 Workshop**."
+#   description: "📝 **One paper** has been accepted to **ECCVW 2024**."
 
-- img: bmvc2023.png
-  year: 2023
-  month: August
+- year: 2023
+  month: Aug
   category: Publication
-  description: "**A paper** accepted to **BMVC 2023**."
-  long_description: 
+  description: "📝 **One paper** has been accepted to **BMVC 2023**."
 
-- img: cvpr2023.png
-  year: 2023
-  month: February
+- year: 2023
+  month: Feb
   category: Publication
-  description: "**A paper** accepted to **CVPR 2023**."
-  long_description: 
+  description: "📝 **One paper** has been accepted to **CVPR 2023**."
 
-- img: qualcomm.jpg
-  year: 2022
-  month: November
-  category: Awards
-  description: "Seongwon Lee won the **Qualcomm Innovation Fellowship 2022**."
-
-- img: cvpr2022.png
-  year: 2022
-  month: March
+- year: 2022
+  month: Nov
+  category: Award
+  description: "🏆 Seongwon Lee won the **Qualcomm Innovation Fellowship 2022**."
+  
+- year: 2022
+  month: Mar
   category: Publication
-  description: "**A paper** has been selected for **Oral presentation** in **CVPR 2022**."
+  description: "🏆 A paper titled **Correlation Verification for Image Retrieval** was selected for **Oral presentation** in **CVPR 2022**."
 
-- img: cvpr2022.png
-  year: 2022
-  month: March
+- year: 2022
+  month: Mar
   category: Publication
-  description: "**Two papers** accepted to **CVPR 2022**."
+  description: "📝 **Two papers** have been accepted to **CVPR 2022**."
 
-- img: iccv2021.png
-  year: 2022
-  month: July
+- year: 2021
+  month: Jul
   category: Publication
-  description: "**A paper** accepted to **ICCV 2021**."
+  description: "📝 **One paper** has been accepted to **ICCV 2021**."

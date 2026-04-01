@@ -195,7 +195,12 @@ body.publication-modal-open {
 		gap: 14px;
 	}
 
+	.publication-entry__body {
+		order: 1;
+	}
+
 	.publication-entry__thumbnail-button {
+		order: 2;
 		flex-basis: auto;
 		align-self: stretch;
 		width: 100%;

@@ -191,17 +191,21 @@ body.publication-modal-open {
 @media (max-width: 767px) {
 	.publication-entry--with-thumbnail {
 		flex-direction: column;
-		gap: 12px;
+		align-items: stretch;
+		gap: 14px;
 	}
 
 	.publication-entry__thumbnail-button {
 		flex-basis: auto;
+		align-self: stretch;
+		width: 100%;
+		height: auto;
 	}
 
 	.publication-entry__thumbnail {
 		width: 100%;
-		max-width: 220px;
-		height: auto;
+		max-width: none;
+		height: 180px;
 	}
 }
 

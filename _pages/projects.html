@@ -1,0 +1,50 @@
+---
+title: "CILAB - Projects"
+layout: gridlay
+sitemap: false
+permalink: /projects/
+---
+
+<h3>Projects</h3>
+
+{% assign year_last = 0 %}
+{% assign div_opened = 0 %}
+
+{% for project in site.data.projects %}
+  {% if year_last != project.start_year %}
+    {% if div_opened == 1 %}
+      </div>
+    </div>
+    {% endif %}
+    {% assign year_last = project.start_year %}
+    {% assign div_opened = 1 %}
+    <div class="row">
+      <div class="col-sm-1 clearfix"><h4>{{ project.start_year }}</h4></div>
+      <div class="col-sm-11 clearfix">
+  {% endif %}
+
+  <div class="well" style="padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; margin-bottom: 3px; box-shadow: none;">
+    <div class="project-entry">
+      {% if project.thumbnail %}
+      <div class="project-entry__thumbnail-wrap" aria-hidden="true">
+        <img
+          class="project-entry__thumbnail"
+          src="{{ project.thumbnail | relative_url }}"
+          alt="{{ project.funding | escape }} thumbnail">
+      </div>
+      {% endif %}
+      <div class="project-entry__body">
+        <p style="margin-bottom: 0px;">
+          <strong>{{ project.title }}</strong><br>
+          <span class="project-entry__meta-label">Period</span> {{ project.period }}<br>
+          <span class="project-entry__meta-label">Funding</span> {{ project.funding }}
+        </p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+{% if div_opened == 1 %}
+      </div>
+    </div>
+{% endif %}

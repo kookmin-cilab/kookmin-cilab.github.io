@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-labelledby="title desc">
+  <title id="title">BStar Robotics</title>
+  <desc id="desc">Simple thumbnail card for BStar Robotics funded project.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ef"/>
+      <stop offset="100%" stop-color="#ffe1cf"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="160" rx="18" fill="url(#bg)"/>
+  <rect x="16" y="16" width="208" height="128" rx="14" fill="#ffffff" opacity="0.88"/>
+  <rect x="30" y="34" width="58" height="8" rx="4" fill="#ff7a45"/>
+  <text x="30" y="92" fill="#c94c16" font-family="Arial, sans-serif" font-size="44" font-weight="700">B*</text>
+  <text x="30" y="122" fill="#7b4330" font-family="Arial, sans-serif" font-size="20" font-weight="700">BStar Robotics</text>
+  <circle cx="188" cy="62" r="18" fill="#ff9f6e" opacity="0.9"/>
+  <circle cx="170" cy="92" r="10" fill="#ffd2bb"/>
+  <circle cx="202" cy="96" r="10" fill="#ffd2bb"/>
+</svg>

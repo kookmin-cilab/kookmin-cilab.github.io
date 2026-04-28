@@ -1,22 +1,26 @@
-- title: "Vision-based Cargo and Cargo Label Recognition on Robots in Logistics Warehouse Environments"
+- title_ko: "물류창고 현장의 로봇 상에서 영상 기반 화물 및 화물 라벨 인식"
+  title: "Vision-based Cargo and Cargo Label Recognition on Robots in Logistics Warehouse Environments"
   start_year: 2026
-  period: "Mar 2026 - Present"
+  period: "Mar 2026 - Dec 2026"
   funding: "BStar Robotics"
   thumbnail: "/images/projects/bstar-robotics.svg"
 
-- title: "Vision-Language Navigation Agents via Cyclic Expansion of Web-Scale Video, Augmented Simulation, and the Real World"
+- title_ko: "웹 비디오, 시뮬레이션, 실세계의 순환적 확장을 통한 비전-언어 네비게이션 에이전트 연구"
+  title: "Vision-Language Navigation Agents via Cyclic Expansion of Web-Scale Video, Augmented Simulation, and the Real World"
   start_year: 2026
-  period: "Mar 2026 - Present"
+  period: "Mar 2026 - Feb 2029"
   funding: "National Research Foundation of Korea (NRF)"
   thumbnail: "/images/projects/nrf.svg"
 
-- title: "Development of High-Fidelity Vehicle Representation via 3D Gaussian Splatting"
+- title_ko: "표면검사 공정 마이스터 로봇화 및 검사 결과 시각화를 위한 Gaussian Splatting 알고리즘 개발"
+  title: "Development of High-Fidelity Vehicle Representation via 3D Gaussian Splatting"
   start_year: 2025
   period: "Apr 2025 - Nov 2025"
   funding: "Korea Electronics Technology Institute (KETI)"
   thumbnail: "/images/projects/keti.svg"
 
-- title: "Development of Brain Signal Based Image Generation"
+- title_ko: "뇌파 신호를 활용한 이미지 생성 기술 연구"
+  title: "Development of Brain Signal Based Image Generation"
   start_year: 2025
   period: "Jun 2025 - Nov 2025"
   funding: "Electronics and Telecommunications Research Institute (ETRI)"

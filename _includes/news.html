@@ -3,12 +3,28 @@
 <h4 style="margin-top: 0px;">Latest News</h4>
 
 <div class="news-list">
-{% for article in site.data.news limit:8 %}
+{% assign latest_news_limit = 12 %}
+{% for article in site.data.news %}
+  {% if article.pinned == true %}
   {% assign month_number = article.month | plus: 0 %}
   <p class="news-list__item">
     <span class="news-list__date">{{ article.year }}. {{ month_number | prepend: '0' | slice: -2, 2 }}.</span>
     <span class="news-list__text">{{ article.description | markdownify | remove: '<p>' | remove: '</p>' }}</span>
   </p>
+  {% endif %}
+{% endfor %}
+{% assign latest_news_count = 0 %}
+{% for article in site.data.news %}
+  {% unless article.pinned == true %}
+  {% if latest_news_count < latest_news_limit %}
+  {% assign month_number = article.month | plus: 0 %}
+  <p class="news-list__item">
+    <span class="news-list__date">{{ article.year }}. {{ month_number | prepend: '0' | slice: -2, 2 }}.</span>
+    <span class="news-list__text">{{ article.description | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+  </p>
+  {% assign latest_news_count = latest_news_count | plus: 1 %}
+  {% endif %}
+  {% endunless %}
 {% endfor %}
 </div>
 

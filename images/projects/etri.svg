@@ -11,8 +11,8 @@
   <rect x="16" y="16" width="208" height="128" rx="14" fill="#ffffff" opacity="0.9"/>
   <rect x="30" y="34" width="62" height="8" rx="4" fill="#1e9473"/>
   <text x="30" y="92" fill="#18735b" font-family="Arial, sans-serif" font-size="40" font-weight="700">ETRI</text>
-  <text x="30" y="122" fill="#42675d" font-family="Arial, sans-serif" font-size="18" font-weight="700">Electronics and Telecom</text>
-  <text x="30" y="142" fill="#42675d" font-family="Arial, sans-serif" font-size="18" font-weight="700">Research Institute</text>
+  <text x="30" y="122" fill="#42675d" font-family="Arial, sans-serif" font-size="22" font-weight="700">RESEARCH</text>
+  <text x="30" y="142" fill="#42675d" font-family="Arial, sans-serif" font-size="22" font-weight="700">LAB</text>
   <path d="M174 98c0-21 17-38 38-38v16c-12 0-22 10-22 22H174Z" fill="#86d4bc"/>
   <path d="M156 98c0-31 25-56 56-56v10c-25 0-46 21-46 46H156Z" fill="#caecdf"/>
 </svg>

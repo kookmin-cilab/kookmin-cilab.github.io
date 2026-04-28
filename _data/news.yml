@@ -1,69 +1,90 @@
 - year: 2026
+  month: 3
+  category: Project
+  description: "Our lab has been awarded a research grant from **BStar Robotics** for the project **Vision-based Cargo and Cargo Label Recognition on Robots in Logistics Warehouse Environments**."
+
+- year: 2026
+  month: 3
+  category: Project
+  description: "Our lab has been awarded the **NRF Young Researcher Program (Type B)** grant from the **Ministry of Science and ICT**, supporting research on **Vision-Language Navigation Agents via Cyclic Expansion of Web-Scale Video, Augmented Simulation, and the Real World** through **February 2029**."
+
+- year: 2026
   month: 2
   category: Publication
-  description: "📝 **Two papers** have been accepted to **CVPR 2026**."
+  description: "**Two papers** have been accepted to **CVPR 2026**."
 
 - year: 2026
   month: 1
   category: Publication
-  description: "📝 **One paper** has been accepted to **ICRA 2026**."
+  description: "**One paper** has been accepted to **ICRA 2026**."
 
 - year: 2025
   month: 9
   category: Publication
-  description: "📝 **One paper** has been published in **IEEE Transactions on Intelligent Vehicles (TIV)** (IF: 14.0, JCR Top 2%)."
+  description: "**One paper** has been published in **IEEE Transactions on Intelligent Vehicles (TIV)** (IF: 14.0, JCR Top 2%)."
+
+- year: 2025
+  month: 6
+  category: Project
+  description: "Our lab has been awarded a research grant from **Electronics and Telecommunications Research Institute (ETRI)** for the project **Development of Brain Signal Based Image Generation**."
+
+- year: 2025
+  month: 4
+  category: Project
+  description: "Our lab has been awarded a research grant from **Korea Electronics Technology Institute (KETI)** for the project **Development of High-Fidelity Vehicle Representation via 3D Gaussian Splatting**."
 
 - year: 2025
   month: 3
   category: Publication
-  description: "📝 **One paper** has been published in **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)** (IF: 20.6, JCR Top 1%)."
+  description: "**One paper** has been published in **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)** (IF: 20.6, JCR Top 1%)."
 
 - year: 2025
   month: 2
   category: Publication
-  description: "📝 **One paper** has been accepted to **ICRA 2025**."
+  description: "**One paper** has been accepted to **ICRA 2025**."
 
 - year: 2024
   month: 10
   category: Publication
-  description: "📝 **One paper** has been accepted to **IEEE Access** (IF: 3.4, JCR Top 40%)."
+  description: "**One paper** has been accepted to **IEEE Access** (IF: 3.4, JCR Top 40%)."
 
 - year: 2024
   month: 8
   category: Career
-  description: "👨‍🏫 **KMU CILAB** is now open!"
+  pinned: true
+  description: "**KMU CILAB** is now open!"
 
 # - year: 2024
 #   month: 7
 #   category: Publication
-#   description: "📝 **One paper** has been accepted to **ECCVW 2024**."
+#   description: "**One paper** has been accepted to **ECCVW 2024**."
 
 - year: 2023
   month: 8
   category: Publication
-  description: "📝 **One paper** has been accepted to **BMVC 2023**."
+  description: "**One paper** has been accepted to **BMVC 2023**."
 
 - year: 2023
   month: 2
   category: Publication
-  description: "📝 **One paper** has been accepted to **CVPR 2023**."
+  description: "**One paper** has been accepted to **CVPR 2023**."
 
 - year: 2022
   month: 11
   category: Award
-  description: "🏆 Seongwon Lee won the **Qualcomm Innovation Fellowship 2022**."
+  description: "Seongwon Lee won the **Qualcomm Innovation Fellowship 2022**."
 
 - year: 2022
   month: 3
   category: Publication
-  description: "🏆 A paper titled **Correlation Verification for Image Retrieval** was selected for **Oral presentation** in **CVPR 2022**."
+  description: "A paper titled **Correlation Verification for Image Retrieval** was selected for **Oral presentation** in **CVPR 2022**."
 
 - year: 2022
   month: 3
   category: Publication
-  description: "📝 **Two papers** have been accepted to **CVPR 2022**."
+  description: "**Two papers** have been accepted to **CVPR 2022**."
 
 - year: 2021
   month: 7
   category: Publication
-  description: "📝 **One paper** has been accepted to **ICCV 2021**."
+  description: "**One paper** has been accepted to **ICCV 2021**."

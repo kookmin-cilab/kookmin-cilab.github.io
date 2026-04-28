@@ -136,6 +136,14 @@ pubtit {
 	flex: 1 1 auto;
 }
 
+.publication-entry__title-link,
+.publication-entry__title-link:hover,
+.publication-entry__title-link:focus,
+.publication-entry__title-text {
+	color: #0076df;
+	text-decoration: none;
+}
+
 .project-entry {
 	display: flex;
 	align-items: center;

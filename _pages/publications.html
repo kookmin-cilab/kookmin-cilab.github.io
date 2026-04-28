@@ -50,9 +50,9 @@ permalink: /publications/
         <div class="publication-entry__body">
           <p style="margin-bottom: 0px;">
             {% if publi.link_exist == 1 %}
-            <a href="{{ publi.link }}" target="_blank"><strong>{{ publi.title }}</strong></a>
+            <a href="{{ publi.link }}" target="_blank" class="publication-entry__title-link"><strong>{{ publi.title }}</strong></a>
             {% else %}
-            <strong>{{ publi.title }}</strong>
+            <strong class="publication-entry__title-text">{{ publi.title }}</strong>
             {% endif %}
             <br>
             {{ publi.authors }}<br>
@@ -108,9 +108,9 @@ permalink: /publications/
         <div class="publication-entry__body">
           <p style="margin-bottom: 0px;">
             {% if publi.link_exist == 1 %}
-            <a href="{{ publi.link }}" target="_blank"><strong>{{ publi.title }}</strong></a>
+            <a href="{{ publi.link }}" target="_blank" class="publication-entry__title-link"><strong>{{ publi.title }}</strong></a>
             {% else %}
-            <strong>{{ publi.title }}</strong>
+            <strong class="publication-entry__title-text">{{ publi.title }}</strong>
             {% endif %}
 
             {% if publi.oral == 1 %}

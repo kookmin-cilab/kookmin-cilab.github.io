@@ -12,7 +12,4 @@
   <rect x="30" y="34" width="58" height="8" rx="4" fill="#ff7a45"/>
   <text x="30" y="92" fill="#c94c16" font-family="Arial, sans-serif" font-size="24" font-weight="700">BStar</text>
   <text x="30" y="120" fill="#7b4330" font-family="Arial, sans-serif" font-size="24" font-weight="700">Robotics</text>
-  <circle cx="188" cy="62" r="18" fill="#ff9f6e" opacity="0.9"/>
-  <circle cx="170" cy="92" r="10" fill="#ffd2bb"/>
-  <circle cx="202" cy="96" r="10" fill="#ffd2bb"/>
 </svg>

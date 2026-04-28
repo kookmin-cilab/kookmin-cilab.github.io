@@ -13,6 +13,4 @@
   <text x="30" y="76" fill="#18735b" font-family="Arial, sans-serif" font-size="16" font-weight="700">Electronics and</text>
   <text x="30" y="100" fill="#42675d" font-family="Arial, sans-serif" font-size="16" font-weight="700">Telecommunications</text>
   <text x="30" y="124" fill="#42675d" font-family="Arial, sans-serif" font-size="16" font-weight="700">Research Institute</text>
-  <path d="M174 98c0-21 17-38 38-38v16c-12 0-22 10-22 22H174Z" fill="#86d4bc"/>
-  <path d="M156 98c0-31 25-56 56-56v10c-25 0-46 21-46 46H156Z" fill="#caecdf"/>
 </svg>

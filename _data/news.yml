@@ -1,12 +1,27 @@
 - year: 2026
-  month: 3
+  month: 6
   category: Project
-  description: "Our lab has been awarded a research grant from **BStar Robotics** for the project **Vision-based Cargo and Cargo Label Recognition on Robots in Logistics Warehouse Environments**."
+  description: "Our lab has been awarded the **Basic Research Laboratory (BRL) Program grant** from NRF for research on Robot Foundation Models."
+
+- year: 2026
+  month: 6
+  category: Publication
+  description: "**One paper** has been accepted to **IROS 2026**."
+
+- year: 2026
+  month: 5
+  category: Project
+  description: "Our lab has been awarded a **research grant** from **Electronics and Telecommunications Research Institute (ETRI)** for research on **Vision-Language Navigation (VLN) Agents**."
 
 - year: 2026
   month: 3
   category: Project
-  description: "Our lab has been awarded the **NRF Young Researcher Program (Type B)** grant from the **Ministry of Science and ICT**, supporting research on **Vision-Language Navigation Agents via Cyclic Expansion of Web-Scale Video, Augmented Simulation, and the Real World** through **February 2029**."
+  description: "Our lab has been awarded a **research grant** from **BStar Robotics** for research on **3D Reconstruction for Logistics Warehouse Robots**."
+
+- year: 2026
+  month: 3
+  category: Project
+  description: "Our lab has been awarded the **Young Researcher Program grant** from NRF for research on **Vision-Language Navigation (VLN) Agents**."
 
 - year: 2026
   month: 2
@@ -26,12 +41,12 @@
 - year: 2025
   month: 6
   category: Project
-  description: "Our lab has been awarded a research grant from **Electronics and Telecommunications Research Institute (ETRI)** for the project **Development of Brain Signal Based Image Generation**."
+  description: "Our lab has been awarded a **research grant** from **Electronics and Telecommunications Research Institute (ETRI)** for the research on **Brain Signal Based Image Generation**."
 
 - year: 2025
   month: 4
   category: Project
-  description: "Our lab has been awarded a research grant from **Korea Electronics Technology Institute (KETI)** for the project **Development of High-Fidelity Vehicle Representation via 3D Gaussian Splatting**."
+  description: "Our lab has been awarded a **research grant** from **Korea Electronics Technology Institute (KETI)** for research on **3D Reconstruction of Vehicles**."
 
 - year: 2025
   month: 3

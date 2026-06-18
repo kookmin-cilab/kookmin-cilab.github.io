@@ -1,3 +1,17 @@
+- title_ko: "차세대 초인지 초적응 액션 파운데이션 모델 연구실"
+  title: "Basic Research Laboratory for Next-Generation Hyper-Cognitive and Hyper-Adaptive Action Foundation Models"
+  start_year: 2026
+  period: "Jul 2026 - Jun 2029"
+  funding: "Basic Research Laboratory (BRL) Program, National Research Foundation of Korea (NRF)"
+  thumbnail: "/images/projects/nrf.svg"
+
+- title_ko: "3차원 재구성 기반 디지털트윈 학습 및 장면 구성 기술 실증"
+  title: "Demonstration of Digital Twin Learning and Scene Composition Technologies Based on 3D Reconstruction"
+  start_year: 2026
+  period: "May 2026 - Nov 2026"
+  funding: "Electronics and Telecommunications Research Institute (ETRI)"
+  thumbnail: "/images/projects/etri.svg"
+
 - title_ko: "물류창고 현장의 로봇 상에서 영상 기반 화물 및 화물 라벨 인식"
   title: "Vision-based Cargo and Cargo Label Recognition on Robots in Logistics Warehouse Environments"
   start_year: 2026

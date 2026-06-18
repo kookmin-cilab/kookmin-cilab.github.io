@@ -1,3 +1,15 @@
+- title: "RayOcc: Occlusion-Agnostic Ray Occupancy Estimation via Gaussian Mixture Intensity"
+  year: 2026
+  authors: <strong>Junho Kim</strong>, and <strong>Seongwon Lee</strong>
+  venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026
+  link_exist: 0
+  link:
+  thumbnail: /images/publications/kim2026rayocc.png
+  oral:
+  spotlight:
+  highlight:
+  under_review:
+
 - title: "Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty"
   year: 2026
   authors: Mangyu Kong, <strong>Seongwon Lee<sup>†</sup></strong>, and Euntai Kim<sup>†</sup>

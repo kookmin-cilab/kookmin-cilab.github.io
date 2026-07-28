@@ -56,7 +56,7 @@ permalink: /publications/
             {% endif %}
             <br>
             {{ publi.authors }}<br>
-            In <i>{{ publi.venue }}</i>
+            In <i class="publication-entry__venue">{{ publi.venue }}</i>
           </p>
         </div>
       </div>
@@ -121,7 +121,7 @@ permalink: /publications/
             {% endif %}
             <br>
             {{ publi.authors }}<br>
-            In <i>{{ publi.venue }}</i>
+            In <i class="publication-entry__venue">{{ publi.venue }}</i>
           </p>
         </div>
       </div>
@@ -136,6 +136,16 @@ permalink: /publications/
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  var venues = document.querySelectorAll('.publication-entry__venue');
+  var abbreviationPattern = /\(([A-Z][A-Z0-9/]*(?:\s+\d{4})?)\)/g;
+
+  Array.prototype.forEach.call(venues, function (venue) {
+    venue.innerHTML = venue.textContent.replace(
+      abbreviationPattern,
+      '(<strong class="publication-entry__venue-abbreviation">$1</strong>)'
+    );
+  });
+
   var modal = document.getElementById('publication-image-modal');
   if (!modal) return;
 

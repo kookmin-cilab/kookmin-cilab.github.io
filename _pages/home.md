@@ -41,8 +41,7 @@ permalink: //
 </div>
 
 <div class="alert alert-info" markdown="0">
-  <strong>학부연구생 및 대학원생 모집</strong><br>
-  컴퓨터 비전과 로봇 지능을 함께 연구할 학생을 모집합니다.
+  <strong>학부연구생 및 대학원생 모집</strong>
   <a class="alert-link" href="{{ '/joining_us/' | relative_url }}">지원 안내 &rarr;</a>
 </div>
 

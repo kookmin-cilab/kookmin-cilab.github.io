@@ -40,6 +40,12 @@ permalink: //
   {% endif %}
 </div>
 
+<div class="alert alert-info" markdown="0">
+  <strong>학부연구생 및 대학원생 모집</strong><br>
+  컴퓨터 비전과 로봇 지능을 함께 연구할 학생을 모집합니다.
+  <a class="alert-link" href="{{ '/joining_us/' | relative_url }}">지원 안내 &rarr;</a>
+</div>
+
 <strong style="color: #0076df;">Welcome to the Computational Intelligence Laboratory (CILAB).</strong>
 We focus on advancing computer vision and its integration with robotics. Our mission is to develop cutting-edge technologies that enable machines to perceive, understand, and interact with the world through visual data. Our research covers a broad range of topics, including multimodal perception, 3D reconstruction, and image search and matching. By exploring these areas, we aim to create intelligent and adaptable robotic systems capable of performing complex tasks in real-world environments.
 

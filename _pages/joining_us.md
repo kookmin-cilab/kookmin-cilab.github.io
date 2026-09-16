@@ -9,6 +9,16 @@ permalink: /joining_us/
 
 국민대학교 CILAB에서 컴퓨터 비전과 로봇 지능을 함께 연구할 학생을 모집합니다.
 
+#### 세계 최고 수준의 학회·저널 연구 성과
+
+**CVPR, ICRA 등 최상위 국제학회와 TPAMI 등 최고 권위의 국제저널에 꾸준히 논문을 발표하고 있습니다.**
+
+- **CVPR 2026 논문 2편 채택** — [관련 기사](https://ee.kookmin.ac.kr/community/board/ee_news/384)
+- **학부생 주저자 ICRA 2026 논문 게재** — [관련 기사](https://ee.kookmin.ac.kr/community/board/ee_news/383)
+- **TPAMI 2025 논문 게재** — [전체 논문 목록]({{ '/publications/' | relative_url }})
+
+**언론 보도**: [중앙일보](https://www.joongang.co.kr/article/25438704) · [국민대학교](https://ee.kookmin.ac.kr/community/board/ee_news/383) · [에듀동아](https://edu.donga.com/news/articleView.html?idxno=103935) · [열린뉴스통신](https://www.onews.tv/news/articleView.html?idxno=281767)
+
 #### 모집 대상
 
 - 학부연구생

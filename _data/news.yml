@@ -1,4 +1,9 @@
 - year: 2026
+  month: 9
+  category: Publication
+  description: "Our paper **CVAR: Cross-View Attention Refinement for Image Retrieval Reranking** has been accepted to **International Journal of Control, Automation and Systems (IJCAS)**."
+
+- year: 2026
   month: 6
   category: Project
   description: "Our lab has been awarded the **Basic Research Laboratory (BRL) Program grant** from NRF for research on Robot Foundation Models."

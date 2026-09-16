@@ -1,9 +1,21 @@
+- title: "CVAR: Cross-View Attention Refinement for Image Retrieval Reranking"
+  year: 2026
+  authors: <strong>Seongwon Lee</strong>
+  venue: International Journal of Control, Automation and Systems (IJCAS)
+  link_exist: 0
+  link:
+  thumbnail:
+  oral:
+  spotlight:
+  highlight:
+  under_review:
+
 - title: "RayOcc: Occlusion-Agnostic Ray Occupancy Estimation via Gaussian Mixture Intensity"
   year: 2026
   authors: <strong>Junho Kim</strong>, and <strong>Seongwon Lee</strong>
   venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026
-  link_exist: 0
-  link:
+  link_exist: 1
+  link: https://arxiv.org/abs/2607.17660
   thumbnail: /images/publications/kim2026rayocc.png
   oral:
   spotlight:
@@ -14,8 +26,8 @@
   year: 2026
   authors: Mangyu Kong, <strong>Seongwon Lee<sup>†</sup></strong>, and Euntai Kim<sup>†</sup>
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026
-  link_exist: 0
-  link: 
+  link_exist: 1
+  link: https://kmk97.github.io/UGSLoc/
   thumbnail: /images/publications/kong2026rethinking.png
   oral: 
   spotlight: 
@@ -27,7 +39,7 @@
   authors: Suhan Woo, <strong>Seongwon Lee</strong>, Jinwoo Jang, and Euntai Kim<sup>†</sup>
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026
   link_exist: 1
-  link: https://arxiv.org/abs/2506.04764
+  link: https://cvpr.thecvf.com/virtual/2026/poster/38544
   thumbnail: /images/publications/woo2026hypevpr.png
   oral: 
   spotlight: 
@@ -39,7 +51,7 @@
   authors: <strong>Junho Kim</strong>, and <strong>Seongwon Lee<sup>†</sup></strong>
   venue: IEEE International Conference on Robotics and Automation (ICRA)
   link_exist: 1
-  link: https://arxiv.org/abs/2512.05988
+  link: https://junho2000.github.io/vg3t.github.io/
   thumbnail: /images/publications/kim2025vg3t.gif
   oral: 
   spotlight: 
@@ -64,7 +76,7 @@
   authors: Mangyu Kong, Jaewon Lee, <strong>Seongwon Lee<sup>†</sup></strong>, and Euntai Kim<sup>†</sup>
   venue: IEEE International Conference on Robotics and Automation (ICRA)
   link_exist: 1
-  link: https://arxiv.org/abs/2406.12202
+  link: https://ieeexplore.ieee.org/document/11128297/
   thumbnail: /images/publications/kong2025fast.gif
   oral: 
   spotlight: 

@@ -1,0 +1,108 @@
+/* CILAB content adaptations. Shared layout and components come from assets/theme/. */
+[hidden] { display: none !important; }
+.cilab-skip-link { position: fixed; left: 16px; top: -80px; z-index: 10000; padding: 10px 16px; background: var(--paper); color: var(--link); border: 2px solid var(--link); }
+.cilab-skip-link:focus { top: 10px; }
+.cilab-wordmark::before { display: block; }
+.lab-mark { grid-template-columns: 150px minmax(0,1fr); }
+.lab-mark .lab-logo-static img { width: 150px; height: auto; max-height: 86px; object-fit: contain; border: 0; border-radius: 0; }
+.lab-logo-static { display: inline-flex; grid-column: 1; align-self: center; cursor: default; }
+.lab-title-link { color: var(--text); }
+.footer-brand-mark img { width: 100px; height: auto; object-fit: contain; border-radius: 5px; background: #fff; padding: 5px; }
+body.theme-dark .lab-logo-static, body.theme-dark .footer-brand-mark img { background: #fff; border-radius: 5px; padding: 6px; }
+/* Home photos retain the upstream 16:10 ratio, on desktop and mobile. */
+.home-image-pair .home-photo { overflow: hidden; border-radius: 16px; }
+.cilab-video-item { min-width: 0; }
+.cilab-video-item iframe, .cilab-video-item video { width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; border-radius: 8px; background: #0f172a; }
+.cilab-video-item p { font-size: .84rem; line-height: 1.45; margin: 8px 0 0; }
+.cilab-video-platform { display: block; margin-top: 4px; font-size: .75rem; color: var(--muted); }
+.cilab-video-pending { position: relative; display: grid; place-items: center; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--wash); }
+.cilab-video-pending img { width: 100%; height: 100%; object-fit: contain; opacity: .35; }
+.cilab-video-pending > span { position: absolute; padding: 8px 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--paper); color: var(--muted); font-size: .8rem; }
+.research-method-field { color: var(--link); font-weight: 600; }
+#research .cilab-research-vision { max-width: none; line-height: 1.75; margin: 18px 0 32px; }
+#research .research-interest-panel { margin-top: 40px; }
+#research .research-interest-panel > h2 { margin-bottom: 20px; }
+#research .research-method-heading, #research #research-videos { margin: 56px 0 24px; }
+#research .research-method-list { gap: 28px; }
+#research .research-method-card { grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); gap: 34px; padding: 24px; }
+#research .research-method-image { border: 0; border-radius: 8px; }
+#research .research-method-image img { aspect-ratio: 3 / 2; object-fit: contain; }
+#research .research-method-card h2 { margin-bottom: 12px; }
+#research .research-method-card p { line-height: 1.7; margin-bottom: 16px; }
+.research-publications-callout { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 48px; padding: 28px 0; border-top: 1px solid var(--line); }
+.research-publications-callout p { margin: 12px 0 0; color: var(--muted); line-height: 1.65; }
+.research-publications-callout > a { flex: 0 0 auto; display: inline-flex; padding: 12px 18px; border: 1px solid var(--line); border-radius: 6px; font-weight: 600; }
+.research-publications-callout > a:hover { border-color: var(--link); }
+.cilab-research-video-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.cilab-subsection-heading h2 { display: flex; align-items: center; gap: 12px; margin: 0; font-size: 1.9rem; font-weight: 650; letter-spacing: -.025em; }
+.cilab-subsection-heading h2::before { content: ''; width: 5px; height: 1.1em; background: var(--link); border-radius: 3px; }
+.cilab-publication-search { display: flex; align-items: center; gap: 12px; margin: 12px 0; }
+.cilab-publication-search label { min-width: 58px; color: var(--muted); font-size: .75rem; font-weight: 600; }
+.cilab-publication-search input { width: min(480px,100%); min-width: 0; padding: 8px 10px; border: 1px solid var(--line); border-radius: 5px; background: var(--paper); color: var(--text); font: inherit; font-size: .85rem; }
+.cilab-empty { padding: 24px 0; color: var(--muted); }
+#publications .publication-filter-help { flex: 1 1 320px; margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.5; }
+/* Larger publication rows, with one paper per row. */
+#publications .publication-list { grid-template-columns: minmax(0,1fr); gap: 20px; }
+#publication-results { scroll-margin-top: 120px; }
+#publication-results:focus { outline: none; }
+#publications .facet-subgroup { grid-template-columns: 165px minmax(0,1fr); }
+#publications .publication-card { grid-template-columns: minmax(0,1fr) 300px; gap: 0 24px; padding: 24px; font-size: 1rem; }
+#publications .publication-card-text-only { grid-template-columns: minmax(0,1fr); }
+#publications .publication-card h3 { font-size: 1.22rem; line-height: 1.45; margin-bottom: 18px; }
+#publications .publication-meta { gap: 9px; line-height: 1.6; }
+#publications .publication-meta > span > b { font-size: .73rem; }
+#publications .publication-figure { min-height: 180px; padding: 12px; }
+#publications .publication-figure img { max-height: 240px; }
+/* Let figures share the full card height, starting alongside the badges. */
+@media(min-width:641px) {
+  #publications .publication-card:not(.publication-card-text-only) { grid-template-areas: "title figure" "subtitle figure" "meta figure" "actions figure"; }
+}
+#publications .pub-badge { font-size: .76rem; text-decoration: none; }
+#publications .pub-badge.award { color: #704600; background: #fff0ba; box-shadow: inset 0 0 0 1px #e9c45b; }
+#publications .pub-badge.badge-venue { color: #fff; background: #0076b3; box-shadow: none; }
+#publications a.pub-badge:hover { outline: 1px solid currentColor; outline-offset: 2px; }
+#publications .publication-actions { margin-top: 16px; }
+#publications .publication-actions a, #publications .publication-actions button { font-size: .86rem; }
+#publications .publication-member-link { text-decoration: underline; text-decoration-color: color-mix(in srgb,var(--link) 30%,transparent); text-underline-offset: 3px; }
+#publications .publication-member-link:hover { text-decoration-color: currentColor; }
+#publications .publication-award-note { color: var(--link); font-weight: 600; }
+.team-page .profile-card, .team-page .team-member-card { scroll-margin-top: 120px; }
+.team-page #member-0 .profile-avatar { object-position: center top; }
+.team-page .profile-card:target, .team-page .team-member-card:target { outline: 3px solid var(--link); outline-offset: 6px; border-color: var(--link); background: color-mix(in srgb,var(--link) 9%,var(--paper)); box-shadow: none; }
+.member-contact-links [class$="-placeholder"] { opacity: .35; cursor: default; }
+.news-year-group > summary { cursor: pointer; }
+.cilab-funding-figure img { padding: 15px; background: white; object-fit: contain; max-height: 140px; }
+.research-interest-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.research-method-card, .teaching-content-stack section, .publication-card, .home-research-videos { scroll-margin-top: 120px; }
+.joining-language-panel:not([hidden]) { display: block; }
+#funded-projects .publication-meta .project-meta-value { display: inline; }
+.project-status-row b { font-size: .8rem; }
+.project-status-row button { gap: 5px; }
+.cilab-contact-map { height: 440px; width: 100%; border: 1px solid var(--line); border-radius: 10px; z-index: 0; }
+.cilab-contact-map .leaflet-popup-content { color: #1f2933; font: 14px/1.5 "Segoe UI",sans-serif; }
+.cilab-contact-map .leaflet-popup-content p { margin: 5px 0 0; }
+.cilab-map-marker { display: grid; place-items: center; }
+.cilab-map-marker span { width: 20px; height: 20px; background: #0076b3; border: 3px solid #fff; border-radius: 50%; box-shadow: 0 0 0 7px #0076b32b,0 2px 5px #0005; }
+#map-status { color: var(--muted); font-size: .85rem; }
+@media(max-width:900px) {
+  #research .research-method-card { grid-template-columns: minmax(0,1fr); gap: 24px; }
+  #publications .publication-card { grid-template-columns: minmax(0,1fr) 240px; }
+  #publications .publication-card-text-only { grid-template-columns: minmax(0,1fr); }
+  .lab-mark { grid-template-columns: 115px minmax(0,1fr); }
+  .lab-mark .lab-logo-static img { width: 115px; }
+  .cilab-research-video-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:640px) {
+  #research .research-method-heading, #research #research-videos { margin-top: 40px; }
+  #research .research-method-card { padding: 16px; }
+  .research-publications-callout { flex-direction: column; align-items: flex-start; }
+  #publications .facet-subgroup { grid-template-columns: minmax(0,1fr); gap: 4px; }
+  #publications .publication-card { grid-template-columns: minmax(0,1fr); padding: 18px; }
+  #publications .publication-card h3 { font-size: 1.08rem; }
+  #publications .publication-figure { width: 100%; min-height: 0; box-sizing: border-box; }
+  .lab-mark { grid-template-columns: 86px minmax(0,1fr); }
+  .lab-mark .lab-logo-static img { width: 86px; }
+  .cilab-research-video-grid, .research-interest-grid { grid-template-columns: 1fr; }
+  .cilab-subsection-heading h2 { font-size: 1.5rem; }
+}
+@media(prefers-reduced-motion:reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }

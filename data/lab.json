@@ -1,0 +1,77 @@
+{
+  "name": "Computational Intelligence Laboratory",
+  "shortName": "CILAB",
+  "logo": "assets/brand/CILAB_LOGO_fit_1.png",
+  "university": "Kookmin University",
+  "department": "School of Electrical Engineering",
+  "email": "sungonce@kookmin.ac.kr",
+  "scholar": "https://scholar.google.com/citations?hl=en&user=wKlb8_gAAAAJ",
+  "phone": "+82-2-910-5069",
+  "phoneHref": "+8229105069",
+  "extension": "5069",
+  "office": "Future Hall 703, Kookmin University",
+  "officeKo": "국민대학교 미래관 703호",
+  "mapUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B5%AD%EB%AF%BC%EB%8C%80%ED%95%99%EA%B5%90%20%EB%AF%B8%EB%9E%98%EA%B4%80",
+  "vision": "We develop physical AI that can perceive, reason about, and act in the real world. Our research connects multimodal perception, spatial intelligence, and embodied learning to turn observations into meaningful action.",
+  "visionGoal": "By learning from visual experience, simulation, and real-world interaction, we aim to build intelligent systems that adapt to unfamiliar environments and work alongside people.",
+  "homePhotos": [
+    {
+      "src": "assets/images/photos/kookmin_university.webp",
+      "alt": "Kookmin University campus"
+    },
+    {
+      "src": "assets/images/photos/2506_KMU_CILAB_first_meeting.webp",
+      "alt": "First Meeting of KMU CILAB, June 2025"
+    }
+  ],
+  "research": [
+    {
+      "id": "visual-understanding",
+      "title": "Perceive the World",
+      "field": "Multimodal Perception",
+      "summary": "Connect visual and multimodal observations to concepts that generalize across the open world.",
+      "description": "Physical intelligence begins with sensing. We study how machines can learn meaningful representations from visual and multimodal experience, recognize what matters, and connect observations to language. Our goal is perception that remains useful across changing viewpoints, environments, and tasks.",
+      "topics": [
+        "Open-world representation learning",
+        "Multimodal grounding and recognition",
+        "Robust perception across environments"
+      ],
+      "image": "assets/images/research/perceive-world.png",
+      "imageAlt": "Concept illustration of visual observations and multimodal perception"
+    },
+    {
+      "id": "3d-scene-understanding",
+      "title": "Understand the Scene",
+      "field": "Spatial Intelligence & World Models",
+      "summary": "Build structured, persistent understanding of space, objects, and how the world changes.",
+      "description": "Useful perception must become an understanding of the surrounding world. We investigate representations that connect geometry, semantics, and dynamics, allowing an agent to locate itself, remember its surroundings, and reason about possible changes. This direction connects 3D scene learning with spatial memory and predictive world models.",
+      "topics": [
+        "3D and 4D scene representations",
+        "Spatial memory and reasoning",
+        "Predictive and interactive world models"
+      ],
+      "image": "assets/images/research/understand-scene.png",
+      "imageAlt": "Concept illustration of 3D scene reconstruction and spatial understanding"
+    },
+    {
+      "id": "intelligent-robotics",
+      "title": "Move into Reality",
+      "field": "Embodied Intelligence & Action",
+      "summary": "Turn perception and understanding into adaptive action through interaction with the physical world.",
+      "description": "We aim to close the loop between seeing, understanding, and doing. Our research explores agents that connect human intent to action and learn from videos, simulation, and physical interaction. We work toward adaptable robot intelligence that can navigate, interact, and improve through experience in real environments.",
+      "topics": [
+        "Vision-language-action learning",
+        "Embodied navigation and interaction",
+        "Learning across video, simulation, and reality"
+      ],
+      "image": "assets/images/research/move-reality.png",
+      "imageAlt": "Concept illustration of a mobile manipulator navigating and interacting with objects"
+    }
+  ],
+  "mapCoordinates": {
+    "latitude": 37.6100625,
+    "longitude": 126.9970625,
+    "source": "Google Maps place 국민대학교 미래관, Plus Code 8Q98JX6W+2R"
+  },
+  "youtubeChannel": "https://www.youtube.com/channel/UCKfMj6B_uX_9tkErT2njT4A"
+}

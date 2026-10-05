@@ -1,0 +1,36 @@
+/* Teaching: plain cards and navy accents, preserving course layout and navigation. */
+#teaching { --link: #0076b3; --link-dark: #005c8c; --teaching-border: #d7dde3; }
+body.theme-dark #teaching { --link: #81d2fa; --link-dark: #b9e9ff; --teaching-border: #354452; }
+#teaching .publications-heading { padding-bottom: 18px; border-bottom: 1px solid var(--line); margin-bottom: 24px; }
+#teaching .publications-heading h1 { letter-spacing: -.025em; }
+#teaching .teaching-course-search,
+#teaching .teaching-toggle-all { border-radius: 5px; background: transparent; border: 1px solid var(--line); color: var(--link); font-weight: 600; font-size: .8rem; box-shadow: none; transform: none; }
+#teaching .teaching-course-search:hover,
+#teaching .teaching-course-search:focus-visible,
+#teaching .teaching-toggle-all:hover,
+#teaching .teaching-toggle-all:focus-visible { border-color: var(--link); background: var(--panel); }
+#teaching .teaching-toc p { font-size: .7rem; letter-spacing: .1em; font-weight: 600; }
+#teaching .teaching-toc a { color: var(--link); font-weight: 600; }
+#teaching .teaching-year-group > summary.publication-year { padding-bottom: 12px; border-bottom: 1px solid var(--line); color: var(--text); font-size: 1.35rem; font-weight: 650; letter-spacing: -.025em; }
+#teaching .teaching-semester { color: var(--muted); font-size: .85rem; font-weight: 600; }
+#teaching .teaching-card { padding: 16px; background: var(--paper); border: 1px solid var(--teaching-border); border-radius: 10px; box-shadow: none; }
+#teaching .teaching-card.teaching-main { border-top: 3px solid var(--link); }
+#teaching .teaching-title-row h3 { color: var(--ink); font-weight: 600; }
+#teaching .teaching-title-row h3 span { font-weight: 400; font-size: .88rem; line-height: 1.5; margin-top: 3px; }
+#teaching .pub-badge { border-radius: 5px; font-size: .68rem; font-weight: 600; padding: 3px 6px; }
+#teaching .pub-badge.pub-year { background: #0076b3; color: #fff; }
+#teaching .pub-badge.featured { color: var(--link); background: transparent; box-shadow: inset 0 0 0 1px var(--teaching-border); }
+#teaching .publication-meta { color: var(--muted); line-height: 1.5; }
+#teaching .publication-meta b { color: var(--text); font-weight: 600; }
+#teaching .publication-meta a { color: var(--link); }
+#teaching .publication-actions a { border: 1px solid var(--teaching-border); border-radius: 5px; background: transparent; color: var(--link); font-weight: 600; font-size: .8rem; box-shadow: none; }
+#teaching .publication-actions a:hover,
+#teaching .publication-actions a:focus-visible { border-color: var(--link); background: var(--panel); }
+#teaching .teaching-projects { border-top: 1px solid var(--line); padding-top: 14px; }
+#teaching .teaching-projects > .teaching-section-heading { margin-top: 0; }
+#teaching .teaching-section-heading { color: var(--text); font-size: 1.35rem; font-weight: 650; letter-spacing: -.025em; }
+#teaching .teaching-projects-meta { font-size: .85rem; }
+@media (max-width: 650px) {
+  #teaching .teaching-heading-actions { align-items: flex-start; }
+  #teaching .teaching-section-heading { font-size: 1.25rem; }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "paperId": "paper-2",
+    "title": "RayOcc: Occlusion-Aware Ray Occupancy Estimation via Gaussian Mixture Intensity",
+    "youtubeUrl": "https://www.youtube.com/watch?v=zWqt4TjiGrQ",
+    "poster": "assets/images/publications/kim2026rayocc.webp"
+  },
+  {
+    "paperId": "paper-5",
+    "title": "VG3T: Visual Geometry Grounded Gaussian Transformer",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ZU3eOOWFAys",
+    "poster": "assets/images/publications/kim2025vg3t.webp"
+  },
+  {
+    "paperId": "paper-3",
+    "title": "Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty",
+    "youtubeUrl": "https://youtu.be/9GXaK05DBvE",
+    "poster": "assets/images/publications/kong2026rethinking.webp"
+  },
+  {
+    "paperId": "paper-4",
+    "title": "HypeVPR: Exploring Hyperbolic Space for Perspective to Equirectangular Visual Place Recognition",
+    "youtubeUrl": "https://youtu.be/w4Sd3LEpUoQ",
+    "poster": "assets/images/publications/woo2026hypevpr.webp"
+  },
+  {
+    "paperId": "paper-12",
+    "title": "Revisiting Self-Similarity: Structural Embedding for Image Retrieval",
+    "youtubeUrl": "https://youtu.be/1_Kqu25roa4",
+    "poster": "assets/images/publications/lee2023revisiting.webp"
+  },
+  {
+    "paperId": "paper-13",
+    "title": "Correlation Verification for Image Retrieval",
+    "youtubeUrl": "https://youtu.be/Yb8qc1UtTvc",
+    "poster": "assets/images/publications/lee2022cvnet.webp"
+  }
+]

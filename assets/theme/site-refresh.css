@@ -1,0 +1,56 @@
+/* Shared CILAB accents: white surfaces, blue markers, and lighter rules. */
+:root { --link: #0076b3; --link-dark: #005c8c; }
+body.theme-dark { --link: #81d2fa; --link-dark: #b9e9ff; }
+.page .publications-heading h1 { display: flex; align-items: center; gap: 12px; }
+.page .publications-heading h1::before { content: ''; flex: 0 0 7px; width: 7px; height: 28px; border-radius: 6px; background: #009fe8; }
+body .page .publications-heading { border-bottom: 0; }
+.page .publication-year,
+.page .gallery-year-heading { border-color: var(--line); }
+.page .teaching-section-heading,
+.page .research-reading-pathway-heading h2 { display: flex; align-items: center; gap: 10px; }
+.page .teaching-section-heading::before,
+.page .research-reading-pathway-heading h2::before { content: ''; width: 6px; flex: 0 0 6px; height: 22px; border-radius: 5px; background: #009fe8; }
+@media (max-width: 650px) {
+  .page .publications-heading h1 { gap: 10px; }
+  .page .publications-heading h1::before { height: 24px; }
+}
+
+/* One shared language selector across home, news, projects and joining. */
+body :is(.page, #funded-projects) .language-control.language-control {
+  display: inline-flex; align-items: center; gap: 2px; padding: 3px;
+  background: #fff; border: 1px solid #d3e0e7; border-radius: 8px;
+  box-shadow: none;
+}
+body :is(.page, #funded-projects) .language-control.language-control button {
+  min-width: 48px; min-height: 28px; padding: 5px 10px;
+  border: 0; border-radius: 5px; background: transparent; color: #536475;
+  font: inherit; font-size: .78rem; font-weight: 600; line-height: 1;
+  box-shadow: none; cursor: pointer;
+}
+body :is(.page, #funded-projects) .language-control.language-control button:hover { color: #005c8c; background: #edf8fe; }
+body :is(.page, #funded-projects) .language-control.language-control button.is-active { color: #fff; background: #0076b3; box-shadow: none; }
+body :is(.page, #funded-projects) .language-control.language-control button:focus-visible { outline: 2px solid #0076b3; outline-offset: 2px; }
+body.theme-dark :is(.page, #funded-projects) .language-control.language-control { background: #14252f; border-color: #355364; }
+body.theme-dark :is(.page, #funded-projects) .language-control.language-control button { color: #d0dde5; }
+body.theme-dark :is(.page, #funded-projects) .language-control.language-control button:hover { color: #b9e9ff; background: #203c4b; }
+body.theme-dark :is(.page, #funded-projects) .language-control.language-control button.is-active { background: #0076b3; color: #fff; }
+
+/* Yellow identifies recruitment; blue remains the shared control color. */
+body .joining-page .publications-heading h1::before { background: #ffd21c; }
+body .joining-page .joining-language-panel > .joining-card:first-child { border-top: 3px solid #ffd21c; }
+body .team-page .team-open-position-grid .team-open-position-mark {
+  background: #fff8da;
+  border-color: #eedb8a;
+  color: #655000;
+}
+body .team-page .team-open-position-role { background: #fff; border-color: #eedb8a; color: #655000; }
+body.theme-dark .team-page .team-open-position-grid .team-open-position-mark { background: #302b18; border-color: #756226; color: #ffdf70; }
+body.theme-dark .team-page .team-open-position-role { background: #221f15; border-color: #756226; color: #ffdf70; }
+
+
+/* Keep the DORI award announcement in regular text on home and news pages. */
+body [data-news-id="ugrp-2026-dori-excellence"] p,
+body [data-news-id="ugrp-2026-dori-excellence"] p a {
+  font-weight: 400;
+  font-style: normal;
+}

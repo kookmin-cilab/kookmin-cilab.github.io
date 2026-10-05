@@ -1,0 +1,1264 @@
+{
+  "updated": "2026-10-05",
+  "team": [
+    {
+      "name": "Seongwon Lee",
+      "group": "professors",
+      "photo": "assets/images/teampic/swlee.webp",
+      "email": "sungonce@kookmin.ac.kr",
+      "homepage": "https://sungonce.github.io/",
+      "interests": "",
+      "affiliation": "",
+      "role": "Assistant Professor"
+    },
+    {
+      "name": "Sangho Byeon",
+      "group": "students",
+      "photo": "assets/images/teampic/shbyeon.webp",
+      "email": "pyeun08@kookmin.ac.kr",
+      "homepage": "",
+      "interests": "Computer Vision, Robotics, Autonomous Driving",
+      "affiliation": "",
+      "role": "Combined BS/MS Student"
+    },
+    {
+      "name": "Junyeong Jang",
+      "group": "students",
+      "photo": "assets/images/teampic/jyjang.webp",
+      "email": "junyoung0825@kookmin.ac.kr",
+      "homepage": "",
+      "interests": "Computer Vision, Robotics, Autonomous Driving",
+      "affiliation": "",
+      "role": "Combined BS/MS Student"
+    },
+    {
+      "name": "Chaeyoung Shin",
+      "group": "students",
+      "photo": "assets/images/teampic/cyshin.webp",
+      "email": "scy3316@kookmin.ac.kr",
+      "homepage": "",
+      "interests": "Computer Vision, Robotics, Autonomous Driving",
+      "affiliation": "",
+      "role": "Combined BS/MS Student"
+    },
+    {
+      "name": "Jiseok Kim",
+      "group": "students",
+      "photo": "assets/images/teampic/jskim.webp",
+      "email": "inplus1130@kookmin.ac.kr",
+      "homepage": "",
+      "interests": "Computer Vision, Robotics, Autonomous Driving",
+      "affiliation": "",
+      "role": "Combined BS/MS Student"
+    },
+    {
+      "name": "HyunYoung Choi",
+      "group": "interns",
+      "photo": "assets/images/teampic/hychoi.webp",
+      "email": "kellychy@kookmin.ac.kr",
+      "homepage": "",
+      "interests": "Computer Vision, Robotics, Autonomous Driving",
+      "affiliation": "",
+      "role": "Undergraduate Student"
+    },
+    {
+      "name": "Junho Kim",
+      "group": "alumni",
+      "photo": "assets/images/teampic/jhkim.webp",
+      "email": "jhk00@kookmin.ac.kr",
+      "homepage": "https://junho2000.github.io/",
+      "interests": "",
+      "affiliation": "RideFlux",
+      "role": "",
+      "scholar": "https://scholar.google.com/citations?hl=ko&user=9tvt3EsAAAAJ"
+    }
+  ],
+  "publications": [
+    {
+      "id": "paper-26",
+      "title": "Beyond Single Sentences: Composed Image Retrieval with Long-Form Modification Texts",
+      "year": 2026,
+      "authors": "Junyeong Jang, Seongwon Lee*",
+      "venue": "ACCV",
+      "venueFull": "Asian Conference on Computer Vision (ACCV) 2026",
+      "type": "Conference",
+      "image": "assets/images/publications/jang2026longform.webp",
+      "oral": false,
+      "links": []
+    },
+    {
+      "id": "paper-27",
+      "title": "Resource-aware structural point-line RGB-D SLAM for dynamic indoor environments",
+      "year": 2026,
+      "authors": "Seongwon Lee, Hyukdoo Choi, Hae Min Cho*",
+      "venue": "Scientific Reports",
+      "venueFull": "Scientific Reports",
+      "type": "Journal",
+      "doi": "10.1038/s41598-026-73677-3",
+      "published": "2026-09-29",
+      "image": "assets/images/publications/lee2026resource.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://www.nature.com/articles/s41598-026-73677-3"
+        },
+        {
+          "label": "Paper",
+          "url": "https://www.nature.com/articles/s41598-026-73677-3_reference.pdf"
+        }
+      ]
+    },
+    {
+      "id": "paper-1",
+      "title": "CVAR: Cross-View Attention Refinement for Image Retrieval Reranking",
+      "year": 2026,
+      "authors": "Sangho Byeon, Seongwon Lee*",
+      "venue": "IJCAS",
+      "venueFull": "International Journal of Control, Automation and Systems (IJCAS)",
+      "type": "Journal",
+      "image": "assets/images/publications/byeon2026cvar.webp",
+      "oral": false,
+      "links": []
+    },
+    {
+      "id": "paper-25",
+      "title": "Selective Appearance Refinement for Feed-Forward 3D Gaussian Splatting",
+      "year": 2026,
+      "authors": "Junho Kim, Jiseok Kim, Seongwon Lee*",
+      "venue": "ICCAS",
+      "venueFull": "International Conference on Control, Automation, and Systems (ICCAS) 2026",
+      "type": "Conference",
+      "image": "assets/images/publications/kim2026selective.png",
+      "oral": false,
+      "links": [],
+      "source": "https://junho2000.github.io/"
+    },
+    {
+      "id": "paper-2",
+      "title": "RayOcc: Occlusion-Aware Ray Occupancy Estimation via Gaussian Mixture Intensity",
+      "year": 2026,
+      "authors": "Junho Kim, Seongwon Lee*",
+      "venue": "IROS",
+      "venueFull": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026",
+      "type": "Conference",
+      "image": "assets/images/publications/kim2026rayocc.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://junho2000.github.io/rayocc.github.io/"
+        },
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/pdf/2607.17660"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2607.17660"
+        },
+        {
+          "label": "Poster",
+          "url": "https://junho2000.github.io/rayocc.github.io/static/images/poster.pdf"
+        }
+      ]
+    },
+    {
+      "id": "paper-3",
+      "title": "Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty",
+      "year": 2026,
+      "authors": "Mangyu Kong, Seongwon Lee*, Euntai Kim*",
+      "venue": "CVPR",
+      "venueFull": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026",
+      "type": "Conference",
+      "image": "assets/images/publications/kong2026rethinking.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://kmk97.github.io/UGSLoc/"
+        },
+        {
+          "label": "Publication",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Kong_Rethinking_Pose_Refinement_in_3D_Gaussian_Splatting_under_Pose_Prior_CVPR_2026_paper.html"
+        },
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Kong_Rethinking_Pose_Refinement_in_3D_Gaussian_Splatting_under_Pose_Prior_CVPR_2026_paper.pdf"
+        },
+        {
+          "label": "Supplement",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Kong_Rethinking_Pose_Refinement_CVPR_2026_supplemental.pdf"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/9GXaK05DBvE"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2603.16538"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/kmk97/UGSLoc"
+        }
+      ]
+    },
+    {
+      "id": "paper-4",
+      "title": "HypeVPR: Exploring Hyperbolic Space for Perspective to Equirectangular Visual Place Recognition",
+      "year": 2026,
+      "authors": "Suhan Woo, Seongwon Lee, Jinwoo Jang, Euntai Kim*",
+      "venue": "CVPR",
+      "venueFull": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026",
+      "type": "Conference",
+      "image": "assets/images/publications/woo2026hypevpr.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://cvpr.thecvf.com/virtual/2026/poster/38544"
+        },
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Woo_HypeVPR_Exploring_Hyperbolic_Space_for_Perspective_to_Equirectangular_Visual_Place_CVPR_2026_paper.pdf"
+        },
+        {
+          "label": "Supplement",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Woo_HypeVPR_Exploring_Hyperbolic_CVPR_2026_supplemental.pdf"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/w4Sd3LEpUoQ"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2506.04764"
+        }
+      ]
+    },
+    {
+      "id": "paper-5",
+      "title": "VG3T: Visual Geometry Grounded Gaussian Transformer",
+      "year": 2026,
+      "authors": "Junho Kim, Seongwon Lee*",
+      "venue": "ICRA",
+      "venueFull": "IEEE International Conference on Robotics and Automation (ICRA)",
+      "type": "Conference",
+      "image": "assets/images/publications/kim2025vg3t.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://junho2000.github.io/vg3t.github.io/"
+        },
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/pdf/2512.05988"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2512.05988"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/junho2000/VG3T"
+        }
+      ]
+    },
+    {
+      "id": "paper-6",
+      "title": "Location-Aware Transformer Network for Bird’s Eye View Semantic Segmentation",
+      "year": 2025,
+      "authors": "Suhan Woo, Minseong Park, Youngjo Lee, Seongwon Lee, Euntai Kim*",
+      "venue": "TIV",
+      "venueFull": "Transactions on Intelligent Vehicles (TIV)",
+      "type": "Journal",
+      "image": "assets/images/publications/woo2025lat.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/document/10729649"
+        }
+      ]
+    },
+    {
+      "id": "paper-7",
+      "title": "Fast Global Localization on Neural Radiance Field",
+      "year": 2025,
+      "authors": "Mangyu Kong, Jaewon Lee, Seongwon Lee*, Euntai Kim*",
+      "venue": "ICRA",
+      "venueFull": "IEEE International Conference on Robotics and Automation (ICRA)",
+      "type": "Conference",
+      "image": "assets/images/publications/kong2025fast.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://ieeexplore.ieee.org/document/11128297/"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2406.12202"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/kmk97/Fast-Loc-NeRF"
+        }
+      ]
+    },
+    {
+      "id": "paper-8",
+      "title": "Correlation Verification for Image Retrieval and Its Memory Footprint Optimization",
+      "year": 2025,
+      "authors": "Seongwon Lee, Hongje Seong, Suhyeon Lee, Euntai Kim*",
+      "venue": "TPAMI",
+      "venueFull": "Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+      "type": "Journal",
+      "image": "assets/images/publications/lee2025cvnetds.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/document/10759842"
+        }
+      ]
+    },
+    {
+      "id": "paper-9",
+      "title": "Back to the Context: Tuning Visual Localization using Structural and Edge Context within Image",
+      "year": 2024,
+      "authors": "Nanda Febri Istighfarin, Seongwon Lee, and HyungGi Jo*",
+      "venue": "IEEE Access",
+      "venueFull": "IEEE Access",
+      "type": "Journal",
+      "image": "",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://ieeexplore.ieee.org/document/10723272"
+        }
+      ]
+    },
+    {
+      "id": "paper-10",
+      "title": "Language-only Efficient Prompt Learning for Zero-shot Composed Image Retrieval",
+      "year": 2024,
+      "authors": "Seongwon Lee, Yong-Ju Lee*",
+      "venue": "ECCV",
+      "venueFull": "European Conference on Computer Vision (ECCV) 2024 Workshop (Green Foundation Models)",
+      "type": "Workshop",
+      "image": "assets/images/publications/lee2024language.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://green-fomo.github.io/ECCV2024/index.html"
+        }
+      ]
+    },
+    {
+      "id": "paper-11",
+      "title": "RoomNeRF: Representing Empty Room as Neural Radiance Fields for View Synthesis",
+      "year": 2023,
+      "authors": "Mangyu Kong, Seongwon Lee, Euntai Kim*",
+      "venue": "BMVC",
+      "venueFull": "The British Machine Vision Conference (BMVC) 2023",
+      "type": "Conference",
+      "image": "assets/images/publications/kong2023room.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://proceedings.bmvc2023.org/825/"
+        },
+        {
+          "label": "Paper",
+          "url": "https://papers.bmvc2023.org/0825.pdf"
+        },
+        {
+          "label": "Supplement",
+          "url": "https://bmvc2022.mpi-inf.mpg.de/BMVC2023/0825_supp.zip"
+        },
+        {
+          "label": "Poster",
+          "url": "https://bmvc2022.mpi-inf.mpg.de/BMVC2023/0825_poster.pdf"
+        }
+      ]
+    },
+    {
+      "id": "paper-12",
+      "title": "Revisiting Self-Similarity: Structural Embedding for Image Retrieval",
+      "year": 2023,
+      "authors": "Seongwon Lee, Suhyeon Lee, Hongje Seong, Euntai Kim*",
+      "venue": "CVPR",
+      "venueFull": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023",
+      "type": "Conference",
+      "image": "assets/images/publications/lee2023revisiting.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Lee_Revisiting_Self-Similarity_Structural_Embedding_for_Image_Retrieval_CVPR_2023_paper.html"
+        },
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Lee_Revisiting_Self-Similarity_Structural_Embedding_for_Image_Retrieval_CVPR_2023_paper.pdf"
+        },
+        {
+          "label": "Supplement",
+          "url": "https://openaccess.thecvf.com/content/CVPR2023/supplemental/Lee_Revisiting_Self-Similarity_Structural_CVPR_2023_supplemental.pdf"
+        },
+        {
+          "label": "Poster",
+          "url": "https://cvpr2023.thecvf.com/media/PosterPDFs/CVPR%202023/22752.png?t=1686640998.037478"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/1_Kqu25roa4"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/sungonce/SENet"
+        }
+      ]
+    },
+    {
+      "id": "paper-13",
+      "title": "Correlation Verification for Image Retrieval",
+      "year": 2022,
+      "authors": "Seongwon Lee, Hongje Seong, Suhyeon Lee, Euntai Kim*",
+      "venue": "CVPR",
+      "venueFull": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022",
+      "type": "Conference",
+      "image": "assets/images/publications/lee2022cvnet.webp",
+      "oral": true,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Lee_Correlation_Verification_for_Image_Retrieval_CVPR_2022_paper.html"
+        },
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Lee_Correlation_Verification_for_Image_Retrieval_CVPR_2022_paper.pdf"
+        },
+        {
+          "label": "Supplement",
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Lee_Correlation_Verification_for_CVPR_2022_supplemental.pdf"
+        },
+        {
+          "label": "Poster",
+          "url": "https://drive.google.com/file/d/1qZ4Ti-4pB249gR60XN7f2OzS-8lL4vQ4/view?usp=drive_link"
+        },
+        {
+          "label": "Video",
+          "url": "https://youtu.be/Yb8qc1UtTvc"
+        },
+        {
+          "label": "Slide",
+          "url": "https://drive.google.com/file/d/1bT1WjrZrSAexQZ-eUZuFohoJ2o0rX2O0/view?usp=drive_link"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2204.01458"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/sungonce/CVNet"
+        }
+      ],
+      "award": "Winner at Qualcomm Innovation Fellowship 2022",
+      "oralNote": "Selected as an Oral Presentation (Oral Presentation Acceptance Rate: 342/8161, 4.2%)"
+    },
+    {
+      "id": "paper-14",
+      "title": "WildNet: Learning Domain Generalized Semantic Segmentation from the Wild",
+      "year": 2022,
+      "authors": "Suhyeon Lee, Hongje Seong, Seongwon Lee, Euntai Kim*",
+      "venue": "CVPR",
+      "venueFull": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022",
+      "type": "Conference",
+      "image": "assets/images/publications/lee2022wildnet.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Lee_WildNet_Learning_Domain_Generalized_Semantic_Segmentation_From_the_Wild_CVPR_2022_paper.html"
+        },
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Lee_WildNet_Learning_Domain_Generalized_Semantic_Segmentation_From_the_Wild_CVPR_2022_paper.pdf"
+        },
+        {
+          "label": "Supplement",
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Lee_WildNet_Learning_Domain_CVPR_2022_supplemental.pdf"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2204.01446"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/suhyeonlee/WildNet"
+        }
+      ]
+    },
+    {
+      "id": "paper-15",
+      "title": "Hierarchical Memory Matching Network for Video Object Segmentation",
+      "year": 2021,
+      "authors": "Hongje Seong, Seoung Wug Oh, Joon-Young Lee, Seongwon Lee, Suhyeon Lee, Euntai Kim*",
+      "venue": "ICCV",
+      "venueFull": "IEEE/CVF International Conference on Computer Vision (ICCV) 2021",
+      "type": "Conference",
+      "image": "assets/images/publications/seong2021hmmn.webp",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Seong_Hierarchical_Memory_Matching_Network_for_Video_Object_Segmentation_ICCV_2021_paper.html"
+        },
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Seong_Hierarchical_Memory_Matching_Network_for_Video_Object_Segmentation_ICCV_2021_paper.pdf"
+        },
+        {
+          "label": "Supplement",
+          "url": "https://openaccess.thecvf.com/content/ICCV2021/supplemental/Seong_Hierarchical_Memory_Matching_ICCV_2021_supplemental.pdf"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2109.11404"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/Hongje/HMMN"
+        }
+      ]
+    },
+    {
+      "id": "paper-16",
+      "title": "Loop Closure Detection in Crowded Place",
+      "year": 2021,
+      "authors": "Seongwon Lee, HyungGi Jo, Hongje Seong, and Euntai Kim*",
+      "venue": "TENSYMP",
+      "venueFull": "2021 IEEE Region 10 Symposium (TENSYMP 2021)",
+      "type": "Conference",
+      "image": "",
+      "oral": false,
+      "links": []
+    },
+    {
+      "id": "paper-17",
+      "title": "A Hybrid SLAM in Complicated Indoor Environments for Mobile Robot on Low-Cost Platform",
+      "year": 2021,
+      "authors": "Hae Min Cho, Seongwon Lee, and Euntai Kim*",
+      "venue": "UR",
+      "venueFull": "18th International Conference on Ubiquitous Robots (UR 2021)",
+      "type": "Conference",
+      "image": "",
+      "oral": false,
+      "links": []
+    },
+    {
+      "id": "paper-18",
+      "title": "Visual Loop Closure Detection over Illumination Change",
+      "year": 2019,
+      "authors": "Seongwon Lee, HyungGi Jo, Hae Min Cho, and Euntai Kim*",
+      "venue": "UR",
+      "venueFull": "16th International Conference on Ubiquitous Robots (UR 2019)",
+      "type": "Conference",
+      "image": "",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://ieeexplore.ieee.org/document/8768627"
+        }
+      ]
+    },
+    {
+      "id": "paper-19",
+      "title": "Odometry Estimation via CNN Using Sparse LiDAR Data",
+      "year": 2019,
+      "authors": "Hae Min Cho, HyungGi Jo, Seongwon Lee, and Euntai Kim*",
+      "venue": "UR",
+      "venueFull": "16th International Conference on Ubiquitous Robots (UR 2019)",
+      "type": "Conference",
+      "image": "",
+      "oral": false,
+      "links": []
+    },
+    {
+      "id": "paper-20",
+      "title": "Large Scale Representation of Volumetric Fusion using ICP",
+      "year": 2018,
+      "authors": "Hae Min Cho, HyungGi Jo, Seongwon Lee, and Euntai Kim*",
+      "venue": "ICCAS",
+      "venueFull": "18th International Conference on Control, Automation and Systems (ICCAS 2018)",
+      "type": "Conference",
+      "image": "",
+      "oral": false,
+      "links": []
+    },
+    {
+      "id": "paper-21",
+      "title": "Robust Visual Loop Closure Detection with Repetitive Features",
+      "year": 2018,
+      "authors": "Seongwon Lee, HyungGi Jo, Hae Min Cho, and Euntai Kim*",
+      "venue": "UR",
+      "venueFull": "15th International Conference on Ubiquitous Robots (UR 2018)",
+      "type": "Conference",
+      "image": "",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://ieeexplore.ieee.org/document/8441872"
+        }
+      ]
+    },
+    {
+      "id": "paper-22",
+      "title": "Robust 6-DOF Localization Using Sensor Fusion System in Indoor-Outdoor Environments",
+      "year": 2018,
+      "authors": "HyungGi Jo, Hae Min Cho, Seongwon Lee, and Euntai Kim*",
+      "venue": "UR",
+      "venueFull": "15th International Conference on Ubiquitous Robots (UR 2018)",
+      "type": "Conference",
+      "image": "",
+      "oral": false,
+      "links": []
+    },
+    {
+      "id": "paper-23",
+      "title": "Empty Area Search on Occupancy Grid Map for Mobile Robot Navigation",
+      "year": 2017,
+      "authors": "Seongwon Lee, HyungGi Jo, Hae Min Cho, and Euntai Kim*",
+      "venue": "ISIS",
+      "venueFull": "18th International Symposium on Advanced Intelligent Systems (ISIS 2017)",
+      "type": "Conference",
+      "image": "",
+      "oral": false,
+      "links": []
+    },
+    {
+      "id": "paper-24",
+      "title": "Multi-Resolution Point Cloud Generation Based on Heterogeneous Sensor Fusion System",
+      "year": 2017,
+      "authors": "HyungGi Jo, Hae Min Cho, Seongwon Lee, and Euntai Kim*",
+      "venue": "URAI",
+      "venueFull": "2017 14th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI 2017)",
+      "type": "Conference",
+      "image": "",
+      "oral": false,
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://ieeexplore.ieee.org/document/7992856"
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "year": 2026,
+      "month": 10,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **ACCV 2026**.",
+      "publicationFilters": {
+        "venue": "accv",
+        "year": 2026
+      }
+    },
+    {
+      "year": 2026,
+      "month": 10,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **ICCAS 2026**.",
+      "publicationFilters": {
+        "venue": "iccas",
+        "year": 2026
+      }
+    },
+    {
+      "year": 2026,
+      "month": 9,
+      "category": "Publication",
+      "description": "**One paper** has been published in **Scientific Reports**.",
+      "paperId": "paper-27"
+    },
+    {
+      "year": 2026,
+      "month": 9,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **International Journal of Control, Automation and Systems (IJCAS)**.",
+      "paperId": "paper-1"
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "category": "Project",
+      "description": "Our lab has been awarded the **Basic Research Laboratory (BRL) Program grant** from NRF for research on Robot Foundation Models."
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **IROS 2026**.",
+      "publicationFilters": {
+        "venue": "iros",
+        "year": 2026
+      }
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "category": "Project",
+      "description": "Our lab has been awarded a **research grant** from **Electronics and Telecommunications Research Institute (ETRI)** for research on **Vision-Language Navigation (VLN) Agents**."
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "category": "Project",
+      "description": "Our lab has been awarded a **research grant** from **BStar Robotics** for research on **3D Reconstruction for Logistics Warehouse Robots**."
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "category": "Project",
+      "description": "Our lab has been awarded the **Young Researcher Program grant** from NRF for research on **Vision-Language Navigation (VLN) Agents**."
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "category": "Publication",
+      "description": "**Two papers** have been accepted to **CVPR 2026**.",
+      "publicationFilters": {
+        "venue": "cvpr",
+        "year": 2026
+      }
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **ICRA 2026**.",
+      "publicationFilters": {
+        "venue": "icra",
+        "year": 2026
+      }
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "category": "Publication",
+      "description": "**One paper** has been published in **IEEE Transactions on Intelligent Vehicles (TIV)** (IF: 14.0, JCR Top 2%).",
+      "publicationFilters": {
+        "venue": "tiv",
+        "year": 2025
+      }
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "category": "Project",
+      "description": "Our lab has been awarded a **research grant** from **Electronics and Telecommunications Research Institute (ETRI)** for the research on **Brain Signal Based Image Generation**."
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "category": "Project",
+      "description": "Our lab has been awarded a **research grant** from **Korea Electronics Technology Institute (KETI)** for research on **3D Reconstruction of Vehicles**."
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "category": "Publication",
+      "description": "**One paper** has been published in **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)** (IF: 20.6, JCR Top 1%).",
+      "publicationFilters": {
+        "venue": "tpami",
+        "year": 2025
+      }
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **ICRA 2025**.",
+      "publicationFilters": {
+        "venue": "icra",
+        "year": 2025
+      }
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **IEEE Access** (IF: 3.4, JCR Top 40%).",
+      "publicationFilters": {
+        "venue": "ieee-access",
+        "year": 2024
+      }
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "category": "Career",
+      "description": "**KMU CILAB** is now open!"
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **BMVC 2023**.",
+      "publicationFilters": {
+        "venue": "bmvc",
+        "year": 2023
+      }
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **CVPR 2023**.",
+      "publicationFilters": {
+        "venue": "cvpr",
+        "year": 2023
+      }
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "category": "Award",
+      "description": "Seongwon Lee won the **Qualcomm Innovation Fellowship 2022**.",
+      "paperId": "paper-13"
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "category": "Publication",
+      "description": "A paper titled **Correlation Verification for Image Retrieval** was selected for **Oral presentation** in **CVPR 2022**.",
+      "paperId": "paper-13"
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "category": "Publication",
+      "description": "**Two papers** have been accepted to **CVPR 2022**.",
+      "publicationFilters": {
+        "venue": "cvpr",
+        "year": 2022
+      }
+    },
+    {
+      "year": 2021,
+      "month": 7,
+      "category": "Publication",
+      "description": "**One paper** has been accepted to **ICCV 2021**.",
+      "publicationFilters": {
+        "venue": "iccv",
+        "year": 2021
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title_ko": "차세대 초인지 초적응 액션 파운데이션 모델 연구실",
+      "title": "Basic Research Laboratory for Next-Generation Hyper-Cognitive and Hyper-Adaptive Action Foundation Models",
+      "start_year": 2026,
+      "period": "Jul 2026 - Jun 2029",
+      "funding": "Basic Research Laboratory (BRL) Program, National Research Foundation of Korea (NRF)",
+      "thumbnail": "/images/projects/nrf.svg",
+      "image": "assets/images/projects/nrf.svg",
+      "funding_ko": "한국연구재단 (NRF) 기초연구실 사업",
+      "program": "Basic Research Laboratory (BRL)",
+      "program_ko": "기초연구실 (BRL)"
+    },
+    {
+      "title_ko": "3차원 재구성 기반 디지털트윈 학습 및 장면 구성 기술 실증",
+      "title": "Demonstration of Digital Twin Learning and Scene Composition Technologies Based on 3D Reconstruction",
+      "start_year": 2026,
+      "period": "May 2026 - Nov 2026",
+      "funding": "Electronics and Telecommunications Research Institute (ETRI)",
+      "thumbnail": "/images/projects/etri.svg",
+      "image": "assets/images/projects/etri.svg",
+      "funding_ko": "한국전자통신연구원 (ETRI)"
+    },
+    {
+      "title_ko": "물류창고 현장의 로봇 상에서 영상 기반 화물 및 화물 라벨 인식",
+      "title": "Vision-based Cargo and Cargo Label Recognition on Robots in Logistics Warehouse Environments",
+      "start_year": 2026,
+      "period": "Mar 2026 - Dec 2026",
+      "funding": "BStar Robotics",
+      "thumbnail": "/images/projects/bstar-robotics.svg",
+      "image": "assets/images/projects/bstar-robotics.svg"
+    },
+    {
+      "title_ko": "웹 비디오, 시뮬레이션, 실세계의 순환적 확장을 통한 비전-언어 네비게이션 에이전트 연구",
+      "title": "Vision-Language Navigation Agents via Cyclic Expansion of Web-Scale Video, Augmented Simulation, and the Real World",
+      "start_year": 2026,
+      "period": "Mar 2026 - Feb 2029",
+      "funding": "National Research Foundation of Korea (NRF)",
+      "thumbnail": "/images/projects/nrf.svg",
+      "image": "assets/images/projects/nrf.svg",
+      "funding_ko": "한국연구재단 (NRF)",
+      "program": "NRF Early-career Research Program",
+      "program_ko": "신진연구 사업"
+    },
+    {
+      "title_ko": "표면검사 공정 마이스터 로봇화 및 검사 결과 시각화를 위한 Gaussian Splatting 알고리즘 개발",
+      "title": "Development of High-Fidelity Vehicle Representation via 3D Gaussian Splatting",
+      "start_year": 2025,
+      "period": "Apr 2025 - Nov 2025",
+      "funding": "Korea Electronics Technology Institute (KETI)",
+      "thumbnail": "/images/projects/keti.svg",
+      "image": "assets/images/projects/keti.svg",
+      "funding_ko": "한국전자기술연구원 (KETI)"
+    },
+    {
+      "title_ko": "뇌파 신호를 활용한 이미지 생성 기술 연구",
+      "title": "Development of Brain Signal Based Image Generation",
+      "start_year": 2025,
+      "period": "Jun 2025 - Nov 2025",
+      "funding": "Electronics and Telecommunications Research Institute (ETRI)",
+      "thumbnail": "/images/projects/etri.svg",
+      "image": "assets/images/projects/etri.svg",
+      "funding_ko": "한국전자통신연구원 (ETRI)"
+    },
+    {
+      "title": "Development of AI Autonomy and Knowledge Enhancement for AI Agent Collaboration",
+      "title_ko": "",
+      "period": "Aug 2023 - Aug 2024",
+      "funding": "Information & Communications Technology Promotion (IITP)",
+      "start_year": 2023,
+      "image": ""
+    },
+    {
+      "title": "Development of Deep Learning-Based Fine-Matching Technology using ToF Depth Sensor",
+      "title_ko": "",
+      "period": "Apr 2022 - Dec 2022",
+      "funding": "LG Electronics",
+      "start_year": 2022,
+      "image": ""
+    },
+    {
+      "title": "Development of Deep Learning-Based Image Retrieval Technology using ToF Depth Sensor",
+      "title_ko": "",
+      "period": "May 2021 - Dec 2021",
+      "funding": "LG Electronics",
+      "start_year": 2021,
+      "image": ""
+    },
+    {
+      "title": "Development of Front-Down SLAM Technology Based on ToF Depth Sensor",
+      "title_ko": "",
+      "period": "Apr 2020 - Feb 2021",
+      "funding": "LG Electronics",
+      "start_year": 2020,
+      "image": ""
+    },
+    {
+      "title": "Development of Depth Map Generation Technology using Continuous Stereo Images",
+      "title_ko": "",
+      "period": "Apr 2019 - Dec 2019",
+      "funding": "Hyundai AutoEver",
+      "start_year": 2019,
+      "image": ""
+    },
+    {
+      "title": "Development of Integration Module Technology for Localization and Autonomous Driving Control Based on Multi-modal Sensor for Wheel Drive Service Robot",
+      "title_ko": "",
+      "period": "Oct 2017 - Feb 2019",
+      "funding": "Ministry of Trade, Industry and Energy (MOTIE)",
+      "start_year": 2017,
+      "image": ""
+    },
+    {
+      "title": "Development of Robot Autonomous Driving Technology using Laser Scanner",
+      "title_ko": "",
+      "period": "Oct 2016 - Oct 2017",
+      "funding": "Hitachi-LG Data Storage",
+      "start_year": 2016,
+      "image": ""
+    },
+    {
+      "title": "Development of Robot Intelligence Technology for Mobility with Learning Capability toward Robust and Seamless Indoor and Outdoor Autonomous Navigation",
+      "title_ko": "",
+      "period": "May 2016 - Apr 2020",
+      "funding": "Ministry of Trade, Industry and Energy (MOTIE)",
+      "start_year": 2016,
+      "image": ""
+    }
+  ],
+  "gallery": [
+    {
+      "id": "album-1",
+      "date": "2026-08",
+      "title": "Graduation of KMU CILAB",
+      "images": [
+        "assets/images/photos/2608_graduation_1.webp",
+        "assets/images/photos/2608_graduation_2.webp",
+        "assets/images/photos/2608_graduation_3.webp",
+        "assets/images/photos/2608_graduation_4.webp",
+        "assets/images/photos/2608_graduation_5.webp",
+        "assets/images/photos/2608_graduation_6.webp",
+        "assets/images/photos/2608_graduation_7.webp",
+        "assets/images/photos/2608_graduation_8.webp",
+        "assets/images/photos/2608_graduation_9.webp"
+      ]
+    },
+    {
+      "id": "album-2",
+      "date": "2026-08",
+      "title": "Photos at KCCV 2026",
+      "images": [
+        "assets/images/photos/2608_KCCV2026.webp"
+      ]
+    },
+    {
+      "id": "album-3",
+      "date": "2026-07",
+      "title": "Photos at ICML 2026",
+      "images": [
+        "assets/images/photos/2607_ICML2026.webp"
+      ]
+    },
+    {
+      "id": "album-4",
+      "date": "2026-06",
+      "title": "Semester-End Party of KMU CILAB",
+      "images": [
+        "assets/images/photos/2606_semester_end_party_1.webp",
+        "assets/images/photos/2606_semester_end_party_2.webp",
+        "assets/images/photos/2606_semester_end_party_3.webp",
+        "assets/images/photos/2606_semester_end_party_4.webp",
+        "assets/images/photos/2606_semester_end_party_5.webp",
+        "assets/images/photos/2606_semester_end_party_6.webp",
+        "assets/images/photos/2606_semester_end_party_7.webp"
+      ]
+    },
+    {
+      "id": "album-5",
+      "date": "2026-05",
+      "title": "Photos at ICRA 2026",
+      "images": [
+        "assets/images/photos/2605_ICRA2026_1.webp",
+        "assets/images/photos/2605_ICRA2026_2.webp",
+        "assets/images/photos/2605_ICRA2026_3.webp",
+        "assets/images/photos/2605_ICRA2026_4.webp",
+        "assets/images/photos/2605_ICRA2026_5.webp"
+      ]
+    },
+    {
+      "id": "album-6",
+      "date": "2026-03",
+      "title": "Lab Meeting of KMU CILAB",
+      "images": [
+        "assets/images/photos/2603_lab_meeting.webp"
+      ]
+    },
+    {
+      "id": "album-7",
+      "date": "2025-12",
+      "title": "Year-End Party of KMU CILAB",
+      "images": [
+        "assets/images/photos/2512_KMU_CILAB_year_end_party_1.webp",
+        "assets/images/photos/2512_KMU_CILAB_year_end_party_2.webp",
+        "assets/images/photos/2512_KMU_CILAB_year_end_party_3.webp",
+        "assets/images/photos/2512_KMU_CILAB_year_end_party_4.webp",
+        "assets/images/photos/2512_KMU_CILAB_year_end_party_5.webp"
+      ]
+    },
+    {
+      "id": "album-8",
+      "date": "2025-08",
+      "title": "Photos at KCCV 2025",
+      "images": [
+        "assets/images/photos/2508_KCCV2025_1.webp",
+        "assets/images/photos/2508_KCCV2025_2.webp",
+        "assets/images/photos/2508_KCCV2025_3.webp"
+      ]
+    },
+    {
+      "id": "album-9",
+      "date": "2025-08",
+      "title": "Summer of Kookmin University",
+      "images": [
+        "assets/images/photos/2508_KMU_summer_1.webp",
+        "assets/images/photos/2508_KMU_summer_2.webp"
+      ]
+    },
+    {
+      "id": "album-10",
+      "date": "2025-07",
+      "title": "Presentation at Gachon University",
+      "images": [
+        "assets/images/photos/2507_gachon_univ_presentation.webp"
+      ]
+    },
+    {
+      "id": "album-11",
+      "date": "2025-06",
+      "title": "Presentation at ICCAS 2025",
+      "images": [
+        "assets/images/photos/2506_ICCAS_2025_presentation_1.webp",
+        "assets/images/photos/2506_ICCAS_2025_presentation_2.webp",
+        "assets/images/photos/2506_ICCAS_2025_presentation_3.webp"
+      ]
+    },
+    {
+      "id": "album-12",
+      "date": "2025-06",
+      "title": "First Meeting of KMU CILAB",
+      "images": [
+        "assets/images/photos/2506_KMU_CILAB_first_meeting.webp"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "year": 2024,
+      "semester": "Fall",
+      "code": "015680U",
+      "title": "Computer Science Lab",
+      "title_ko": "전산학실습"
+    },
+    {
+      "year": 2025,
+      "semester": "Spring",
+      "code": "1636101",
+      "title": "Fundamentals of Data Structures and Algorithms",
+      "title_ko": "자료구조및알고리즘기초"
+    },
+    {
+      "year": 2024,
+      "semester": "Fall",
+      "code": "0333402",
+      "title": "Data Structures",
+      "title_ko": "자료구조"
+    },
+    {
+      "year": 2026,
+      "semester": "Fall",
+      "code": "0333402",
+      "title": "Data Structures",
+      "title_ko": "자료구조"
+    },
+    {
+      "year": 2025,
+      "semester": "Fall",
+      "code": "1326101",
+      "title": "Operating Systems",
+      "title_ko": "운영체제"
+    },
+    {
+      "year": 2026,
+      "semester": "Fall",
+      "code": "1326101",
+      "title": "Operating Systems",
+      "title_ko": "운영체제"
+    },
+    {
+      "year": 2025,
+      "semester": "Spring",
+      "code": "1326202",
+      "title": "Computer Vision",
+      "title_ko": "컴퓨터비전"
+    },
+    {
+      "year": 2026,
+      "semester": "Spring",
+      "code": "1326202",
+      "title": "Computer Vision",
+      "title_ko": "컴퓨터비전"
+    },
+    {
+      "year": 2025,
+      "semester": "Summer",
+      "code": "1326202",
+      "title": "Computer Vision",
+      "title_ko": "컴퓨터비전"
+    },
+    {
+      "year": 2025,
+      "semester": "Winter",
+      "code": "1326202",
+      "title": "Computer Vision",
+      "title_ko": "컴퓨터비전"
+    },
+    {
+      "year": 2026,
+      "semester": "Summer",
+      "code": "1326202",
+      "title": "Computer Vision",
+      "title_ko": "컴퓨터비전"
+    },
+    {
+      "year": 2025,
+      "semester": "Fall",
+      "code": "1326904",
+      "title": "Deep Learning",
+      "title_ko": "심층학습"
+    },
+    {
+      "year": 2026,
+      "semester": "Fall",
+      "code": "1632701",
+      "title": "Fundamentals of Artificial Intelligence",
+      "title_ko": "인공지능기초"
+    },
+    {
+      "year": 2025,
+      "semester": "Fall",
+      "code": "1647801",
+      "title": "UROP II"
+    }
+  ],
+  "talks": [
+    {
+      "date": "Sep 2025",
+      "title": "Neural Rendering: Creating Reality with AI",
+      "place": "School of Electrical and Electronic Engineering, Yonsei University",
+      "url": ""
+    },
+    {
+      "date": "Jul 2025",
+      "title": "Neural Rendering Using Vision and LiDAR and Its Application in Map Representation",
+      "place": "SOSLAB",
+      "url": ""
+    },
+    {
+      "date": "Jul 2025",
+      "title": "Recent Advances in Computer Vision: Foundation Models, Vision-Language Models and 3D Neural Representations",
+      "place": "School of Computing, Gachon University",
+      "url": ""
+    },
+    {
+      "date": "Apr 2025",
+      "title": "Neural Rendering: NeRF and 3D Gaussian Splatting",
+      "place": "Korea Electronics Technology Institute (KETI)",
+      "url": ""
+    },
+    {
+      "date": "Mar 2025",
+      "title": "Match and Extend: Visual-Based Matching and 3D Reconstruction Technology",
+      "place": "Electronics and Telecommunications Research Institute (ETRI)",
+      "url": ""
+    },
+    {
+      "date": "Jan 2024",
+      "title": "Recent Advances in Computer Vision: Foundation Models, Vision-Language Models and 3D Neural Representations",
+      "place": "School of Electrical and Electronic Engineering, Yonsei University",
+      "url": "https://drive.google.com/file/d/1AS2djykCUuBL5o9tbf6CG_T8U4xLkZlB/view?usp=drive_link"
+    },
+    {
+      "date": "Oct 2023",
+      "title": "Introduction to Image Retrieval: Local Features & beyond",
+      "place": "Department of Electronic Engineering, Jeonbuk National University",
+      "url": "https://drive.google.com/file/d/1fW5CCr2GB1FcbikLkqMRpAipIjUtzOMP/view?usp=drive_link"
+    }
+  ]
+}

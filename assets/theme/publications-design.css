@@ -1,0 +1,117 @@
+/* Publications: keep the two-column cards and semantic badges. */
+#publications { --link: #0076b3; --link-dark: #005c8c; }
+body.theme-dark #publications { --link: #81d2fa; --link-dark: #b9e9ff; }
+#publications .publications-heading { padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+#publications .publications-heading h1 { letter-spacing: -.025em; }
+#publications .publication-author-note > span { color: var(--muted); font-weight: 600; }
+#publications .publication-author-note em { background: transparent; border: 0; border-radius: 6px; padding: 3px 6px; }
+#publications .publication-filter-panel { background: var(--paper); border-color: color-mix(in srgb, var(--line) 82%, transparent); border-radius: 8px; gap: 8px; }
+#publications .publication-filter-panel span { color: var(--text); font-weight: 600; }
+#publications .publication-filter-panel button,
+#publications .publication-filter-panel select { border-radius: 6px; box-shadow: none; font-size: .8rem; font-weight: 600; }
+#publications .publication-filter-panel button { color: var(--link); background: var(--paper); border-color: color-mix(in srgb, var(--line) 72%, transparent); }
+#publications .publication-filter-panel > div:first-child { gap: 6px; }
+#publications .publication-filter-panel > div:first-child > span { margin-right: 2px; }
+#publications .publication-filter-panel button[data-filter-group="region"] { margin-left: 0; border-radius: 6px; }
+#publications .publication-filter-panel button.is-active { color: #fff; background: #0076b3; border-color: #0076b3; }
+#publications .publication-filter-panel button:hover { border-color: var(--link); transform: none; box-shadow: none; }
+#publications .publication-filter-panel button:focus-visible,
+#publications .publication-facets button:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+#publications .publication-facets button { background: var(--paper); border-color: color-mix(in srgb, var(--line) 72%, transparent); border-radius: 6px; color: var(--text); box-shadow: none; font-size: .8rem; }
+#publications .publication-facets button.is-active { background: #0076b3; border-color: #0076b3; color: #fff; }
+#publications .publication-filter-total { background: none; border: 0; padding: 0; color: var(--muted); font-weight: 500; }
+#publications .publication-year { color: var(--text); font-size: 1.35rem; font-weight: 650; letter-spacing: -.025em; border-top: 0; padding-top: 0; padding-bottom: 12px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+#publications .publication-card { background: var(--paper); color: var(--text); border: 1px solid color-mix(in srgb, var(--line) 82%, transparent); border-radius: 8px; padding: 14px; box-shadow: none; }
+#publications .publication-card h3 { color: var(--text); font-weight: 650; line-height: 1.4; margin-top: 5px; margin-bottom: 14px; position: relative; padding-left: 12px; }
+#publications .publication-card h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .2em;
+  width: 4px;
+  height: 1em;
+  border-radius: 4px;
+  background: #009fe8;
+}
+#publications .publication-meta { color: var(--muted); line-height: 1.4; }
+#publications .publication-meta b { color: var(--text); font-weight: 600; }
+#publications .publication-title-en { color: var(--muted); font-weight: 500; }
+#publications .pub-badge { border-radius: 5px; font-size: .68rem; font-weight: 600; }
+#publications .pub-badge.pub-year,
+#publications .pub-badge.badge-region-international,
+#publications .pub-badge.badge-region-domestic { color: var(--muted); background: transparent; box-shadow: inset 0 0 0 1px var(--line); }
+#publications .publication-actions a,
+#publications .publication-actions button { color: var(--link); background: transparent; border: 1px solid color-mix(in srgb, var(--line) 72%, transparent); border-radius: 6px; font-size: .78rem; font-weight: 600; }
+#publications .publication-actions a:hover,
+#publications .publication-actions button:hover { border-color: var(--link); background: var(--panel); }
+#publications .publication-figure { border-radius: 6px; }
+/* Let titles span the card, with figures beside the details below. */
+#publications .publication-card {
+  grid-template-areas: "title title" "subtitle subtitle" "meta figure" "actions figure";
+  grid-template-rows: auto auto auto 1fr;
+  row-gap: 0;
+}
+#publications .publication-body { display: contents; }
+#publications .publication-title-row { grid-area: title; min-width: 0; }
+#publications .publication-title-en { grid-area: subtitle; min-width: 0; }
+#publications .publication-meta { grid-area: meta; min-width: 0; }
+#publications .publication-actions { grid-area: actions; align-self: start; }
+#publications .publication-figure { grid-area: figure; }
+#publications .publication-card-text-only {
+  grid-template-areas: "title" "subtitle" "meta" "actions";
+}
+@media (max-width: 640px) {
+  #publications .publication-card {
+    grid-template-areas: "title" "subtitle" "meta" "actions" "figure";
+    grid-template-rows: auto;
+  }
+  #publications .publication-figure { margin-top: 12px; }
+}
+#publications .publication-card:target { background: var(--paper); border-color: var(--link); outline: 2px solid var(--link); outline-offset: 3px; box-shadow: none; }
+
+/* Preserve publication-type colors in the filter controls. */
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="conference"] { color: var(--type-conference-text); border-color: var(--type-conference-border); }
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="conference"].is-active { color: #fff; background: var(--type-conference-active); border-color: var(--type-conference-active); }
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="journal"] { color: var(--type-journal-text); border-color: var(--type-journal-border); }
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="journal"].is-active { color: #fff; background: var(--type-journal-active); border-color: var(--type-journal-active); }
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="book"] { color: var(--type-book-text); border-color: var(--type-book-border); }
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="book"].is-active { color: #fff; background: var(--type-book-active); border-color: var(--type-book-active); }
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="preprint"] { color: var(--type-preprint-text); border-color: var(--type-preprint-border); }
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="preprint"].is-active { color: #fff; background: var(--type-preprint-active); border-color: var(--type-preprint-active); }
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="workshop"] { color: var(--type-workshop-text); border-color: var(--type-workshop-border); }
+#publications .publication-filter-panel button[data-filter-group="type"][data-filter-value="workshop"].is-active { color: #fff; background: var(--type-workshop-active); border-color: var(--type-workshop-active); }
+
+
+/* Keep all supporting publication text as legible as the main copy. */
+#publications { --muted: var(--text); }
+#publications .publication-updated,
+#publications .publication-author-note em,
+#publications .publication-author-note em b,
+#publications .publication-author-note em strong,
+#publications .facet-row > span,
+#publications .facet-subgroup em,
+#publications .facet-subgroup em span,
+#publications .facet-year-range label,
+#publications .facet-count-total { color: var(--text); }
+#publications .publication-facets button.is-active .facet-count-total { color: #fff; }
+
+/* Section labels echo the home page's Our Vision typography. */
+#publications .publication-author-note > span,
+#publications .publication-filter-panel > div > span,
+#publications .facet-row > span {
+  color: var(--text);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* Match metadata labels to the small uppercase section labels. */
+#publications .publication-meta > span > b {
+  color: var(--text);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  vertical-align: .08em;
+}

@@ -1,0 +1,31 @@
+/* Joining CILAB: restrained guide styling, preserving both language versions. */
+.joining-page { --link: #0076b3; --link-dark: #005c8c; }
+body.theme-dark .joining-page { --link: #81d2fa; --link-dark: #b9e9ff; }
+.joining-page .publications-heading { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.joining-page .publications-heading h1 { letter-spacing: -.025em; }
+body .joining-page .joining-language-tabs { background: transparent; border-color: var(--line); border-radius: 5px; }
+body .joining-page .joining-language-tabs button { color: var(--muted); border-radius: 1px; font-size: .82rem; font-weight: 600; }
+body .joining-page .joining-language-tabs button.is-active { color: #fff; background: #0076b3; }
+body .joining-page .joining-card { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; box-shadow: none; }
+.joining-page .joining-language-panel > .joining-card:first-child { border-top: 3px solid var(--link); }
+.joining-page .joining-card h2 { color: var(--text); font-size: 1.25rem; font-weight: 600; letter-spacing: -.015em; padding-bottom: 12px; border-bottom: 1px solid var(--light-line); }
+.joining-page .joining-card h3 { color: var(--text); font-weight: 600; }
+body .joining-page .joining-card p,
+body .joining-page .joining-card ul { color: var(--text); line-height: 1.55; }
+.joining-page .position-open { color: var(--link); font-weight: 650; }
+.joining-page .keyword-chip-list { gap: 6px; }
+body .joining-page .keyword-chip-list span { background: transparent; color: var(--muted); border-color: var(--line); border-radius: 5px; font-size: .8rem; font-weight: 500; }
+body .joining-page .joining-links a { background: transparent; color: var(--link); border: 1px solid var(--line); border-radius: 5px; font-size: .85rem; font-weight: 600; }
+body .joining-page .joining-links a.joining-links-accent { color: var(--tag-publication-text); background: var(--tag-publication-bg); border-color: var(--tag-publication-border); }
+.joining-page .joining-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+body .joining-page .embed-placeholder { background: transparent; border: 1px solid var(--line); border-radius: 7px; padding: 16px; color: var(--text); }
+.joining-page .embed-placeholder strong { color: var(--text); font-weight: 600; }
+.joining-page .embed-placeholder a { display: inline; padding: 0; min-height: 0; background: none; border: 0; border-radius: 0; font: inherit; color: var(--link); text-decoration: underline; text-underline-offset: 3px; }
+.joining-page .embed-placeholder a strong { color: var(--link); }
+body .joining-page .embed-placeholder .joining-position-note { padding: 0 0 0 12px; background: none; border: 0; border-left: 2px solid var(--line); border-radius: 0; color: var(--muted); font-size: .88rem; }
+.joining-page .drive-embed iframe { border-color: var(--line); border-radius: 5px; }
+@media (max-width: 650px) {
+  body .joining-page .joining-card { padding: 16px; }
+  body .joining-page .embed-placeholder { padding: 12px; }
+  .joining-page .joining-card h2 { font-size: 1.12rem; line-height: 1.4; }
+}

@@ -1,0 +1,109 @@
+/* Team: retain portraits, member order and groups; clarify their visual hierarchy. */
+.team-page {
+  --link: #0076b3;
+  --link-dark: #005c8c;
+  --team-surface: transparent;
+  --team-border: #d5dfe8;
+}
+body.theme-dark .team-page {
+  --link: #81d2fa;
+  --link-dark: #b9e9ff;
+  --team-surface: transparent;
+  --team-border: #35495b;
+}
+.team-page .publications-heading {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.team-page .publications-heading h1 { font-size: 1.9rem; letter-spacing: -.025em; }
+body .team-page .profile-card {
+  padding: 16px 14px 22px;
+  background: var(--team-surface);
+  border: 0;
+  border-radius: 0;
+}
+.team-page .profile-avatar { max-width: 100%; height: auto; aspect-ratio: 1; }
+.team-page .profile-card h2 { font-size: 1.65rem; font-weight: 600; letter-spacing: -.025em; }
+.team-page .profile-subrole { font-size: .94rem; font-weight: 500; }
+.team-page .profile-biography h2 { font-size: 1.4rem; font-weight: 600; }
+body .team-page .profile-biography p { color: var(--text); font-size: 1rem; line-height: 1.65; }
+.team-page .statement-links { padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-weight: 600; }
+.team-page .statement-links a { color: var(--link); text-underline-offset: 3px; }
+.team-page .profile-detail-grid section { padding: 0; border: 0; background: transparent; border-radius: 0; }
+.team-page .profile-detail-grid h3 { font-size: 1rem; font-weight: 600; }
+body .team-page .profile-detail-grid ul { color: var(--text); font-size: .92rem; }
+body .team-page .team-member-card {
+  background: var(--team-surface);
+  border: 1px solid var(--team-border);
+  border-radius: 10px;
+  box-shadow: none;
+}
+.team-page .team-member-card h3 a { color: var(--link); font-weight: 600; }
+.team-page .team-member-card h3 { font-weight: 600; }
+body .team-page .team-members-section > h2,
+body .team-page .team-student-programs > summary { color: var(--text); font-size: 1.25rem; font-weight: 650; letter-spacing: -.015em; }
+body .team-page .team-student-programs > h3 { color: var(--text); font-weight: 600; }
+body .team-page .member-contact-links :is(.member-email-link, .member-scholar-link, .member-home-link) {
+  color: var(--link);
+  background: transparent;
+  border: 1px solid var(--team-border);
+  border-radius: 7px;
+  box-shadow: none;
+}
+body .team-page .member-contact-links :is(a, button):hover,
+body .team-page .member-contact-links :is(a, button):focus-visible { border-color: var(--link); background: var(--panel); }
+body .team-page .team-simple-list { background: var(--team-surface); border-color: var(--team-border); border-radius: 10px; }
+body .team-page .team-simple-list b { color: var(--text); font-weight: 600; }
+.team-page .team-simple-list a,
+.team-page .team-collaborator-list a { color: var(--link); font-weight: 600; }
+.team-page .team-intern-cohort + .team-intern-cohort { padding-top: 12px; border-top: 1px solid var(--team-border); }
+.team-page .team-ugrp-project-label { border-radius: 5px; }
+.team-page .team-open-position-mark { color: var(--link); background: var(--panel); border: 1px solid var(--team-border); border-radius: 7px; }
+body .team-page :is(.profile-card, .team-member-card):target {
+  background: var(--team-surface);
+  border-color: var(--link);
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+  box-shadow: none;
+}
+@media (max-width: 650px) {
+  .team-page .publications-heading h1 { font-size: 1.65rem; }
+  .team-page .profile-detail-grid section { padding: 0; }
+}
+
+/* Open positions retain a distinct fill from member portraits. */
+body .team-page .team-open-position-grid .team-open-position-mark {
+  background: #edf3f8;
+}
+body.theme-dark .team-page .team-open-position-grid .team-open-position-mark {
+  background: #1a2e40;
+}
+
+.team-page .profile-biography { max-width: none; width: 100%; min-width: 0; }
+
+/* Compact the biography column to balance the adjacent profile. */
+body .team-page .profile-biography p { line-height: 1.45; margin-bottom: 12px; }
+.team-page .profile-biography h2 { margin-bottom: 12px; }
+.team-page .statement-links { padding: 10px 0; }
+.team-page .profile-detail-grid { margin-top: 20px; }
+.team-page .profile-detail-grid h3 { margin-bottom: 8px; }
+.team-page .profile-detail-grid ul { line-height: 1.45; }
+.team-page .profile-detail-grid li + li { margin-top: 4px; }
+
+/* Tighten the transition from the leader profile to current members. */
+.team-page .team-profile { padding-bottom: 18px; }
+body.theme-dark .team-page .team-profile,
+body.theme-dark .team-page .profile-card { background: transparent; }
+.team-page #current-lab-members { margin-top: 12px; padding-top: 18px; }
+
+
+/* Highlight the DORI team when arriving from its award news. */
+.team-page #ugrp-2026-dori {
+  scroll-margin-top: calc(var(--sticky-utility-height, 48px) + var(--sticky-nav-height, 56px) + 24px);
+}
+.team-page #ugrp-2026-dori:target {
+  background: var(--panel);
+  outline: 2px solid var(--link);
+  outline-offset: 6px;
+  border-radius: 5px;
+}

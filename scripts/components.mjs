@@ -1,10 +1,12 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {videos,video,youtubeId} from './videos.mjs';
 export {videos,video};
 export const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 export const out=path.join(root,'dist');
+const headerStyleVersion=createHash('sha256').update(await fs.readFile(path.join(root,'assets/theme/header-design.css'))).digest('hex').slice(0,12);
 export const data=JSON.parse(await fs.readFile(path.join(root,'data/site.json'),'utf8'));
 export const lab=JSON.parse(await fs.readFile(path.join(root,'data/lab.json'),'utf8'));
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -28,7 +30,7 @@ export function shell(key,body){
   const design=key==='index'?'home':key;
   const css=['styles','header-design',...(key!=='404'?[design+'-design']:[]),'site-refresh'];
   const scripts=[...(key==='publications'?['publications']:[]),...(key==='index'?['home-video-scroll']:[]),...(key==='gallery'?['gallery-carousel']:[]),...(key==='teaching'?['teaching']:[]),'lightbox','header-stickiness','nav-toggle'];
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${title} | CILAB · Kookmin University</title><meta name="description" content="${lab.name}, Kookmin University. Physical AI through multimodal perception, spatial intelligence, and embodied action."><meta name="theme-color" content="#0076b3"><link rel="icon" type="image/png" href="assets/brand/favicon-32x32.png">${css.map(c=>`<link rel="stylesheet" href="assets/theme/${c}.css">`).join('')}${key==='contact'?'<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">':''}<link rel="stylesheet" href="assets/site.css"></head><body class="${key==='index'?'home-brand':''}" data-page="${key}"><a class="cilab-skip-link" href="#main">Skip to content</a>${header(key)}${body}${footer()}${scripts.map(s=>`<script src="assets/theme/${s}.js"></script>`).join('')}<script src="assets/site.js"></script>${key==='contact'?'<script src="assets/vendor/leaflet/leaflet.js"></script><script src="assets/contact-map.js"></script>':''}</body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${title} | CILAB · Kookmin University</title><meta name="description" content="${lab.name}, Kookmin University. Physical AI through multimodal perception, spatial intelligence, and embodied action."><meta name="theme-color" content="#0076b3"><link rel="icon" type="image/png" href="assets/brand/favicon-32x32.png">${css.map(c=>`<link rel="stylesheet" href="assets/theme/${c}.css${c==='header-design'?'?v='+headerStyleVersion:''}">`).join('')}${key==='contact'?'<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">':''}<link rel="stylesheet" href="assets/site.css"></head><body class="${key==='index'?'home-brand':''}" data-page="${key}"><a class="cilab-skip-link" href="#main">Skip to content</a>${header(key)}${body}${footer()}${scripts.map(s=>`<script src="assets/theme/${s}.js"></script>`).join('')}<script src="assets/site.js"></script>${key==='contact'?'<script src="assets/vendor/leaflet/leaflet.js"></script><script src="assets/contact-map.js"></script>':''}</body></html>`;
 }
 export const newsKo=[
  '**ACCV 2026**에 논문 **1편**이 채택되었습니다.',

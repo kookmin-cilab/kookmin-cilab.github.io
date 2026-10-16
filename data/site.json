@@ -1122,99 +1122,118 @@
     {
       "year": 2024,
       "semester": "Fall",
-      "code": "015680U",
-      "title": "Computer Science Lab",
-      "title_ko": "전산학실습"
+      "title": "C Programming Lab",
+      "title_ko": "전산학실습",
+      "level": "undergraduate"
     },
     {
       "year": 2025,
       "semester": "Spring",
-      "code": "1636101",
       "title": "Fundamentals of Data Structures and Algorithms",
-      "title_ko": "자료구조및알고리즘기초"
+      "title_ko": "자료구조및알고리즘기초",
+      "level": "undergraduate"
     },
     {
       "year": 2024,
       "semester": "Fall",
-      "code": "0333402",
       "title": "Data Structures",
-      "title_ko": "자료구조"
+      "title_ko": "자료구조",
+      "level": "undergraduate"
     },
     {
       "year": 2026,
       "semester": "Fall",
-      "code": "0333402",
       "title": "Data Structures",
-      "title_ko": "자료구조"
+      "title_ko": "자료구조",
+      "level": "undergraduate"
     },
     {
       "year": 2025,
       "semester": "Fall",
-      "code": "1326101",
       "title": "Operating Systems",
-      "title_ko": "운영체제"
+      "title_ko": "운영체제",
+      "level": "undergraduate"
     },
     {
       "year": 2026,
       "semester": "Fall",
-      "code": "1326101",
       "title": "Operating Systems",
-      "title_ko": "운영체제"
+      "title_ko": "운영체제",
+      "level": "undergraduate"
     },
     {
       "year": 2025,
       "semester": "Spring",
-      "code": "1326202",
       "title": "Computer Vision",
-      "title_ko": "컴퓨터비전"
+      "title_ko": "컴퓨터비전",
+      "level": "undergraduate"
     },
     {
       "year": 2026,
       "semester": "Spring",
-      "code": "1326202",
       "title": "Computer Vision",
-      "title_ko": "컴퓨터비전"
+      "title_ko": "컴퓨터비전",
+      "level": "undergraduate"
     },
     {
       "year": 2025,
       "semester": "Summer",
-      "code": "1326202",
       "title": "Computer Vision",
-      "title_ko": "컴퓨터비전"
+      "title_ko": "컴퓨터비전",
+      "level": "undergraduate"
     },
     {
       "year": 2025,
       "semester": "Winter",
-      "code": "1326202",
       "title": "Computer Vision",
-      "title_ko": "컴퓨터비전"
+      "title_ko": "컴퓨터비전",
+      "level": "undergraduate"
     },
     {
       "year": 2026,
       "semester": "Summer",
-      "code": "1326202",
       "title": "Computer Vision",
-      "title_ko": "컴퓨터비전"
+      "title_ko": "컴퓨터비전",
+      "level": "undergraduate"
     },
     {
       "year": 2025,
       "semester": "Fall",
-      "code": "1326904",
       "title": "Deep Learning",
-      "title_ko": "심층학습"
+      "title_ko": "심층학습",
+      "level": "undergraduate"
     },
     {
       "year": 2026,
       "semester": "Fall",
-      "code": "1632701",
       "title": "Fundamentals of Artificial Intelligence",
-      "title_ko": "인공지능기초"
+      "title_ko": "인공지능기초",
+      "level": "undergraduate"
     },
     {
       "year": 2025,
       "semester": "Fall",
-      "code": "1647801",
-      "title": "UROP II"
+      "title": "UROP II",
+      "level": "undergraduate"
+    },
+    {
+      "year": 2026,
+      "semester": "Spring",
+      "level": "graduate",
+      "title": "3D Computer Vision",
+      "title_ko": "3차원 컴퓨터 비전"
+    },
+    {
+      "year": 2026,
+      "semester": "Spring",
+      "level": "undergraduate",
+      "title": "UROP I"
+    },
+    {
+      "year": 2025,
+      "semester": "Spring",
+      "level": "graduate",
+      "title": "AR/XR/VR"
     }
   ],
   "talks": [
@@ -1259,6 +1278,30 @@
       "title": "Introduction to Image Retrieval: Local Features & beyond",
       "place": "Department of Electronic Engineering, Jeonbuk National University",
       "url": "https://drive.google.com/file/d/1fW5CCr2GB1FcbikLkqMRpAipIjUtzOMP/view?usp=drive_link"
+    },
+    {
+      "date": "2026-05-15",
+      "title": "Physical AI 글로벌 동향 및 핵심 기술 트렌드 분석",
+      "place": "다올투자증권",
+      "url": ""
+    },
+    {
+      "date": "2026-05-22",
+      "title": "학부생도 시작할 수 있는 연구 길잡이: 현업에서 원하는 문제 해결 역량과 인재상",
+      "place": "성공회대학교",
+      "url": ""
+    },
+    {
+      "date": "2026-03-25",
+      "title": "3D Reconstruction: From Traditional Methods to Modern Approaches",
+      "place": "Gachon University",
+      "url": ""
+    },
+    {
+      "date": "2026-04-21",
+      "title": "From Pixels to Actions: How Robots Learn the World",
+      "place": "Korea Electronics Technology Institute (KETI)",
+      "url": ""
     }
   ]
 }

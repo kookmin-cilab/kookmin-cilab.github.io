@@ -19,7 +19,7 @@ node scripts/check.mjs   # 빌드 및 내부 링크·이미지·콘텐츠 검증
 
 ## 페이지
 
-Home, Team, News, Research, Publications, Projects, Teaching, Gallery, Contact, Joining CILAB의 10개 페이지입니다. 본문은 빌드 시 HTML로 생성됩니다. Home은 Welcome → Lab Openings → 사진 2장 → 최신 소식 → 연구 영상 순서를 따릅니다. Team은 원형 교수 사진, 멤버 카드, 메일·Google Scholar·홈페이지 SVG 아이콘을 제공합니다.
+Home, Team, News, Research, Publications, Projects, Teaching, Talks, Gallery, Contact, Joining CILAB의 11개 페이지입니다. 본문은 빌드 시 HTML로 생성됩니다. Home은 Welcome → Lab Openings → 사진 2장 → 최신 소식 → 연구 영상 순서를 따릅니다. Team은 원형 교수 사진, 멤버 카드, 메일·Google Scholar·홈페이지 SVG 아이콘을 제공합니다.
 
 Publications는 크게 표시한 한 단 목록이며 Region·Type·연도·Venue 다중 태그, 연도 범위, 건수, Default Filter, Show all, 논문별 Bib 복사를 지원합니다. Default Filter 옆에는 기본 조회 범위(국제 학회·저널·프리프린트, 전체 연도·학회)를 안내합니다. Conference는 CVPR·ICCV·ICRA·IROS·ACCV·BMVC, Journal은 TPAMI·TIV·Scientific Reports·IJCAS·IEEE ACCESS로 묶었고 나머지는 Others 버튼 하나로 필터링합니다. Book 및 CILAB/External Collaborations 필터는 제거했습니다. 키워드 검색도 같은 필터에 연결했습니다. 기본값은 International + Conference/Journal/Preprint이므로 27편 중 Workshop 1편을 제외한 26편을 표시합니다. Show all은 전체 27편을 표시합니다. BibTeX는 확인된 제목·저자·학회·연도로 생성됩니다.
 
@@ -55,11 +55,11 @@ Publications는 크게 표시한 한 단 목록이며 Region·Type·연도·Venu
 
 기존 YouTube 영상 4개와 [KMU-CILAB 채널](https://www.youtube.com/channel/UCKfMj6B_uX_9tkErT2njT4A)의 RayOcc·VG3T 영상 2개를 연결했습니다. RoomNeRF는 영상 목록에서 제외했으며 논문 자체는 Publications에 유지합니다. 상단 YouTube 링크는 `data/lab.json`의 `youtubeChannel`에서 관리합니다. YouTube에서 외부 사이트의 재생을 허용한 공개 또는 일부 공개 영상의 주소를 사용하세요.
 
-### Projects와 Teaching
+### Projects, Teaching, Talks
 
 Projects는 원본의 제목·상태 배지·항목별 메타데이터·오른쪽 그림 형식입니다. `program`, `program_ko`, `role`, `role_ko`, `funding_ko`를 추가할 수 있습니다. 확인되지 않은 연구 역할은 임의로 표시하지 않습니다. 진행/완료 필터와 한·영 전환을 지원합니다.
 
-Courses는 `year`, `semester`, `code`, `title`, `title_ko`, `main`, `ta`, `url`, `description`을 지원합니다. 연도·학기별 카드, 목차, 연도 접기/펼치기는 원본 Teaching 구성을 따릅니다. 기존 `term` 형식도 지원합니다. Invited Talks는 원본의 Invited Talk 배지와 Date·Event·Speaker·Slides 형식입니다.
+Courses는 `year`, `semester`, `level` (`undergraduate` 또는 `graduate`), `title`, `title_ko`, `ta`, `url`, `description`을 지원합니다. 학부·대학원으로 나눈 뒤 연도·학기별 카드를 표시하며, 연도 접기/펼치기를 지원합니다. 학정번호는 표시하지 않습니다. Talks는 별도 페이지에서 최신순으로 정리하며 날짜·제목·초청기관·자료 링크를 표시합니다. 정확한 강연일은 `YYYY-MM-DD`, 월만 확인된 경우는 `MMM YYYY` 형식으로 기록합니다.
 
 ### 연구 소개와 연락처
 
@@ -67,12 +67,14 @@ Courses는 `year`, `semester`, `code`, `title`, `title_ko`, `main`, `ta`, `url`,
 
 Contact 지도는 Leaflet과 OpenStreetMap을 사용하며 Google Maps·Naver Map 길찾기 링크를 제공합니다. Google Maps의 미래관 위치 코드 `8Q98JX6W+2R`에서 좌표를 확인했습니다. 지도는 건물 위치를 나타내며 703호는 마커 안내에 표시됩니다.
 
-Teaching에는 사용자가 제공한 수업 목록에서 2024–2026년의 14개 개설 내역을 옮겼습니다. 연도·학기·과목코드·한국어 과목명은 첨부 자료를 따르며, 영어 과목명은 표시용 번역입니다. 공학인증 표기는 제외했습니다. 확인된 초청강연 7건은 별도로 유지합니다. 아래 형식으로 `courses`에 추가하면 강의가 표시됩니다.
+Teaching에는 2024–2026년의 17개 개설 내역(학부 15개, 대학원 2개)을 반영했습니다. 연도·학기·한국어 과목명은 사용자가 제공한 자료를 따르며, 영어 과목명은 표시용 번역입니다. 공학인증 표기는 제외했습니다. Talks에는 확인된 초청강연 11건을 표시합니다. 아래 형식으로 `courses`에 추가하면 강의가 표시됩니다.
 
 ```json
 {
   "title": "실제 강의명",
-  "term": "실제 개설 학기",
+  "year": 2026,
+  "semester": "Spring",
+  "level": "undergraduate",
   "description": "강의 소개",
   "url": "https://강의자료주소"
 }

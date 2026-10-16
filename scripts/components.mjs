@@ -11,7 +11,7 @@ export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;'
 export const md=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
 export const ext=(url,text,attributes='')=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" ${attributes}>${text}</a>`;
 export const image=(src,alt,cls='',eager=false,zoomable=true)=>`<img src="${esc(src)}" alt="${esc(alt)}"${cls?` class="${cls}"`:''} loading="${eager?'eager':'lazy'}" ${eager?'fetchpriority="high" ':''}decoding="async"${zoomable?'':' data-lightbox="off"'}>`;
-export const nav=[['index','Home'],['team','Team'],['news','News'],['research','Research'],['publications','Publications'],['projects','Projects'],['teaching','Teaching'],['gallery','Gallery'],['contact','Contact'],['joining','Joining CILAB']];
+export const nav=[['index','Home'],['team','Team'],['news','News'],['research','Research'],['publications','Publications'],['projects','Projects'],['teaching','Teaching'],['talks','Talks'],['gallery','Gallery'],['contact','Contact'],['joining','Joining CILAB']];
 export const heading=(title,description='')=>`<div class="publications-heading"><div><h1>${title}</h1>${description?`<p>${description}</p>`:''}</div></div>`;
 export const yearValues=items=>[...new Set(items.map(p=>p.year))].sort((a,b)=>b-a);
 export const publicationUrl=(filters={},paperId='publication-results')=>'publications.html?'+new URLSearchParams({region:'all',type:'all',year:'all',venue:'all',...filters}).toString().replaceAll('+','%20')+'#'+paperId;

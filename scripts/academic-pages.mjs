@@ -1,4 +1,4 @@
-import {data,lab,esc,ext,image} from './components.mjs';
+import {data,esc,ext,image} from './components.mjs';
 
 const localized=(en,ko=en)=>`data-project-en="${esc(en)}" data-project-ko="${esc(ko)}"`;
 const text=(en,ko=en,tag='span')=>`<${tag} ${localized(en,ko)}>${esc(en)}</${tag}>`;
@@ -26,13 +26,17 @@ export const projectsPage=`<main id="main" class="page"><section id="funded-proj
 const courses=data.courses.map(c=>({...c,year:c.year||String(c.term||'').match(/\d{4}/)?.[0],semester:c.semester||String(c.term||'').replace(/\d{4}/,'').trim()}));
 const semesterOrder={Winter:4,Fall:3,Summer:2,Spring:1};
 courses.sort((a,b)=>Number(b.year)-Number(a.year)||(semesterOrder[b.semester]||0)-(semesterOrder[a.semester]||0));
-const courseYears=[...new Set(courses.map(c=>c.year).filter(Boolean))].sort((a,b)=>b-a);
-function course(c){return `<article class="teaching-card${c.main?' teaching-main':''}"><div class="teaching-title-row">${c.code?`<span class="pub-badge pub-year">${esc(c.code)}</span>`:''}${c.main?'<span class="pub-badge featured">Main</span>':''}<h3>${esc(c.title)}${c.title_ko?`<span lang="ko">(${esc(c.title_ko)})</span>`:''}</h3></div><div class="publication-meta">${c.year?`<span><b>Year</b>${esc(c.year)}</span>`:''}${c.semester?`<span><b>Semester</b>${esc(c.semester)}</span>`:''}${c.ta?`<span><b>TA</b>${esc(c.ta)}</span>`:''}${c.description?`<span>${esc(c.description)}</span>`:''}</div>${c.url?`<div class="publication-actions">${ext(c.url,'Material')}</div>`:''}</article>`;}
-const courseGroups=courseYears.map((year,i)=>`<details id="teaching-${year}" class="teaching-year-group" data-teaching-year="${year}"${i===0?' open':''}><summary class="publication-year">${year}</summary>${[...new Set(courses.filter(c=>c.year===year).map(c=>c.semester))].map(semester=>`<div class="teaching-semester">${esc(semester)}</div><div class="teaching-list">${courses.filter(c=>c.year===year&&c.semester===semester).map(course).join('')}</div>`).join('')}</details>`).join('');
-function talk(t,i){return `<article class="teaching-card" id="talk-${i}"><div class="teaching-title-row"><span class="pub-badge">Invited Talk</span><h3>${esc(t.title)}</h3></div><div class="publication-meta"><span><b>Date</b>${esc(t.date)}</span><span><b>Event</b>${esc(t.place)}</span><span><b>Speaker</b>Seongwon Lee</span></div>${t.url?`<div class="publication-actions">${ext(t.url,'Slides')}</div>`:''}</article>`;}
+const courseLevels=[['undergraduate','Undergraduate Courses'],['graduate','Graduate Courses']];
+const yearsFor=level=>[...new Set(courses.filter(c=>c.level===level).map(c=>c.year))].sort((a,b)=>b-a);
+const yearId=(level,year)=>level==='undergraduate'?`teaching-${year}`:`teaching-graduate-${year}`;
+function course(c){return `<article class="teaching-card"><div class="teaching-title-row"><h4>${esc(c.title)}${c.title_ko?`<span lang="ko">(${esc(c.title_ko)})</span>`:''}</h4></div>${c.ta||c.description?`<div class="publication-meta">${c.ta?`<span><b>TA</b>${esc(c.ta)}</span>`:''}${c.description?`<span>${esc(c.description)}</span>`:''}</div>`:''}${c.url?`<div class="publication-actions">${ext(c.url,'Material')}</div>`:''}</article>`;}
+function courseGroup(level,label){
+  return `<section class="teaching-level" id="${level}-courses"><h2>${label}</h2>${yearsFor(level).map((year,i)=>{
+    const offerings=courses.filter(c=>c.level===level&&c.year===year);
+    return `<details id="${yearId(level,year)}" class="teaching-year-group" data-teaching-year="${level}-${year}"${i===0?' open':''}><summary class="publication-year"><h3>${year}</h3></summary>${[...new Set(offerings.map(c=>c.semester))].map(semester=>`<p class="teaching-semester">${esc(semester)}</p><div class="teaching-list">${offerings.filter(c=>c.semester===semester).map(course).join('')}</div>`).join('')}</details>`;
+  }).join('')}</section>`;
+}
 export const teachingPage=`<main id="main" class="page"><section id="teaching" class="publications-section teaching-section">
-  <div class="publications-heading"><div><h1>Teaching</h1><p>${courses.length} course offerings · ${data.talks.length} invited talks</p></div>${courseYears.length?'<div class="teaching-heading-actions"><button class="teaching-toggle-all" type="button" aria-expanded="false">Expand all years</button></div>':''}</div>
-  <div class="teaching-layout"><aside class="teaching-toc"><nav aria-label="Teaching contents"><p>Contents</p><ol>${courseYears.length?courseYears.map(year=>`<li><a href="#teaching-${year}" data-index="${year}" data-teaching-target-year="${year}">Courses</a></li>`).join(''):'<li><a href="#courses" data-index="Courses">Courses</a></li>'}<li><a href="#invited-talks" data-index="Talks">Invited Talks</a></li></ol></nav></aside>
-  <div class="teaching-content-stack"><section id="courses">${courseGroups||`<h2 class="publication-year teaching-section-heading">Courses</h2><div class="teaching-list">${courses.length?courses.map(course).join(''):`<article class="teaching-card"><div class="teaching-title-row"><h3>Course information</h3></div><div class="publication-meta"><span>Course details will be added here.</span></div><div class="publication-actions"><a href="mailto:${lab.email}">Contact</a></div></article>`}</div>`}</section>
-  <section id="invited-talks" class="teaching-projects"><h2 class="publication-year teaching-section-heading">Invited Talks</h2><p class="teaching-projects-meta">${data.talks.length} entries</p><div class="teaching-list">${data.talks.map(talk).join('')}</div></section>
-  </div></div></section></main>`;
+  <div class="publications-heading"><div><h1>Teaching</h1><p>Undergraduate and graduate courses at Kookmin University.</p></div><div class="teaching-heading-actions"><button class="teaching-toggle-all" type="button" aria-expanded="false">Expand all years</button></div></div>
+  <div class="teaching-layout"><aside class="teaching-toc"><nav aria-label="Teaching contents"><p>Courses</p>${courseLevels.map(([level,label])=>`<a class="teaching-level-link" href="#${level}-courses">${label}</a><ol>${yearsFor(level).map(year=>`<li><a href="#${yearId(level,year)}" data-index="${year}" data-teaching-target-year="${level}-${year}">Courses</a></li>`).join('')}</ol>`).join('')}<a class="teaching-talks-link" href="talks.html">Invited Talks →</a></nav></aside>
+  <div id="courses" class="teaching-content-stack">${courseLevels.map(([level,label])=>courseGroup(level,label)).join('')}</div></div></section></main>`;

@@ -15,8 +15,8 @@ body.theme-dark #teaching { --link: #81d2fa; --link-dark: #b9e9ff; --teaching-bo
 #teaching .teaching-semester { color: var(--muted); font-size: .85rem; font-weight: 600; }
 #teaching .teaching-card { padding: 16px; background: var(--paper); border: 1px solid var(--teaching-border); border-radius: 10px; box-shadow: none; }
 #teaching .teaching-card.teaching-main { border-top: 3px solid var(--link); }
-#teaching .teaching-title-row h3 { color: var(--ink); font-weight: 600; }
-#teaching .teaching-title-row h3 span { font-weight: 400; font-size: .88rem; line-height: 1.5; margin-top: 3px; }
+#teaching .teaching-title-row h4 { margin: 0; color: var(--ink); font-size: 1rem; line-height: 1.5; font-weight: 600; }
+#teaching .teaching-title-row h4 span { display: block; color: var(--muted); font-weight: 400; font-size: .88rem; line-height: 1.5; margin-top: 3px; }
 #teaching .pub-badge { border-radius: 5px; font-size: .68rem; font-weight: 600; padding: 3px 6px; }
 #teaching .pub-badge.pub-year { background: #0076b3; color: #fff; }
 #teaching .pub-badge.featured { color: var(--link); background: transparent; box-shadow: inset 0 0 0 1px var(--teaching-border); }
@@ -34,3 +34,16 @@ body.theme-dark #teaching { --link: #81d2fa; --link-dark: #b9e9ff; --teaching-bo
   #teaching .teaching-heading-actions { align-items: flex-start; }
   #teaching .teaching-section-heading { font-size: 1.25rem; }
 }
+
+#teaching .teaching-level + .teaching-level { margin-top: 42px; padding-top: 28px; border-top: 1px solid var(--line); }
+#teaching .teaching-level > h2 { margin: 0 0 20px; font-size: 1.45rem; line-height: 1.3; }
+#teaching .teaching-year-group > summary h3 { display: inline; margin: 0; font: inherit; }
+#teaching .teaching-card { min-height: 0; }
+#teaching .teaching-title-row { margin-bottom: 0; }
+#teaching .teaching-card .publication-meta { margin-top: 10px; }
+#teaching .teaching-toc .teaching-level-link,
+#teaching .teaching-toc .teaching-talks-link { display: block; }
+#teaching .teaching-toc .teaching-level-link::before,
+#teaching .teaching-toc .teaching-talks-link::before { content: none; }
+#teaching .teaching-toc ol { margin-bottom: 18px; }
+#teaching .teaching-toc .teaching-talks-link { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--line); }

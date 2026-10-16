@@ -5,7 +5,7 @@ import {build,root,out} from './build.mjs';
 import {videos,youtubeId} from './videos.mjs';
 await build();
 const data=JSON.parse(await fs.readFile(path.join(root,'data/site.json'),'utf8'));
-const pages=['index','team','news','research','publications','projects','teaching','gallery','contact','joining'];
+const pages=['index','team','news','research','publications','projects','teaching','talks','gallery','contact','joining'];
 const deploymentPrefix='/'+(process.env.BASE_PATH||'').replace(/^\/+|\/+$/g,'')+'/';
 const prefix=deploymentPrefix==='//'?'/':deploymentPrefix;
 const documents=new Map();

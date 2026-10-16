@@ -3,8 +3,6 @@
   const institution = document.querySelector(".institution-bar");
   const lab = document.querySelector(".lab-header");
   const nav = document.querySelector(".primary-nav");
-  const wordmark = document.querySelector(".cilab-wordmark");
-  const wordmarkText = wordmark && wordmark.querySelector("span");
   let preserveHashAlignment = false;
   if (!header || !institution || !lab || !nav) return;
 
@@ -27,18 +25,6 @@
     const threshold = institution.offsetHeight + lab.offsetHeight;
     const compact = window.scrollY >= threshold || preserveHashAlignment;
     document.body.classList.toggle("header-compact-sticky", compact);
-    if (wordmark && wordmarkText) {
-      wordmark.href = compact ? wordmark.dataset.compactHref : wordmark.dataset.defaultHref;
-      wordmarkText.textContent = compact ? wordmark.dataset.compactLabel : wordmark.dataset.defaultLabel;
-      wordmark.setAttribute("aria-label", wordmarkText.textContent);
-      if (compact || new URL(wordmark.href).origin === window.location.origin) {
-        wordmark.removeAttribute("target");
-        wordmark.removeAttribute("rel");
-      } else {
-        wordmark.setAttribute("target", "_blank");
-        wordmark.setAttribute("rel", "noopener noreferrer");
-      }
-    }
   }
 
   function alignHashTarget() {

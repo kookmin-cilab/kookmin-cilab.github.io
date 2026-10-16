@@ -2,13 +2,9 @@
 [hidden] { display: none !important; }
 .cilab-skip-link { position: fixed; left: 16px; top: -80px; z-index: 10000; padding: 10px 16px; background: var(--paper); color: var(--link); border: 2px solid var(--link); }
 .cilab-skip-link:focus { top: 10px; }
-.cilab-wordmark::before { display: block; }
-.lab-mark { grid-template-columns: 150px minmax(0,1fr); }
-.lab-mark .lab-logo-static img { width: 150px; height: auto; max-height: 86px; object-fit: contain; border: 0; border-radius: 0; }
-.lab-logo-static { display: inline-flex; grid-column: 1; align-self: center; cursor: default; }
 .lab-title-link { color: var(--text); }
 .footer-brand-mark img { width: 100px; height: auto; object-fit: contain; border-radius: 5px; background: #fff; padding: 5px; }
-body.theme-dark .lab-logo-static, body.theme-dark .footer-brand-mark img { background: #fff; border-radius: 5px; padding: 6px; }
+body.theme-dark .footer-brand-mark img { background: #fff; border-radius: 5px; padding: 6px; }
 /* Home photos retain the upstream 16:10 ratio, on desktop and mobile. */
 .home-image-pair .home-photo { overflow: hidden; border-radius: 16px; }
 .cilab-video-item { min-width: 0; }
@@ -88,8 +84,6 @@ body.theme-dark .lab-logo-static, body.theme-dark .footer-brand-mark img { backg
   #research .research-method-card { grid-template-columns: minmax(0,1fr); gap: 24px; }
   #publications .publication-card { grid-template-columns: minmax(0,1fr) 240px; }
   #publications .publication-card-text-only { grid-template-columns: minmax(0,1fr); }
-  .lab-mark { grid-template-columns: 115px minmax(0,1fr); }
-  .lab-mark .lab-logo-static img { width: 115px; }
   .cilab-research-video-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 @media(max-width:640px) {
@@ -100,8 +94,6 @@ body.theme-dark .lab-logo-static, body.theme-dark .footer-brand-mark img { backg
   #publications .publication-card { grid-template-columns: minmax(0,1fr); padding: 18px; }
   #publications .publication-card h3 { font-size: 1.08rem; }
   #publications .publication-figure { width: 100%; min-height: 0; box-sizing: border-box; }
-  .lab-mark { grid-template-columns: 86px minmax(0,1fr); }
-  .lab-mark .lab-logo-static img { width: 86px; }
   .cilab-research-video-grid, .research-interest-grid { grid-template-columns: 1fr; }
   .cilab-subsection-heading h2 { font-size: 1.5rem; }
 }

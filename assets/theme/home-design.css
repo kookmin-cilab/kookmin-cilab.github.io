@@ -114,26 +114,16 @@ body.theme-dark .home-page .home-recruiting { border-color: var(--line); }
 .home-page .home-news .news-tag { vertical-align: baseline; }
 body.theme-dark .home-page .home-news li { background: transparent; }
 
-/* Small brand accents keep the introduction open and the action clear. */
-.home-page h1.home-kicker::after {
-  content: '';
-  display: block;
-  width: 96px;
-  height: 4px;
-  margin-top: 16px;
-  border-radius: 3px;
-  background: linear-gradient(to right, #009fe8 0 54%, transparent 54% 59%, #ffd21c 59% 79%, transparent 79% 84%, #f53670 84% 100%);
-}
-.home-page .home-recruiting .news-tag::before {
-  content: '';
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  margin-right: 7px;
-  border-radius: 50%;
-  background: #ffd21c;
-  vertical-align: 1px;
-}
+/* A quiet research pathway gives the welcome its own visual identity. */
+.home-page h1.home-kicker::after { content: none; }
+.home-page .home-research-path { display: flex; align-items: center; gap: clamp(8px, 2vw, 18px); width: fit-content; max-width: 100%; padding: 10px 14px; margin: 0 0 22px; border: 1px solid #dce6e2; border-radius: 7px; background: #f6f9f8; font-size: clamp(.72rem, 2.8vw, .86rem); line-height: 1.35; }
+.home-page .home-research-path a { display: inline-flex; align-items: center; gap: 7px; color: #315f55; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.home-page .home-research-path a::before { content: ''; width: 6px; height: 6px; border: 1.5px solid currentColor; border-radius: 50%; flex: 0 0 auto; }
+.home-page .home-research-path > span { color: #7f9991; }
+.home-page .home-research-path a:hover { color: #193f35; text-decoration: underline; text-underline-offset: 3px; }
+.home-page .home-research-path a:focus-visible { outline: 2px solid #315f55; outline-offset: 4px; border-radius: 2px; }
+.home-page .home-recruiting .news-tag::before { content: none; }
+.home-page .home-research-videos .home-section-heading h2::before { background: #315f55; }
 body .home-page .home-recruiting > a {
   background: #0076b3;
   border-color: #0076b3;

@@ -24,10 +24,11 @@ body.header-compact-sticky .site-header .primary-nav { box-shadow: none; }
   .site-header .nav-toggle { font-weight: 600; }
 }
 
-/* A compact, static logo replaces the utility toolbar. */
+/* A compact logo links back to the homepage. */
 .site-header .institution-inner { flex-direction: row; justify-content: flex-start; min-height: 36px; padding-top: 6px; padding-bottom: 6px; }
-.cilab-top-logo { display: flex; align-items: center; cursor: default; }
-.cilab-top-logo img { display: block; width: 60px; height: 20px; object-fit: contain; cursor: default; }
+.cilab-top-logo { display: flex; align-items: center; cursor: pointer; }
+.cilab-top-logo:focus-visible { outline: 2px solid var(--nav-accent); outline-offset: 4px; border-radius: 2px; }
+.cilab-top-logo img { display: block; width: 60px; height: 20px; object-fit: contain; cursor: inherit; }
 .site-header .lab-mark { display: block; }
 .site-header .lab-title-block { grid-column: auto; }
 .site-header .lab-header { min-height: 104px; }

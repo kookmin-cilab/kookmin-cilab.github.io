@@ -13,7 +13,7 @@ function authors(p){
   return p.authors.replace(/\*/g,'†').replace(/,?\s+and\s+/g,', ').split(',').map(a=>a.trim()).filter(Boolean).map((name,i)=>{
     const plain=name.replace(/†/g,'');
     const member=team.find(m=>m.name===plain);
-    const label=member?`<a class="publication-member-link" href="${memberUrl(member)}" aria-label="View ${esc(plain)} in Team"><strong>${esc(plain)}</strong></a>`:esc(plain);
+    const label=member?`<a class="publication-member-link" href="${memberUrl(member)}" aria-label="View ${esc(plain)} in Team">${esc(plain)}</a>`:esc(plain);
     return label+(i===0?'*':'')+(name.includes('†')?'†':'');
   }).join(', ');
 }
@@ -49,7 +49,7 @@ function venueGroup(title,venues){
 }
 
 export const pubPage=`<main id="main" class="page section-page"><section id="publications" class="publications-section">
-  <div class="publications-heading"><h1>Publications</h1><div class="publication-author-note"><span>Author notes</span><em><b>*</b> First author</em><em><b>†</b> Corresponding author</em><em><strong>bold</strong> CILAB member</em></div></div>
+  <div class="publications-heading"><h1>Publications</h1><div class="publication-author-note"><span>Author notes</span><em><b>*</b> First author</em><em><b>†</b> Corresponding author</em><em>Linked authors: CILAB members</em></div></div>
   <div class="publication-filter-panel" aria-label="Publication filters">
     <div><span>Region</span>${['all','international','domestic'].map(v=>button('region',v,v[0].toUpperCase()+v.slice(1))).join('')}</div>
     <div><span>Type</span>${['all','conference','journal','preprint','workshop'].map(v=>button('type',v,v[0].toUpperCase()+v.slice(1))).join('')}</div>

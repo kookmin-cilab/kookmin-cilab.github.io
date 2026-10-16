@@ -6,7 +6,7 @@ import {videos,video,youtubeId} from './videos.mjs';
 export {videos,video};
 export const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 export const out=path.join(root,'dist');
-const styleVersions=Object.fromEntries(await Promise.all(['header-design','home-design'].map(async name=>[name,createHash('sha256').update(await fs.readFile(path.join(root,`assets/theme/${name}.css`))).digest('hex').slice(0,12)])));
+const styleVersions=Object.fromEntries(await Promise.all(['header-design','home-design','site-refresh'].map(async name=>[name,createHash('sha256').update(await fs.readFile(path.join(root,`assets/theme/${name}.css`))).digest('hex').slice(0,12)])));
 export const data=JSON.parse(await fs.readFile(path.join(root,'data/site.json'),'utf8'));
 export const lab=JSON.parse(await fs.readFile(path.join(root,'data/lab.json'),'utf8'));
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -56,7 +56,7 @@ export const newsKo=[
 function newsContent(description,n){
   const destination=n.publicationFilters||n.paperId?publicationUrl(n.publicationFilters,n.paperId):'';
   let html=md(description);
-  if(destination)html=html.replace(/<strong>(.*?)<\/strong>/g,`<a href="${esc(destination)}"><strong>$1</strong></a>`);
+  if(destination)html=html.replace(/<strong>(.*?)<\/strong>/g,`<a href="${esc(destination)}">$1</a>`);
   for(const name of ['Seongwon Lee','이성원 교수'])html=html.replaceAll(name,`<a href="team.html#member-0">${name}</a>`);
   return html;
 }

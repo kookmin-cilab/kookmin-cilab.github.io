@@ -1,5 +1,8 @@
 /* Shared CILAB accents: white surfaces, blue markers, and lighter rules. */
 :root { --link: #0076b3; --link-dark: #005c8c; }
+/* Links use color and underlines rather than bold weight. */
+body :is(.home-page, .news-page, #publications) a[href],
+body :is(.home-page, .news-page, #publications) a[href] :is(strong, b) { font-weight: 400; }
 body.theme-dark { --link: #81d2fa; --link-dark: #b9e9ff; }
 .page .publications-heading h1 { display: flex; align-items: center; gap: 12px; }
 .page .publications-heading h1::before { content: ''; flex: 0 0 7px; width: 7px; height: 28px; border-radius: 6px; background: #009fe8; }

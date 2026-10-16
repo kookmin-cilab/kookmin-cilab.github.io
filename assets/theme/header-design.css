@@ -25,19 +25,13 @@ body.header-compact-sticky .site-header .primary-nav { box-shadow: none; }
 }
 
 /* A compact, static logo replaces the utility toolbar. */
-.site-header .institution-inner { flex-direction: row; justify-content: flex-start; gap: 10px; min-height: 56px; padding-top: 4px; padding-bottom: 4px; }
-.cilab-home-link { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; flex: 0 0 40px; color: var(--muted); border-radius: 6px; }
-.cilab-home-link svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-.cilab-home-link:hover { color: var(--nav-accent); background: var(--panel); }
-.cilab-home-link:focus-visible { outline: 2px solid var(--nav-accent); outline-offset: 2px; }
+.site-header .institution-inner { flex-direction: row; justify-content: flex-start; min-height: 36px; padding-top: 6px; padding-bottom: 6px; }
 .cilab-top-logo { display: flex; align-items: center; cursor: default; }
-.cilab-top-logo img { display: block; width: 110px; height: 36px; object-fit: contain; cursor: default; }
+.cilab-top-logo img { display: block; width: 60px; height: 20px; object-fit: contain; cursor: default; }
 .site-header .lab-mark { display: block; }
 .site-header .lab-title-block { grid-column: auto; }
 .site-header .lab-header { min-height: 104px; }
 @media (max-width: 640px) {
-  .site-header .institution-inner { min-height: 52px; }
-  .cilab-top-logo img { width: 98px; height: 32px; }
   .site-header .lab-header { min-height: 100px; padding-top: 16px; padding-bottom: 16px; }
   .site-header .lab-mark strong { line-height: 1.2; }
 }

@@ -30,7 +30,7 @@ const source = Object.fromEntries(await Promise.all(files.map(async name => [nam
 const personal = await read('personal.md');
 const paperBlocks = personal.split('<div class="paper-box">').slice(1);
 const normalize = s => clean(s).toLowerCase().replace(/[^a-z0-9]/g, '');
-const imagePath = original => 'assets/' + original.replace(/^\//, '').replace(/\.[^.]+$/, '.webp');
+const imagePath = original => 'assets/' + original.replace(/^\//, '').replace(/\.[^.]+$/, extension => /^\.gif$/i.test(extension) ? '.gif' : '.webp');
 const publications = source.publist.map((p, i) => {
   const block = paperBlocks.find(b => normalize(b.match(/class="paper-box-title">([\s\S]*?)<\/p>/)?.[1] || '') === normalize(p.title));
   const links = block ? [...block.matchAll(/<a href="([^"]+)"[^>]*>\[([^<]+)\]<\/a>/g)].map(m => ({label: m[2] === 'arXiv' ? 'arXiv' : m[2] === 'project page' ? 'Project' : m[2] === 'page' ? 'Publication' : m[2] === 'supp' ? 'Supplement' : m[2][0].toUpperCase()+m[2].slice(1), url:m[1].replace(/^http:/,'https:')})) : [];
@@ -77,7 +77,7 @@ await Promise.all(Array.from({length:5}, async()=> {
     const response=await fetch('https://raw.githubusercontent.com/kookmin-cilab/kookmin-cilab.github.io/main/'+item.path);
     if(!response.ok) throw new Error(item.path+': '+response.status);
     const buffer=Buffer.from(await response.arrayBuffer());
-    if(item.path.endsWith('.svg')) await fs.writeFile(dest,buffer);
+    if(/\.(svg|gif)$/i.test(item.path)) await fs.writeFile(dest,buffer);
     else await sharp(buffer).rotate().resize({width:item.path.includes('teampic')?600:1600,withoutEnlargement:true}).webp({quality:83}).toFile(dest);
     console.log(dest);
   }

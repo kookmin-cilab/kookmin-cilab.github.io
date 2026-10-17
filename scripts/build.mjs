@@ -12,7 +12,7 @@ export async function build(){
   for(const [key,body] of Object.entries(pages))await fs.writeFile(path.join(out,key+'.html'),shell(key,body));
   await fs.writeFile(path.join(out,'.nojekyll'),'');
   await fs.copyFile(path.join(root,'CNAME'),path.join(out,'CNAME'));
-  const redirect=target=>`<!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=${target}"><title>Redirecting · CILAB</title><a href="${target}">Continue to CILAB</a></html>`;
+  const redirect=target=>`<!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=${target}"><title>Redirecting | KMU_CILAB</title><a href="${target}">Continue to CILAB</a></html>`;
   const aliases={members:'team',photos:'gallery',joining_us:'joining',...Object.fromEntries(Object.keys(pages).filter(k=>k!=='index').map(k=>[k,k]))};
   for(const [old,target] of Object.entries(aliases)){await fs.mkdir(path.join(out,old),{recursive:true});await fs.writeFile(path.join(out,old,'index.html'),redirect('../'+target+'.html'));}
   await fs.writeFile(path.join(out,'allnews.html'),redirect('news.html'));

@@ -18,7 +18,27 @@ body .home-page .home-framework-link,
 body .home-page .home-framework-overview-link { padding: 0; background: none; border: 0; border-radius: 0; color: var(--link); white-space: normal; }
 .home-page .home-joining { padding: 8px 0 0; }
 .home-page .home-joining p { margin: 0; color: var(--text); font-size: .94rem; line-height: 1.6; }
-.home-page .home-joining .home-section-heading > a { white-space: nowrap; }
+.home-page .home-join-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #0076b3;
+  border-radius: 9px;
+  background: #0076b3;
+  color: #fff;
+  font-size: .875rem;
+  line-height: 1.4;
+  font-weight: 400;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.home-page .home-join-button svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.home-page .home-join-button:hover,
+.home-page .home-join-button:focus-visible { background: #005c8c; border-color: #005c8c; color: #fff; text-decoration: none; }
+.home-page .home-join-button:focus-visible { outline: 3px solid #8cd4f3; outline-offset: 3px; }
 .home-page .home-image-pair { gap: 18px; }
 .home-page .home-image-pair a { border-radius: 16px; border: 0; }
 .home-page .home-news { background: transparent; border: 0; border-radius: 0; padding: 8px 0 0; }

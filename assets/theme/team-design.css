@@ -97,6 +97,7 @@ body.theme-dark .team-page .profile-card { background: transparent; }
 .team-page #current-lab-members { margin-top: 12px; padding-top: 18px; }
 
 @media (max-width: 900px) {
+  .team-page .profile-card { text-align: center; }
   .team-page .profile-avatar {
     width: min(180px, 100%);
     margin: 0 auto 16px;

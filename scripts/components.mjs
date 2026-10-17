@@ -6,7 +6,7 @@ import {videos,video,youtubeId} from './videos.mjs';
 export {videos,video};
 export const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 export const out=path.join(root,'dist');
-const styleVersions=Object.fromEntries(await Promise.all(['header-design','home-design','site-refresh'].map(async name=>[name,createHash('sha256').update(await fs.readFile(path.join(root,`assets/theme/${name}.css`))).digest('hex').slice(0,12)])));
+const styleVersions=Object.fromEntries(await Promise.all(['header-design','home-design','team-design','site-refresh'].map(async name=>[name,createHash('sha256').update(await fs.readFile(path.join(root,`assets/theme/${name}.css`))).digest('hex').slice(0,12)])));
 export const data=JSON.parse(await fs.readFile(path.join(root,'data/site.json'),'utf8'));
 export const lab=JSON.parse(await fs.readFile(path.join(root,'data/lab.json'),'utf8'));
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

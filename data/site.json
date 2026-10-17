@@ -701,7 +701,8 @@
       "year": 2026,
       "month": 6,
       "category": "Project",
-      "description": "Our lab has been awarded the **Basic Research Laboratory (BRL) Program grant** from NRF for research on Robot Foundation Models."
+      "description": "Our lab has been awarded the **Basic Research Laboratory (BRL) Program grant** from NRF for research on Robot Foundation Models.",
+      "projectId": "project-0"
     },
     {
       "year": 2026,
@@ -717,19 +718,22 @@
       "year": 2026,
       "month": 5,
       "category": "Project",
-      "description": "Our lab has been awarded a **research grant** from **Electronics and Telecommunications Research Institute (ETRI)** for research on **Vision-Language Navigation (VLN) Agents**."
+      "description": "Our lab has been awarded a **research grant** from **Electronics and Telecommunications Research Institute (ETRI)** for research on **Vision-Language Navigation (VLN) Agents**.",
+      "projectId": "project-1"
     },
     {
       "year": 2026,
       "month": 3,
       "category": "Project",
-      "description": "Our lab has been awarded a **research grant** from **BStar Robotics** for research on **3D Reconstruction for Logistics Warehouse Robots**."
+      "description": "Our lab has been awarded a **research grant** from **BStar Robotics** for research on **3D Reconstruction for Logistics Warehouse Robots**.",
+      "projectId": "project-2"
     },
     {
       "year": 2026,
       "month": 3,
       "category": "Project",
-      "description": "Our lab has been awarded the **Young Researcher Program grant** from NRF for research on **Vision-Language Navigation (VLN) Agents**."
+      "description": "Our lab has been awarded the **Young Researcher Program grant** from NRF for research on **Vision-Language Navigation (VLN) Agents**.",
+      "projectId": "project-3"
     },
     {
       "year": 2026,
@@ -765,13 +769,15 @@
       "year": 2025,
       "month": 6,
       "category": "Project",
-      "description": "Our lab has been awarded a **research grant** from **Electronics and Telecommunications Research Institute (ETRI)** for the research on **Brain Signal Based Image Generation**."
+      "description": "Our lab has been awarded a **research grant** from **Electronics and Telecommunications Research Institute (ETRI)** for the research on **Brain Signal Based Image Generation**.",
+      "projectId": "project-5"
     },
     {
       "year": 2025,
       "month": 4,
       "category": "Project",
-      "description": "Our lab has been awarded a **research grant** from **Korea Electronics Technology Institute (KETI)** for research on **3D Reconstruction of Vehicles**."
+      "description": "Our lab has been awarded a **research grant** from **Korea Electronics Technology Institute (KETI)** for research on **3D Reconstruction of Vehicles**.",
+      "projectId": "project-4"
     },
     {
       "year": 2025,
@@ -875,7 +881,8 @@
       "image": "assets/images/projects/nrf.svg",
       "funding_ko": "한국연구재단 (NRF) 기초연구실 사업",
       "program": "Basic Research Laboratory (BRL)",
-      "program_ko": "기초연구실 (BRL)"
+      "program_ko": "기초연구실 (BRL)",
+      "id": "project-0"
     },
     {
       "title_ko": "3차원 재구성 기반 디지털트윈 학습 및 장면 구성 기술 실증",
@@ -885,7 +892,8 @@
       "funding": "Electronics and Telecommunications Research Institute (ETRI)",
       "thumbnail": "/images/projects/etri.svg",
       "image": "assets/images/projects/etri.svg",
-      "funding_ko": "한국전자통신연구원 (ETRI)"
+      "funding_ko": "한국전자통신연구원 (ETRI)",
+      "id": "project-1"
     },
     {
       "title_ko": "물류창고 현장의 로봇 상에서 영상 기반 화물 및 화물 라벨 인식",
@@ -894,7 +902,8 @@
       "period": "Mar 2026 - Dec 2026",
       "funding": "BStar Robotics",
       "thumbnail": "/images/projects/bstar-robotics.svg",
-      "image": "assets/images/projects/bstar-robotics.svg"
+      "image": "assets/images/projects/bstar-robotics.svg",
+      "id": "project-2"
     },
     {
       "title_ko": "웹 비디오, 시뮬레이션, 실세계의 순환적 확장을 통한 비전-언어 네비게이션 에이전트 연구",
@@ -906,7 +915,8 @@
       "image": "assets/images/projects/nrf.svg",
       "funding_ko": "한국연구재단 (NRF)",
       "program": "NRF Early-career Research Program",
-      "program_ko": "신진연구 사업"
+      "program_ko": "신진연구 사업",
+      "id": "project-3"
     },
     {
       "title_ko": "표면검사 공정 마이스터 로봇화 및 검사 결과 시각화를 위한 Gaussian Splatting 알고리즘 개발",
@@ -916,7 +926,8 @@
       "funding": "Korea Electronics Technology Institute (KETI)",
       "thumbnail": "/images/projects/keti.svg",
       "image": "assets/images/projects/keti.svg",
-      "funding_ko": "한국전자기술연구원 (KETI)"
+      "funding_ko": "한국전자기술연구원 (KETI)",
+      "id": "project-4"
     },
     {
       "title_ko": "뇌파 신호를 활용한 이미지 생성 기술 연구",
@@ -926,7 +937,8 @@
       "funding": "Electronics and Telecommunications Research Institute (ETRI)",
       "thumbnail": "/images/projects/etri.svg",
       "image": "assets/images/projects/etri.svg",
-      "funding_ko": "한국전자통신연구원 (ETRI)"
+      "funding_ko": "한국전자통신연구원 (ETRI)",
+      "id": "project-5"
     },
     {
       "title": "Development of AI Autonomy and Knowledge Enhancement for AI Agent Collaboration",
@@ -934,7 +946,8 @@
       "period": "Aug 2023 - Aug 2024",
       "funding": "Information & Communications Technology Promotion (IITP)",
       "start_year": 2023,
-      "image": ""
+      "image": "",
+      "id": "project-6"
     },
     {
       "title": "Development of Deep Learning-Based Fine-Matching Technology using ToF Depth Sensor",
@@ -942,7 +955,8 @@
       "period": "Apr 2022 - Dec 2022",
       "funding": "LG Electronics",
       "start_year": 2022,
-      "image": ""
+      "image": "",
+      "id": "project-7"
     },
     {
       "title": "Development of Deep Learning-Based Image Retrieval Technology using ToF Depth Sensor",
@@ -950,7 +964,8 @@
       "period": "May 2021 - Dec 2021",
       "funding": "LG Electronics",
       "start_year": 2021,
-      "image": ""
+      "image": "",
+      "id": "project-8"
     },
     {
       "title": "Development of Front-Down SLAM Technology Based on ToF Depth Sensor",
@@ -958,7 +973,8 @@
       "period": "Apr 2020 - Feb 2021",
       "funding": "LG Electronics",
       "start_year": 2020,
-      "image": ""
+      "image": "",
+      "id": "project-9"
     },
     {
       "title": "Development of Depth Map Generation Technology using Continuous Stereo Images",
@@ -966,7 +982,8 @@
       "period": "Apr 2019 - Dec 2019",
       "funding": "Hyundai AutoEver",
       "start_year": 2019,
-      "image": ""
+      "image": "",
+      "id": "project-10"
     },
     {
       "title": "Development of Integration Module Technology for Localization and Autonomous Driving Control Based on Multi-modal Sensor for Wheel Drive Service Robot",
@@ -974,7 +991,8 @@
       "period": "Oct 2017 - Feb 2019",
       "funding": "Ministry of Trade, Industry and Energy (MOTIE)",
       "start_year": 2017,
-      "image": ""
+      "image": "",
+      "id": "project-11"
     },
     {
       "title": "Development of Robot Autonomous Driving Technology using Laser Scanner",
@@ -982,7 +1000,8 @@
       "period": "Oct 2016 - Oct 2017",
       "funding": "Hitachi-LG Data Storage",
       "start_year": 2016,
-      "image": ""
+      "image": "",
+      "id": "project-12"
     },
     {
       "title": "Development of Robot Intelligence Technology for Mobility with Learning Capability toward Robust and Seamless Indoor and Outdoor Autonomous Navigation",
@@ -990,7 +1009,8 @@
       "period": "May 2016 - Apr 2020",
       "funding": "Ministry of Trade, Industry and Energy (MOTIE)",
       "start_year": 2016,
-      "image": ""
+      "image": "",
+      "id": "project-13"
     }
   ],
   "gallery": [

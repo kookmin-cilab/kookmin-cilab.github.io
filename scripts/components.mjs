@@ -54,7 +54,7 @@ export const newsKo=[
  '**CVPR 2022**에 논문 **2편**이 채택되었습니다.', '**ICCV 2021**에 논문 **1편**이 채택되었습니다.'
 ];
 function newsContent(description,n){
-  const destination=n.publicationFilters||n.paperId?publicationUrl(n.publicationFilters,n.paperId):'';
+  const destination=n.publicationFilters||n.paperId?publicationUrl(n.publicationFilters,n.paperId):n.projectId?`projects.html#${n.projectId}`:'';
   let html=md(description);
   if(destination)html=html.replace(/<strong>(.*?)<\/strong>/g,`<a href="${esc(destination)}">$1</a>`);
   for(const name of ['Seongwon Lee','이성원 교수'])html=html.replaceAll(name,`<a href="team.html#member-0">${name}</a>`);

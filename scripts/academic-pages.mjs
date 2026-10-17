@@ -11,7 +11,7 @@ const completedProjects=data.projects.filter(p=>!current(p));
 function project(p){
   const isCurrent=current(p),state=isCurrent?'Current':'Completed';
   const title=p.program||p.title;
-  return `<article id="project-${data.projects.indexOf(p)}" class="publication-card project-card" data-project-status="${state.toLowerCase()}"${p.role?` data-project-roles="${esc(p.role)}"`:''}>
+  return `<article id="${esc(p.id)}" class="publication-card project-card" data-project-status="${state.toLowerCase()}"${p.role?` data-project-roles="${esc(p.role)}"`:''}>
     <div class="publication-body"><div class="publication-title-row"><span class="pub-badge project-${state.toLowerCase()}" ${localized(state,isCurrent?'진행 중':'완료')}>${state}</span>${p.start_year<2024?`<span class="pub-badge" ${localized('Prior research','이전 연구 참여')}>Prior research</span>`:''}<h3 ${localized(title,p.program_ko||p.title_ko||title)}>${esc(title)}</h3></div>
     <div class="publication-meta">${p.role?meta('Role',p.role,p.role_ko):''}${meta('Period',period(p))}${meta('Funding Source',p.funding,p.funding_ko)}${p.program?meta('Program',p.program,p.program_ko):''}${p.program?meta('Title',p.title,p.title_ko):''}</div></div>
     ${p.image?`<a class="publication-figure cilab-funding-figure" href="${p.image}">${image(p.image,p.funding)}</a>`:''}</article>`;

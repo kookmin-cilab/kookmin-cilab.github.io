@@ -1,14 +1,14 @@
 (function () {
   const header = document.querySelector(".site-header");
   const institution = document.querySelector(".institution-bar");
-  const lab = document.querySelector(".lab-header");
+  const menu = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".primary-nav");
   let preserveHashAlignment = false;
-  if (!header || !institution || !lab || !nav) return;
+  if (!header || !institution || !nav) return;
 
   function setHeaderMetrics() {
     document.documentElement.style.setProperty("--sticky-utility-height", `${institution.offsetHeight}px`);
-    document.documentElement.style.setProperty("--sticky-nav-height", `${nav.offsetHeight}px`);
+    document.documentElement.style.setProperty("--sticky-nav-height", `${nav.offsetHeight + (menu?.offsetHeight || 0)}px`);
   }
 
   function getHashTarget() {
@@ -22,7 +22,7 @@
 
   function updateCompactHeader() {
     setHeaderMetrics();
-    const threshold = institution.offsetHeight + lab.offsetHeight;
+    const threshold = institution.offsetHeight;
     const compact = window.scrollY >= threshold || preserveHashAlignment;
     document.body.classList.toggle("header-compact-sticky", compact);
   }

@@ -15,7 +15,7 @@
     { title: "Gallery", url: "gallery.html" },
     { title: "Teaching", url: "teaching.html" },
     { title: "Contact", url: "contact.html" },
-    { title: "Joining CILAB", url: "joining.html" },
+    { title: "Join CILAB", url: "joining.html" },
   ];
 
   const siteRoot = new URL("../../", document.currentScript.src);

@@ -3,6 +3,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {build,root,out} from './build.mjs';
 import {videos,youtubeId} from './videos.mjs';
+import {authors} from './publications-page.mjs';
 await build();
 const data=JSON.parse(await fs.readFile(path.join(root,'data/site.json'),'utf8'));
 const pages=['index','team','news','research','publications','projects','teaching','talks','gallery','contact','joining'];
@@ -40,6 +41,13 @@ assert.equal((documents.get(path.join(out,'publications.html')).match(/id="paper
 assert.equal((documents.get(path.join(out,'gallery.html')).match(/class="gallery-carousel"/g)||[]).length,data.gallery.length);
 for(const album of data.gallery)for(const image of album.images)await fs.access(path.join(out,image));
 for(const paper of data.publications){for(const link of paper.links)assert.ok(/^https:\/\//.test(link.url),'Publication URL must use HTTPS');}
+// A first-position author is unmarked unless equal contribution is explicit.
+assert.equal(authors({authors:'Alpha, Beta*'}),'Alpha, Beta<sup class="publication-author-mark" title="Corresponding author">†</sup>');
+const sharedAuthors=authors({authors:'Alpha, Beta*, Gamma*',coFirstAuthors:['Alpha','Beta']});
+assert.ok(sharedAuthors.includes('title="Co-first author">*</sup>'),'Missing equal-contribution superscript');
+assert.ok(sharedAuthors.includes('title="Co-first author; Corresponding author">*†</sup>'),'Missing combined author roles');
+assert.equal((sharedAuthors.match(/†/g)||[]).length,2,'Corresponding-author marks must be preserved');
+assert.ok(!authors({authors:'Alpha, Beta*',coFirstAuthors:['Alpha']}).includes('>*'),'A single author cannot be co-first alone');
 for(const video of videos){
   if(video.youtubeUrl)assert.ok(youtubeId(video.youtubeUrl),`Invalid YouTube URL: ${video.title}`);
   if(video.poster)await fs.access(path.join(out,video.poster));

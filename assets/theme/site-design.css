@@ -1,0 +1,175 @@
+/* Home */
+body.home-brand {
+  --ink: #142630;
+  --text: #43535d;
+  --link: #0076b3;
+  --content-width: 1240px;
+  color: var(--text);
+}
+.home-brand button { font-family: inherit; }
+.home-brand .home-page { gap: 32px; padding-top: 0; }
+body.home-brand .home-page .cilab-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  padding: 48px 0 36px;
+  overflow: visible;
+}
+.home-brand .cilab-intro-eyebrow { margin: 0 0 22px; font-size: .76rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: #607580; }
+.home-brand .cilab-intro-eyebrow span { margin-inline: 9px; color: #96acb9; }
+.home-brand .home-page h1.cilab-intro-title {
+  margin: 0;
+  max-width: none;
+  white-space: normal;
+  font-size: clamp(2.65rem, 4.3vw, 3.55rem);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -.04em;
+  color: var(--ink);
+}
+.home-brand .cilab-name-line { display: inline-block; }
+.home-brand .cilab-initial { color: #0076b3; }
+.home-brand .cilab-intro-content { max-width: 1040px; }
+.home-brand .cilab-intro-content p { margin: 0 0 15px; font-size: 1.06rem; line-height: 1.7; }
+.home-brand .cilab-intro-content .cilab-intro-goal { font-size: .98rem; color: #687680; }
+.home-brand .cilab-intro-directions a { color: #0076b3; text-decoration: underline; text-decoration-color: #b2d6e6; text-underline-offset: 4px; }
+.home-brand .cilab-intro-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 20px 27px; margin-top: 28px; }
+.home-brand .cilab-intro-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 11px; min-height: 46px; font-size: .94rem; line-height: 1.3; text-decoration: none; }
+.home-brand .cilab-intro-actions svg { width: 17px; height: 17px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.home-brand .cilab-intro-secondary { color: var(--ink); }
+.home-brand .cilab-intro-secondary span { text-decoration: underline; text-decoration-color: #a6b5be; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+.home-brand .cilab-intro-secondary:hover { color: #0076b3; }
+.home-brand .cilab-intro-actions a:focus-visible { outline: 2px solid #0076b3; outline-offset: 5px; }
+.home-brand .home-page .home-section-heading h2 { font-size: 1.65rem; font-weight: 500; letter-spacing: -.025em; }
+.home-brand .home-page .home-section-heading h2::before { flex-basis: 4px; width: 4px; height: 22px; }
+.home-brand .home-page .home-joining { padding: 24px 0 0; border-top: 1px solid #e3e9ed; }
+.home-brand .home-page .home-joining .home-section-heading { margin-bottom: 10px; }
+.home-brand .home-page .home-join-button { min-height: 35px; padding: 6px 13px; background: #fff; border-color: #c4d4df; color: #0076b3; border-radius: 6px; }
+.home-brand .home-page .home-join-button:hover { background: #edf7fc; }
+.home-brand .home-page .home-image-pair { gap: 20px; }
+.home-brand .home-page .home-image-pair .home-photo { border-radius: 8px; }
+.home-brand .home-news li { font-size: .96rem; }
+.home-brand .home-page .home-research-videos { border-radius: 10px; }
+@media (max-width: 1000px) {
+  .home-brand .home-page h1.cilab-intro-title { font-size: clamp(2.15rem, 4.5vw, 2.8rem); }
+}
+@media (max-width: 760px) {
+  body.home-brand .home-page .cilab-intro { grid-template-columns: 1fr; gap: 27px; padding: 38px 0 12px; }
+  .home-brand .home-page h1.cilab-intro-title { font-size: clamp(2.3rem, 6.5vw, 3.2rem); }
+  .home-brand .cilab-intro-eyebrow { margin-bottom: 16px; font-size: .69rem; }
+  .home-brand .cilab-intro-content p { font-size: 1rem; line-height: 1.65; }
+  .home-brand .cilab-intro-content .cilab-intro-goal { font-size: .94rem; }
+  .home-brand .cilab-intro-actions { gap: 16px 22px; margin-top: 22px; }
+  .home-brand .cilab-intro-actions a { font-size: .88rem; }
+  .home-brand .home-page { gap: 27px; }
+}
+
+/* Typography */
+:root {
+  --cilab-font-sans: 'Figtree', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+}
+body,
+button,
+input,
+select,
+textarea,
+.leaflet-container,
+.cilab-contact-map .leaflet-popup-content {
+  font-family: var(--cilab-font-sans);
+}
+body .page h1 { font-weight: 500; letter-spacing: -.03em; }
+body .page h2 { font-weight: 500; letter-spacing: -.02em; }
+body #publications .publication-card h3 { font-weight: 500; }
+body .site-footer h2 { font-weight: 600; }
+
+/* News labels */
+body :is(.home-news,.news-page) [data-news-content] .news-inline-label {
+  padding: 1px 5px 2px;
+  border-radius: 3px;
+  font-weight: 400;
+  text-decoration: none;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+body :is(.home-news,.news-page) .news-inline-venue {
+  color: #006a9e;
+  background: #eaf4fa;
+}
+body :is(.home-news,.news-page) .news-inline-project {
+  color: #286352;
+  background: #ecf5f0;
+}
+body :is(.home-news,.news-page) .news-inline-venue:hover { background: #d9edf8; }
+body :is(.home-news,.news-page) .news-inline-project:hover { background: #dceee4; }
+body :is(.home-news,.news-page) [data-news-content] .news-inline-label:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+body :is(.home-news,.news-page) li > p { line-height: 1.8; }
+body :is(.home-news,.news-page) li > p > .news-tag {
+  color: #697780;
+  background: #f3f5f6;
+  border-color: #e5e9ec;
+  font-weight: 400;
+}
+
+/* Author notes */
+#publications .publication-author-mark {
+  position: relative;
+  top: -.45em;
+  margin-left: .08em;
+  vertical-align: baseline;
+  font-size: .67em;
+  font-weight: 400;
+  line-height: 0;
+}
+
+/* Shared header */
+body.cilab-header .site-header { --content-width: 1288px; position: sticky; top: 0; background: #fff; }
+body.cilab-header .site-header .institution-bar,
+body.cilab-header .site-header .primary-nav { position: static; }
+body.cilab-header .site-header .institution-inner {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) auto minmax(140px, 1fr);
+  gap: 14px;
+  min-height: 60px;
+  padding-block: 12px;
+  align-items: center;
+}
+.cilab-header .cilab-top-logo { justify-self: start; }
+.cilab-header .cilab-top-logo img { width: 78px; height: 26px; }
+.cilab-header .cilab-header-title {
+  justify-self: center;
+  min-width: 0;
+  text-align: center;
+  color: #142630;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.035em;
+  text-decoration: none;
+}
+.cilab-header .cilab-header-title:hover { color: #142630; text-decoration: none; }
+.cilab-header .cilab-header-title:focus-visible { outline: 2px solid #0076b3; outline-offset: 5px; }
+.cilab-header .cilab-header-word { display: inline-block; }
+.cilab-header .cilab-header-initial { color: #0076b3; }
+.cilab-header .cilab-header-affiliation { justify-self: end; color: #61717b; font-size: .85rem; white-space: nowrap; }
+body.cilab-header #publication-results,
+body.cilab-header .publication-card,
+body.cilab-header .profile-card,
+body.cilab-header .team-member-card,
+body.cilab-header .research-method-card,
+body.cilab-header .teaching-content-stack section,
+body.cilab-header .home-research-videos {
+  scroll-margin-top: calc(var(--sticky-utility-height, 60px) + var(--sticky-nav-height, 44px) + 18px);
+}
+@media (max-width: 980px) {
+  body.cilab-header .site-header .institution-inner { grid-template-columns: 78px minmax(0, 1fr) 78px; gap: 10px; }
+  .cilab-header .cilab-header-title { font-size: clamp(1rem, 2.7vw, 1.4rem); }
+  .cilab-header .cilab-header-affiliation { display: none; }
+}
+@media (max-width: 640px) {
+  body.cilab-header .site-header .institution-inner { grid-template-columns: 78px minmax(0, 1fr) 78px; gap: 8px; padding-inline: 12px; padding-block: 10px; }
+  .cilab-header .cilab-header-title { font-size: clamp(.875rem, 4vw, 1rem); }
+}

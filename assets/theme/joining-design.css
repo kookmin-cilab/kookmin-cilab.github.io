@@ -1,4 +1,4 @@
-/* Joining CILAB: restrained guide styling, preserving both language versions. */
+/* Join CILAB: restrained guide styling, preserving both language versions. */
 .joining-page { --link: #0076b3; --link-dark: #005c8c; }
 body.theme-dark .joining-page { --link: #81d2fa; --link-dark: #b9e9ff; }
 .joining-page .publications-heading { padding-bottom: 18px; border-bottom: 1px solid var(--line); }

@@ -19,7 +19,7 @@ node scripts/check.mjs   # 빌드 및 내부 링크·이미지·콘텐츠 검증
 
 ## 페이지
 
-Home, Team, News, Research, Publications, Projects, Teaching, Talks, Gallery, Contact, Joining CILAB의 11개 페이지입니다. 본문은 빌드 시 HTML로 생성됩니다. Home은 Welcome → Lab Openings → 사진 2장 → 최신 소식 → 연구 영상 순서를 따릅니다. Team은 원형 교수 사진, 멤버 카드, 메일·Google Scholar·홈페이지 SVG 아이콘을 제공합니다.
+Home, Team, News, Research, Publications, Projects, Teaching, Talks, Gallery, Contact, Join CILAB의 11개 페이지입니다. 본문은 빌드 시 HTML로 생성됩니다. Home은 연구실 풀네임과 연구 소개 → Join CILAB → 사진 2장 → 소식 → 연구 영상 순서를 따릅니다. 모든 페이지는 같은 중앙 정렬 헤더와 78×26px 로고를 사용하며, 본문 글꼴은 Figtree와 Noto Sans KR입니다. Team은 원형 교수 사진, 멤버 카드, 메일·Google Scholar·홈페이지 SVG 아이콘을 제공합니다.
 
 Publications는 크게 표시한 한 단 목록이며 Region·Type·연도·Venue 다중 태그, 연도 범위, 건수, Default Filter, Show all, 논문별 Bib 복사를 지원합니다. Default Filter 옆에는 기본 조회 범위(국제 학회·저널·프리프린트, 전체 연도·학회)를 안내합니다. Conference는 CVPR·ICCV·ICRA·IROS·ACCV·BMVC, Journal은 TPAMI·TIV·Scientific Reports·IJCAS·IEEE ACCESS로 묶었고 나머지는 Others 버튼 하나로 필터링합니다. Book 및 CILAB/External Collaborations 필터는 제거했습니다. 키워드 검색도 같은 필터에 연결했습니다. 기본값은 International + Conference/Journal/Preprint이므로 27편 중 Workshop 1편을 제외한 26편을 표시합니다. Show all은 전체 27편을 표시합니다. BibTeX는 확인된 제목·저자·학회·연도로 생성됩니다.
 
@@ -38,6 +38,7 @@ Publications는 크게 표시한 한 단 목록이며 Region·Type·연도·Venu
 | `scripts/academic-pages.mjs` | 원본 Projects·Teaching·Invited Talks 형식 |
 | `scripts/videos.mjs` | YouTube URL 처리 및 공통 플레이어 |
 | `assets/theme/` | 공통 CSS 및 상호작용 코드 |
+| `assets/theme/site-design.css` | 홈 구성, 글꼴, 공통 헤더, 뉴스 배지, 저자 위첨자 |
 | `assets/site.css` | CILAB 로고·콘텐츠에 필요한 소규모 스타일 보정 |
 | `assets/site.js` | CILAB 뉴스·과제·모집 안내의 한·영 전환 |
 | `assets/brand/` | 기존 CILAB 로고 원본 |
@@ -46,6 +47,8 @@ Publications는 크게 표시한 한 단 목록이며 Region·Type·연도·Venu
 | `assets/images/` | 최적화한 실제 연구실 사진과 논문 이미지 |
 
 사진을 추가할 때는 `assets/images/`에 파일을 넣고 JSON에 `assets/images/...` 상대 경로를 기록하세요. Gallery의 `images` 배열에 넣은 순서대로 앨범 사진이 표시됩니다. 논문 링크는 `{ "label": "Paper", "url": "https://..." }` 형태입니다. News의 `description`에서는 `**강조**`를 지원합니다.
+
+News의 학회·저널명은 옅은 파란색, 과제명·지원사업명은 옅은 녹색 배지로 표시합니다. 기존 논문 필터와 과제 바로가기 링크는 유지됩니다. 논문의 공동 제1저자가 확인된 경우 `coFirstAuthors` 배열에 `authors`와 동일한 이름을 두 명 이상 기록하면 작은 `*` 위첨자가 붙습니다. 단독 제1저자는 표시하지 않으며, 기존 저자 문자열의 `*` 교신저자 정보는 작은 `†` 위첨자로 표시합니다.
 
 멤버의 `homepage`, `scholar`에 URL을 추가하면 해당 아이콘이 활성화됩니다. 공개 원본에 없는 학생 링크는 비활성 아이콘으로 표시합니다. 이름을 누르면 모든 논문 유형을 대상으로 해당 이름을 검색한 Publications로 이동합니다. 논문에 표시된 연구실 멤버 이름은 Team의 해당 카드로 이동하며 카드가 강조됩니다. 논문마다 같은 파란색의 학회·저널 배지를 표시하며, 자료 링크는 Page·Paper·Supp 등의 짧은 이름을 사용합니다. 논문 연도·유형·학회·수상 태그를 누르면 해당 조건의 목록으로 바로 이동합니다. News 항목에는 `publicationFilters`(예: `{ "venue": "cvpr", "year": 2026 }`) 또는 `paperId`를 지정하면 한·영 안내에 관련 논문 링크가 생깁니다. 논문의 `award`와 `oralNote`로 수상·구두 발표 주석을 관리합니다. 여러 표기의 이름은 `publicationQuery`에 `English Name|한글이름`처럼 지정할 수 있습니다. 현재 로고는 기존 홈페이지에서 사용한 `assets/brand/CILAB_LOGO_fit_1.png`입니다. Home 사진은 원본과 동일한 16:10 비율입니다. 뉴스 한국어 문구는 `components.mjs`의 `newsKo`에 원본 뉴스 순서대로 관리합니다.
 

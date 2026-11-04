@@ -1,6 +1,6 @@
 import {data,esc,ext,image,yearValues,publicationUrl,memberUrl} from './components.mjs';
 
-const {team,publications}=data;
+const {publications}=data;
 const venueKey=p=>p.venue.toLowerCase().replace(/[^a-z0-9]+/g,'-')+(p.type==='Workshop'?'-ws':'');
 const conferenceVenues=[['cvpr','CVPR'],['iccv','ICCV'],['icra','ICRA'],['iros','IROS'],['accv','ACCV'],['bmvc','BMVC']];
 const journalVenues=[['tpami','TPAMI'],['tiv','TIV'],['scientific-reports','Scientific Reports'],['ijcas','IJCAS'],['ieee-access','IEEE ACCESS']];
@@ -9,12 +9,19 @@ const button=(group,value,label,count)=>`<button type="button" data-filter-group
 const filterBadge=(label,filters,cls='')=>`<a class="pub-badge ${cls}" href="${esc(publicationUrl(filters))}" title="Show publications: ${esc(label)}">${esc(label)}</a>`;
 const resourceLabel=label=>({Publication:'Page',Supplement:'Supp'}[label]||label);
 
-function authors(p){
-  return p.authors.replace(/\*/g,'†').replace(/,?\s+and\s+/g,', ').split(',').map(a=>a.trim()).filter(Boolean).map((name,i)=>{
-    const plain=name.replace(/†/g,'');
-    const member=team.find(m=>m.name===plain);
+export function authors(p) {
+  const names=p.authors.replace(/\*/g,'†').replace(/,?\s+and\s+/g,', ').split(',').map(a=>a.trim()).filter(Boolean);
+  const plainNames=names.map(name=>name.replace(/†/g,'').trim());
+  const shared=new Set((p.coFirstAuthors||[]).filter(name=>plainNames.includes(name)));
+  return names.map((name,i)=>{
+    const plain=plainNames[i];
+    const member=data.team.find(m=>m.name===plain);
     const label=member?`<a class="publication-member-link" href="${memberUrl(member)}" aria-label="View ${esc(plain)} in Team">${esc(plain)}</a>`:esc(plain);
-    return label+(i===0?'*':'')+(name.includes('†')?'†':'');
+    const notes=[];
+    if(shared.size>1&&shared.has(plain))notes.push(['*','Co-first author']);
+    if(name.includes('†'))notes.push(['†','Corresponding author']);
+    const mark=notes.length?`<sup class="publication-author-mark" title="${notes.map(n=>n[1]).join('; ')}">${notes.map(n=>n[0]).join('')}</sup>`:'';
+    return label+mark;
   }).join(', ');
 }
 
@@ -49,7 +56,7 @@ function venueGroup(title,venues){
 }
 
 export const pubPage=`<main id="main" class="page section-page"><section id="publications" class="publications-section">
-  <div class="publications-heading"><h1>Publications</h1><div class="publication-author-note"><span>Author notes</span><em><b>*</b> First author</em><em><b>†</b> Corresponding author</em><em>Linked authors: CILAB members</em></div></div>
+  <div class="publications-heading"><h1>Publications</h1><div class="publication-author-note"><span>Author notes</span><em><sup class="publication-author-mark">*</sup> Co-first authors</em><em><sup class="publication-author-mark">†</sup> Corresponding author</em><em>Linked authors: CILAB members</em></div></div>
   <div class="publication-filter-panel" aria-label="Publication filters">
     <div><span>Region</span>${['all','international','domestic'].map(v=>button('region',v,v[0].toUpperCase()+v.slice(1))).join('')}</div>
     <div><span>Type</span>${['all','conference','journal','preprint','workshop'].map(v=>button('type',v,v[0].toUpperCase()+v.slice(1))).join('')}</div>
